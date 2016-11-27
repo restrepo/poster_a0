@@ -24,7 +24,7 @@ xcolor=dvipsnames,table%,pdftex%,
 %\mode<presentation>
 %{
   %\usetheme{Madrid}
- \usetheme[progressbar=frametitle]{m}% \usetheme{Boadilla}
+ \usetheme[progressbar=frametitle]{metropolis}% \usetheme{Boadilla}
   % or ...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %para revelar texto a aparecer en overlays
@@ -99,11 +99,11 @@ xcolor=dvipsnames,table%,pdftex%,
 \newcommand{\widescreen}{
 \setlength{\paperwidth}{171 mm}
 \setlength{\paperheight}{96 mm}
-\setlength{\textwidth}{161 mm}
+\setlength{\textwidth}{151 mm}
 \setlength{\textheight}{86 mm}
 }
 
-%\widescreen
+\widescreen
 
 
 \title{Title}
@@ -118,13 +118,13 @@ xcolor=dvipsnames,table%,pdftex%,
 %   affiliation.
 \institute{
   \begin{columns}
-    \begin{column}{0.5\textwidth}
+    \begin{column}{0.3\textwidth}
 Instituto de F\'\i sica\\
 Universidad de Antioquia\\
 Phenomenology Group\\
 \url{http://gfif.udea.edu.co}      
     \end{column}
-    \begin{column}{0.5\textwidth}
+    \begin{column}{0.3\textwidth}
       \hfill Image title\\
       \hfill \includegraphics[scale=0.15]{imageicon}\\
       \hfill \tiny{Image credits}
@@ -183,44 +183,23 @@ arXiv:NNNN.NNNNN (Jrnl)\\
 %=============
 
 \maketitle
- % \begin{frame}%[plain]
- %   \titlepage
- % \end{frame}
-% }
 
-\end{document}
-
-% {
-% \usebackgroundtemplate{\includegraphics[width=\paperwidth]{tocrs}}
 \begin{frame}
   \frametitle{Table of Contents}
-\small
-%\vspace{-0.5cm}
-  \setbeamertemplate{section in toc}[sections numbered]
-  \tableofcontents[hideallsubsections]
+% %\small
+% %\vspace{-0.5cm}
+   \setbeamertemplate{section in toc}[sections numbered]
+   \tableofcontents[hideallsubsections]
+   \tableofcontents[hideallsubsections]
 \end{frame}
-
 
 \section{First section}
 
-% * <restrepo@udea.edu.co> 2015-11-15T12:41:09.269Z:
-%
-% Rememeber the basic idea: combine nu and dark matter
-%
-% ^.
-
 \begin{frame}
-  \frametitle{First slide}
+  \frametitle{First title}
 
 \end{frame}
-%%%%%
 
-
-\section{Second section}
-%%%%
-\begin{frame}
-
-\end{frame}
 \end{document}
 
 
