@@ -520,7 +520,7 @@ $\Psi_{321-\frac{1}{3}}$ & 1 & $(1,2,3,-1/3)$ & 1/2& $\overline{16}$\\
 
 \begin{frame}
   \frametitle{DM}
-  \includegraphics[scale=0.8]{Fig5}  %  
+  \includegraphics[scale=1]{Fig5}  %  
 \end{frame}
 
 \begin{frame}
@@ -540,10 +540,10 @@ $L^{c}$& 3 & $(1,1,2,+1)$  & 1/2& 16\\
 $\Phi$ & 1 & $(1,2,2,0)$ & 0& $10$\\
 $\Delta_R$ & 1 & $(1,1,3,-2)$ & 0& $126$\\ %DEBUG: check
 \hline 
-\invisible<1>{%
+\invisible<0>{%
 $\Psi_{1130}$ & 1 & $(1,1,3,0)$ & 1/2& $45$\\
 }%
-\invisible<1-2>{%
+\invisible<1>{%
 $\Psi_{1132}$ & 1 & $(1,1,3,2)$ & 1/2& $126$\\
 $\Psi_{113-2}$ & 1 & $(1,1,3,-2)$ & 1/2& $\overline{126}$\\
 \hline 
@@ -559,6 +559,49 @@ $\Psi_{321-\frac{1}{3}}$ & 1 & $(1,2,3,-1/3)$ & 1/2& $\overline{16}$\\
   \end{center}
 \invisible<2->{\phantom{aa}}
 \end{frame}
+
+\begin{frame}
+  \frametitle{Setup}
+
+\begin{equation}
+\Psi_{1132} = 
+ \begin{pmatrix}
+  \Psi^{+}/\sqrt{2} & \Psi^{++}  \\
+  \Psi^{0} & -\Psi^{+}/\sqrt{2} \\
+ \end{pmatrix}, \hspace{0.8cm}
+{\bar\Psi}_{113-2} = 
+ \begin{pmatrix}
+  \Psi^{-}/\sqrt{2} & \overline{\Psi}^{0}  \\
+  \Psi^{--} & -\Psi^{-}/\sqrt{2} \\
+ \end{pmatrix}.
+\end{equation}
+
+
+  \begin{align}
+L\supset & M_{11}\operatorname{Tr}(\Psi_{1130}\Psi_{1130})+M_{23}\operatorname{Tr}(\Psi_{1132}{\bar\Psi}_{113-2})\nonumber\\
+&+\lambda_{13}\operatorname{Tr}(\Delta_{R}{\bar\Psi}_{113-2}\Psi_{1130})+\lambda_{12}\operatorname{Tr}(\Delta^{\dagger}_{R}\Psi_{1132} \Psi_{1130})\, ,
+\end{align}
+
+\begin{align}
+\tan\gamma=&\frac{\lambda_{13}}{\lambda_{12}}\,,& \lambda=&\sqrt{\lambda_{12}^2+\lambda_{13}^2}\,.
+\end{align}
+\end{frame}
+
+\begin{frame}
+  \frametitle{fig}
+\def\fh{6cm}
+\includegraphics[height=\fh]{lambda}
+\includegraphics[height=\fh,width=7cm]{ssi_Mdm}
+\end{frame}
+
+\begin{frame}
+  \frametitle{MDM}
+  \includegraphics[width=0.37\textwidth]{IIMDMvsMZRExa5}
+
+\includegraphics[width=0.35\textwidth]{MDMvsDDExa5} 
+\includegraphics[width=0.35\textwidth]{IIMZRvsDDExa5} 
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Unification}
@@ -577,15 +620,15 @@ $L^{c}$& 3 & $(1,1,2,+1)$  & 1/2& 16\\
 $\Phi$ & 1 & $(1,2,2,0)$ & 0& $10$\\
 $\Delta_R$ & 1 & $(1,1,3,-2)$ & 0& $126$\\ %DEBUG: check
 \hline 
-\invisible<1>{%
+\invisible<0>{%
 $\Psi_{1130}$ & 1 & $(1,1,3,0)$ & 1/2& $45$\\
 }%
-\invisible<1-2>{%
+\invisible<0>{%
 $\Psi_{1132}$ & 1 & $(1,1,3,2)$ & 1/2& $126$\\
 $\Psi_{113-2}$ & 1 & $(1,1,3,-2)$ & 1/2& $\overline{126}$\\
 \hline 
 }%
-\invisible<1-2>{%
+\invisible<1>{%
 $\Psi_{1130}$ & 1 & $(1,1,3,-2)$ & 1/2& $45$\\
 $\Psi_{8110}$ & 1 & $(1,1,8,0)$ & 1/2& $45$\\
 $\Psi_{321\frac{1}{3}}$ & 1 & $(3,2,1,1/3)$ & 1/2& $16$\\
@@ -601,9 +644,13 @@ $\Psi_{321-\frac{1}{3}}$ & 1 & $(1,2,3,-1/3)$ & 1/2& $\overline{16}$\\
 
 
 \begin{frame}
-  \frametitle{This works}
-  
+  \frametitle{U}
+\includegraphics[width=0.5\textwidth]{ParamSpaceI}  %
+\hspace{0.5cm}
+\includegraphics[width=0.48\textwidth]{ParamSpaceII}% 
+\end{tabular}
 \end{frame}
+
 
 
 
