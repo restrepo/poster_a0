@@ -106,8 +106,8 @@ xcolor=dvipsnames,table%,pdftex%,
 \widescreen
 
 
-\title{Title}
-\subtitle{Sibtitle  }
+\title{Dark matter in left-right symmetric standard model}
+\subtitle{triplet-right scalar dark matter portal  }
 
 
 %\subtitle
@@ -136,13 +136,13 @@ Phenomenology Group\\
 \alert{\textbf{Focus on}} \\
 arXiv:NNNN.NNNNN (Jrnl)\\
 \alert{In collaboration with}\\
-  N.~Name}
+  C.~Arbeláez (UFSM)\& M.~Hirsch (IFIC)}
 %\centering
 }
 % - Use the \inst command only if there are several affiliations.
 % - Keep it simple, no one is interested in your street address.
 
-\date{\tiny November 15, 2016 } % (optional) \today
+\date{\tiny May 18, 2017 } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -193,10 +193,218 @@ arXiv:NNNN.NNNNN (Jrnl)\\
    \tableofcontents[hideallsubsections]
 \end{frame}
 
-\section{First section}
+
+\section{Dark matter and unification}
 
 \begin{frame}
-  \frametitle{First title}
+  \frametitle{Unification: $SO(10)$}
+  \begin{columns}
+    \begin{column}{0.7\textwidth}
+      \begin{small}
+  \begin{align*}
+    \mathbf{16}_{F_{i}}=
+    \begin{pmatrix}
+      {{\color{green}u_{R}}^{\dagger}}\\
+      {{\color{blue}u_{R}}^{\dagger}}\\
+      {{\color{red}u_{R}}^{\dagger}}\\
+      {{\color{green}u_{L}}}\\
+      {{\color{blue}u_{L}}}\\
+      {{\color{red}u_{L}}}\\
+      {{\color{green}d_{L}}}\\
+      {{\color{blue}d_{L}}}\\
+      {{\color{red}d_{L}}}\\
+      {{\color{green}d_{R}}^{\dagger}}\\
+      {{\color{blue}d_{R}}^{\dagger}}\\
+      {{\color{red}d_{R}}^{\dagger}}\\
+      \nu_L\\
+      e_L\\
+      {e_{R}}^{\dagger}\\
+      N\\
+    \end{pmatrix}_{i} \qquad\Rightarrow \mathcal{L}_{SM}\supset h\, \mathbf{16}_F\times\mathbf{16}_{F}\times \mathbf{10}_{S}+\text{h.c}
+  \end{align*}
+      \end{small}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+  \hfill\includegraphics[scale=0.2]{sym}      
+    \end{column}
+  \end{columns}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Not-susy $\operatorname{SO}(10)\to SU(5)\to \operatorname{SU}(3)_C\times SU(2)_L \times \operatorname{U}(1)_Y \times Z_2 $}
+\begin{picture}(320,250)
+%\includegraphics[scale=0.2]{tocrs}
+ %   
+ % \only<1->{\put(-11,10){\includegraphics[scale=0.4]{tocrs}}}%
+ % 
+ \only<1->{\put(-10,250){
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      \metroset{block=fill}
+      \begin{block}{Standard Model: $Z_2$-even }
+        Fermions: $\boldsymbol{16}_F$
+
+        Scalars: $\boldsymbol{10}_H,\boldsymbol{45}_H\cdots$
+      \end{block}
+
+
+    \column{0.5\textwidth}
+
+      \metroset{block=fill}
+
+
+      \begin{alertblock}{New $Z_2$-odd particles}
+       \color{red}
+        $\boldsymbol{10}_F,\boldsymbol{45}_F,\cdots$
+       
+        $\boldsymbol{16}_H,\cdots$
+      \end{alertblock}
+  \end{columns}
+}
+}
+\only<1->{\put(-10,200){
+    \begin{minipage}[t]{1.0\textwidth}
+ \alert{Lightest Odd Particle (LOP)} may be  a suitable dark matter candidate, \alert{and can improve gauge coupling unification }
+    \end{minipage}
+}
+}
+\only<1>{\put(0,20){
+\includegraphics[scale=0.45]{smunif}
+}
+}
+\only<2->{\put(0,90){
+  \begin{overpic}[height=3cm%,grid
+            ]{table1}
+\put(16,0){\tikz \draw[red,thick,rounded corners,fill=orange,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}
+\put(62,0){\tikz \draw[red,thick,rounded corners,fill=orange,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}
+\put(38,-7){\tikz \draw[red,thick,rounded corners,fill=orange,fill opacity=0.2] (0,0) rectangle (1.,0.5);}
+\only<5>{\put(18,-7){\tikz \draw[red,thick,rounded corners,fill=orange,fill opacity=0.2] (0,0) rectangle (0.9,0.5);}}
+\only<3->{\put(16,6){\tikz \draw[green,thick,rounded corners,fill=green,fill opacity=0.2] (0,0) rectangle (1.,0.5);}}
+\only<3->{\put(50,6){\tikz \draw[green,thick,rounded corners,fill=green,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}}
+\only<3-4>{\put(16,13){\tikz \draw[blue,thick,rounded corners,fill=blue,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}}
+\only<3-4>{\put(55,13){\tikz \draw[blue,thick,rounded corners,fill=blue,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}}
+\only<5>{\put(16,13){\tikz \draw[orange,thick,rounded corners,fill=orange,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}}
+\only<4->{\put(30,5){\tikz \draw[black,thick,rounded corners,fill=black,fill opacity=0.2] (0,0) rectangle (1.,0.6);}}
+\only<4->{\put(32,8){\parbox[t]{2cm}{$\mathbf{2}_{1/2}^{S}$}}}
+  \end{overpic}
+  \begin{overpic}[height=3cm%,grid
+            ]{table2}
+\only<4->{\put(30,30){\tikz \draw[black,thick,rounded corners,fill=black,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}}
+  \end{overpic}
+}
+}
+\only<2-5>{\put(0,80){
+  \begin{minipage}[t]{1.0\linewidth}
+    $SU(3)_{C}: \mathbf{3}\; (T),\ \mathbf{6},\ \mathbf{8}\;(\Lambda) $
+  \end{minipage}
+}
+%\put(40,38){\color{red}${}^{2}$}
+}
+\only<2>{\put(0,70){
+  \begin{minipage}[t]{1.0\linewidth}
+    \begin{align*}
+      m_{3_0}=2.7\ \text{TeV},\qquad m_{\Lambda}\sim 10^{10}\ \text{TeV},\qquad m_{\text{GUT}}\sim 10^{16}\ \text{GeV}\,.
+    \end{align*}
+    arXiv:0912.1545 (Frigerio-Hambye)
+  \end{minipage}
+}
+}
+\only<3>{\put(0,70){
+  \begin{minipage}[t]{1.0\linewidth}
+\centering
+     \alert{Split-SUSY like}
+
+    %uniftwo451E16
+    arXiv:1509.06313 (C. Arbelaez, R. Longas, D.R, O. Zapata)
+  \end{minipage}
+}
+}
+%%%circle
+\invisible<1-3>{\put(0,82){      \metroset{block=fill}
+    \begin{minipage}[t]{1.0\linewidth}
+      \begin{exampleblock}{\only<4>{Radiative hybrid seesaw (Parida {%\tiny 
+1106.4137}) or} 1509.06313}
+      \centering
+      \only<4>{Partial  Split-}SUSY-like spectrum: {\color{red}bino}-higgsino-{\color{red}wino}
+
+               \hfill             + $\color{red}\hspace{3cm}\downarrow$\hspace{3cm}    
+        
+         $\boldsymbol{10}'_H$ with fermion DM or, \hspace{0.5cm}  \color{red}
+         $\boldsymbol{16}_H,\cdots$ with scalar DM 
+        
+      \end{exampleblock}
+    \end{minipage}
+}
+}
+\end{picture}
+
+
+\end{frame}
+\begin{frame}
+  \frametitle{{\color{red}Singlet-Doublet}-Triplet fermion dark-matter}
+The most general $\text{SO}(10)$ invariant Lagrangian contains the following Yukawa terms
+\begin{align*}
+-\mathcal{L} & \supset  Y{\bf 10}_F {\bf 45}_F {\bf 10}_H + M_{\mathbf{45}_F}{\bf 45}_F{\bf 45}_F + M_{\mathbf{10}_F}{\bf 10}_F{\bf 10}_F
+\invisible<1>{+{\mathcal{L}(\alert{\mathbf{10}_\Phi}\invisible<2>{\ \text{or}\   \mathbf{16}_\Phi})}.} 
+\end{align*}
+
+
+
+  \begin{columns}
+    \begin{column}{0.47\textwidth}
+Basis $\boldsymbol{\psi}^0=\left({\color{red}N},\Sigma^0,{\color{red}\psi_L^0},{\color{red}\left( \psi_R^0 \right)^{\dagger}}\right)^T$ 
+\tiny
+\begin{align*}
+  &\mathcal{M}_{\boldsymbol{\psi}^0}=\nonumber\\
+&\begin{pmatrix}
+{\color{red}M_N}          &   0       &{\color{red}-y\,c_\beta v/\sqrt{2}}&{\color{red}y\,s_\beta v/\sqrt{2}} \\
+0 & M_\Sigma &  f\,c_{\beta'}v/\sqrt{2} & -f\,s_{\beta'}v/\sqrt{2}\\
+{\color{red}-y\,c_\beta} v/\sqrt{2} &  f\,c_{\beta'}v/\sqrt{2}  & 0            & {\color{red}}-M_D\\
+{\color{red}y\,s_\beta v/\sqrt{2}}& -f\,s_{\beta'}v/\sqrt{2}&{\color{red}}  -M_D                &  0  \\
+\end{pmatrix},
+\end{align*}
+    \end{column}
+    \begin{column}{0.53\textwidth}
+      \only<2>{\includegraphics[scale=0.38]{rumor}}
+      \only<3>{\includegraphics[scale=0.38]{sdfdm}}
+    \end{column}
+  \end{columns}
+
+  \invisible<2->{Model used for the Nimatron proposal: arXiv:1511.06495\\
+{\small \textbf{Physics Opportunities of a 100 TeV Proton-Proton Collider}\\
+Nima Arkani-Hamed, T. Han, M. Mangano, LT Wang. }
+}
+\end{frame}
+\begin{frame}
+  \frametitle{Split-SUSY like}
+\centering
+
+  \includegraphics[scale=0.8]{uniftwo451E16}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Partial split-SUSY like}
+\centering
+
+  \includegraphics[scale=0.8]{uniftwo452E3}
+\end{frame}
+
+\begin{frame}
+  \frametitle{SUSY like}
+\begin{picture}(320,250)
+\put(-40,100){ \includegraphics[scale=0.5]{unif2E3}  }
+\put(125,100){\includegraphics[scale=0.5]{unif1E10} }
+\end{picture}
+\end{frame}
+
+
+\section{Left-Right symmetric realization}
+
+\begin{frame}
+  \frametitle{First realization}
 
 \end{frame}
 
