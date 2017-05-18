@@ -383,38 +383,17 @@ Basis $\boldsymbol{\psi}^0=\left({\color{red}N},\Sigma^0,{\color{red}\psi_L^0},{
 \vspace{-1cm}
   \invisible<2->{ $\mathbf{10}_F \to \psi_L,\left( \psi_R \right)^{\dagger}$\\
                   $\mathbf{45}_F \to \Sigma,\Lambda$\\
-                  $\mathbf{45}_F \to N$\\
+                  $\mathbf{45}'_F \to N$\\
 %Model used in: arXiv:1511.06495\\
 %{\small \textbf{Physics Opportunities of a 100 TeV Proton-Proton Collider}\\
 %Nima Arkani-Hamed, T. Han, M. Mangano, LT Wang. }
 }
 \end{frame}
-\begin{frame}
-  \frametitle{Split-SUSY like}
-\centering
-
-  \includegraphics[scale=0.8]{uniftwo451E16}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Partial split-SUSY like}
-\centering
-
-  \includegraphics[scale=0.8]{uniftwo452E3}
-\end{frame}
-
-\begin{frame}
-  \frametitle{SUSY like}
-\begin{picture}(320,250)
-\put(-40,100){ \includegraphics[scale=0.5]{unif2E3}  }
-\put(125,100){\includegraphics[scale=0.5]{unif1E10} }
-\end{picture}
-\end{frame}
 
 
 \begin{frame}
   \frametitle{Is the glass half empty or half full?}
-  Results from LUX could be a half fill glass result pointing out that tree-level SM-portal could be fully excluded in the near future
+   Tree-level SM-portal could be fully excluded in the near future
 
   \begin{columns}
     \begin{column}{0.5\textwidth}
@@ -435,8 +414,8 @@ Basis $\boldsymbol{\psi}^0=\left({\color{red}N},\Sigma^0,{\color{red}\psi_L^0},{
 
   In this talk we explore
   \begin{itemize}
-  \item<2-> New portals in LR models 
-  \item<3-> ...
+  \item<2-> Recover SM-portals in LR models 
+  \item<3-> New portals in LR models 
   \end{itemize}
 
 \end{frame}
@@ -473,12 +452,12 @@ origin is specified in the fourth column. }
 \begin{tabular}{c|c|c}
  $m_{\text{LR}} \,(\mbox{GeV})$ &  $3_{c}2_{L}2_{R}1_{B-L}$  & $m_{G}\,(\mbox{GeV})$ \\ \hline
 
- {$2\times 10^{3}$ }  & $\alert{\Psi_{1,1,3,0}} + \Phi_{1,1,3,0}+\Phi_{1,2,2,0}+\Phi_{8,1,1,0}+2\Phi_{1,1,3,-2}$ & $1.65 \times 10^{16}$   \\
+ {$2\times 10^{3}$ }  & ${\color{blue}\Phi_{1,2,2,0}+2\Phi_{1,1,3,-2}}+\alert{\Psi_{1,1,3,0}} + \Phi_{1,1,3,0}+\Phi_{8,1,1,0}$ & $1.65 \times 10^{16}$   \\
  
  $\vdots$ &  $\vdots$  & $\vdots$   \\ 
 \end{tabular}
 \end{center}
-\caption{ $\alert{\Delta_{L,R}}=2\Phi_{1,1,3,-2}$. $m_{\text{LR}}$ and $m_{G}$ are given in GeV.}
+\caption{ $\color{blue}{\Delta_{L,R}}=2\Phi_{1,1,3,-2}$. $m_{\text{LR}}$ and $m_{G}$ are given in GeV.}
 \label{tab:I}
 \end{table}
 
@@ -531,7 +510,13 @@ $\Psi_{321-\frac{1}{3}}$ & 1 & $(1,2,3,-1/3)$ & 1/2& $\overline{16}$\\
 
 \begin{frame}
   \frametitle{DM}
-  \includegraphics[scale=1]{Fig5}  %  
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.9]{Fig5}  %  
+    \caption{$0.5<v_R/\text{TeV}<50$}
+  \end{figure}
+
+   
 \end{frame}
 
 \begin{frame}
@@ -589,20 +574,31 @@ $\Psi_{321-\frac{1}{3}}$ & 1 & $(1,2,3,-1/3)$ & 1/2& $\overline{16}$\\
 
 
   \begin{align}
-L\supset & M_{11}\operatorname{Tr}(\Psi_{1130}\Psi_{1130})+M_{23}\operatorname{Tr}(\Psi_{1132}{\bar\Psi}_{113-2})\nonumber\\
-&+\lambda_{13}\operatorname{Tr}(\Delta_{R}{\bar\Psi}_{113-2}\Psi_{1130})+\lambda_{12}\operatorname{Tr}(\Delta^{\dagger}_{R}\Psi_{1132} \Psi_{1130})\, ,
+L\supset &\alert{M_{11}}\operatorname{Tr}(\Psi_{1130}\Psi_{1130})+\alert{M_{23}}\operatorname{Tr}(\Psi_{1132}{\bar\Psi}_{113-2})\nonumber\\
+&+{\color{blue}\lambda_{13}}\operatorname{Tr}({\color{blue}\Delta_{R}}{\bar\Psi}_{113-2}\Psi_{1130})
++{\color{blue}\lambda_{12}}\operatorname{Tr}(\Delta^{\dagger}_{R}\Psi_{1132} \Psi_{1130})\, ,
 \end{align}
 
 \begin{align}
-\tan\gamma=&\frac{\lambda_{13}}{\lambda_{12}}\,,& \lambda=&\sqrt{\lambda_{12}^2+\lambda_{13}^2}\,.
+{\color{blue}\tan\gamma}=&\frac{\lambda_{13}}{\lambda_{12}}\,,& {\color{blue} \lambda}=&\sqrt{\lambda_{12}^2+\lambda_{13}^2}\,.
 \end{align}
+
+Blind spot at
+\begin{align}
+  M_{23}\sin2\gamma - M_{\text{DM}}=0
+\end{align}
+
 \end{frame}
 
 \begin{frame}
   \frametitle{fig}
 \def\fh{6cm}
-\includegraphics[height=\fh]{lambda}
+\begin{figure}
+  \centering
+  \includegraphics[height=\fh]{lambda}
 \includegraphics[height=\fh,width=7cm]{ssi_Mdm}
+  \caption{$2.7<M_{23}/\text{TeV}<3.1$ \qquad\qquad\qquad\qquad  (Right:  $\tan\gamma>5$)}
+\end{figure}
 \end{frame}
 
 \begin{frame}
