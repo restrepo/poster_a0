@@ -103,7 +103,7 @@ xcolor=dvipsnames,table%,pdftex%,
 \setlength{\textheight}{86 mm}
 }
 
-\widescreen
+%\widescreen
 
 
 \title{Dark matter in left-right symmetric standard model}
@@ -118,15 +118,15 @@ xcolor=dvipsnames,table%,pdftex%,
 %   affiliation.
 \institute{
   \begin{columns}
-    \begin{column}{0.3\textwidth}
+    \begin{column}{0.4\textwidth}
 Instituto de F\'\i sica\\
 Universidad de Antioquia\\
 Phenomenology Group\\
 \url{http://gfif.udea.edu.co}      
     \end{column}
-    \begin{column}{0.3\textwidth}
-      \hfill Mitchell Workshop\\
-      \hfill \includegraphics[scale=0.25]{mitchell}\\
+    \begin{column}{0.5\textwidth}
+      \hfill 5th Uniandes Particle Physics School\\
+      \hfill \includegraphics[scale=0.25]{ua}\\
       %\hfill \tiny{Image credits}
     \end{column}
   \end{columns}
@@ -142,7 +142,7 @@ arXiv:1703.08148 (PRD)\\
 % - Use the \inst command only if there are several affiliations.
 % - Keep it simple, no one is interested in your street address.
 
-\date{\tiny May 18, 2017 } % (optional) \today
+\date{\tiny May 21, 2017 } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -194,7 +194,406 @@ arXiv:1703.08148 (PRD)\\
 
 %\section{Motivation}
 
+\section{Review of SM}
+\begin{frame}
+  \frametitle{Lorentz transformation}
+  Boost in $x$
+\begin{align*}
+  \left\{x^\mu\right\}=\begin{pmatrix}
+    t\\
+    x\\
+    y\\
+    z
+  \end{pmatrix}\to
+  \begin{pmatrix}
+    t'\\
+    x'\\
+    y'\\
+    z'
+  \end{pmatrix}=
+  \begin{pmatrix}
+    \frac{t+vx}{\sqrt{1-v^2}}\\
+    \frac{x+vt}{\sqrt{1-v^2}}\\
+    y\\
+    z
+  \end{pmatrix}=&
+  \begin{pmatrix}
+    \cosh\xi&\sinh\xi&0&0\\
+    \sinh\xi&\cosh\xi&0&0\\
+    0     &  0  &1&0\\
+    0     &  0  &0&1
+  \end{pmatrix}
+  \begin{pmatrix}
+    t\\
+    x\\
+    y\\
+    z
+  \end{pmatrix}\nonumber\\
+{x'}^{\mu}\to x^{\mu}=&{{\Lambda_x}^{\mu}}_{\nu}x^\nu\,,
+\end{align*}
+where ($c=1$)
+\begin{equation*}
+  \cosh\xi=\gamma\qquad\sinh\xi=v\gamma,\qquad\text{and}\qquad \gamma=\frac{1}{\sqrt{1-v^2}}.
+\end{equation*}
+In general
+\begin{align*}
+  {\Lambda^{\mu}}_{\nu}={\left[\exp\left( \boldsymbol{\xi}\cdot\mathbf{K}+i\boldsymbol{\theta}\cdot\mathbf{L} \right)\,  \right]^{\mu}}_{\nu}
+\end{align*}
+\begin{align*}
+  x'\cdot y'=x'_{\mu}{y'}^{\mu}=&x_{\mu}y^{\mu}\,,&\text{if:}\qquad
+  g_{\alpha\beta}=&{\Lambda^{\mu}}_{\alpha}g_{\mu\nu}{\Lambda^{\nu}}_{\beta}\,.
+\end{align*}
+
+\end{frame}
+%%%%
+\begin{frame}{Theorem of Noether}
+  For each \alert{continuous simetry} there is at least  one \alert{conserved charge}.
+
+  \begin{flushright}
+    \includegraphics[scale=0.35]{Noether}\\
+    Emmy Noether (1882-1935)
+  \end{flushright}
+\end{frame}
+%%%%%
+\begin{frame}[plain]
+  \begin{picture}(320,250)
+    \only<1>{\put(-27,-10){\includegraphics[scale=0.47]{phase}}}
+    \only<1>{\put(-27,-10){\includegraphics[scale=0.44]{r2u1}}}
+\end{picture}
+
+\end{frame}
+
+%%%%
+\begin{frame}
+  \frametitle{Only fields}
+  Lorentz\invisible<1>{+$U(1)$}:
+  \begin{align}
+    \mathcal{L}=\only<1>{-\tfrac{1}{4}\left( \partial^{\mu} A^{\nu}-\partial^{\nu} A^{\mu} \right) \left( \partial_{\mu} A_{\nu}-\partial_{\nu} A_{\mu} \right) \,.  }
+\only<2>{\partial_{\mu}\phi^{\color{red}*}\partial^{\mu}\phi-{\color{red}m^2} \phi^{\color{red}*}\phi-\lambda \left( \phi^{\color{red}*}\phi \right)^2\,.}
+  \end{align}
+  \begin{align*}
+   A^\mu(x)\to {A'}^\mu=&{\Lambda^\mu}_\nu A^\nu(\Lambda^{-1}x)&&\text{Vector field}\nonumber\\
+   \phi(x)\to \phi'(x')=&\phi(\Lambda^{-1} x) && \text{Scalar field}\nonumber\\
+    \psi_\alpha(x)\to\psi'_\alpha(x)=&{\left[ S(\Lambda) \right]_\alpha}^\beta\psi_\beta(\Lambda^{-1}x)\,, &&\text{Left Weyl spinor}\nonumber\\
+\left(  \psi_\alpha(x) \right)^{\dagger}=\psi_{\dot{\alpha}}^{\dagger}(x)\to{\psi'}_{\dot{\alpha}}^{\dagger}(x)=&{\left[ S^*(\Lambda)\right]_{\dot{\alpha}}}^{\dot{\beta}} \psi_{\dot{\beta}}^{\dagger}(\Lambda^{-1}x)\,,&&\text{Right anti-Weyl spinor}
+\end{align*}
+With
+\begin{align*}
+  S(\Lambda)=
+\exp\left( \boldsymbol{\xi}\cdot \frac{\boldsymbol{\sigma}}{2}+i\boldsymbol{\theta}\cdot \frac{\boldsymbol{\sigma}}{2} \right)\,,
+\end{align*}
+where $\boldsymbol{\sigma}=(\sigma_1,\sigma_2,\sigma_3)$ are the Pauli matrices. $\overline{\boldsymbol{\sigma}}\equiv-\boldsymbol{\sigma}$.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Weyl spinor}
+  \begin{align}
+  \mathcal{L}=&i{\psi}^{\dagger}_{\dot{\alpha}}\overline{\sigma}^{\mu \dot{\alpha}\alpha}\partial_\mu\psi_{\alpha}-
+m \left( \psi^{\alpha}\psi_{\alpha}+\psi^{\dagger}_{\dot{\alpha}}\psi^{\dagger \dot{\alpha}} \right) \nonumber\\
+=&i{\psi}^{\dagger}\overline{\sigma}^\mu\partial_\mu\psi-
+m \left( \psi\psi+\psi^{\dagger}\psi^{\dagger} \right)\,.
+\end{align}
+
+
+Only if
+\begin{align*}
+  S^{\dagger}a^\nu S=&{\left(\Lambda\right)^\nu}_\rho a^\rho\,,
+\end{align*}
+
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Electron field: \emph{one in four}: Dreiner,... arXiv:0812.1594 (PR)}
+\vspace{-0.7cm}
+
+\begin{align*}
+\text{Scalar product:}\qquad  {{}^{\alpha}}\,{}_{\alpha}\qquad \text{and}\qquad {{}_{\dot{\alpha}}}\,{}^{\dot{\alpha}}\,.
+\end{align*}
+\rowcolors{1}{RoyalBlue!20}{}
+    \begin{tabular}{llll}
+    Name \hspace{4cm} & Symbol Name \hspace{1.5cm} & Lorentz Name \hspace{1.5cm} & $U(1)$\\\hline
+    $e_L$: left electron  & $\xi_{\alpha}$ & ${\left[ S \right]_{\alpha}}^{\beta}$ & $e^{i\theta}$\\
+   $\left( e_L \right)^{\dagger}=e^{\dagger}_R$: right positron    & $\left( \xi_{\alpha} \right)^{\dagger}=\xi^{\dagger}_{\dot{\alpha}}$ & ${\left[{S^{*}}\right]_{\dot{\alpha}}}^{\dot{\beta}}$ & $e^{-i\theta}$\\
+   $e_R$: right electron    & $\left( \eta^{\alpha} \right)^{\dagger}=\eta^{\dagger\;\dot{\alpha}}$ & ${\left[ \left( S^{-1} \right)^\dagger \right]^{\dot{\alpha}}}_{\dot{\beta}}$& $e^{i\theta}$\\
+   $\left( e_R \right)^{\dagger}=e^{\dagger}_L$: left positron&$\eta^{\alpha}$& ${\left[ \left( S^{-1} \right)^T \right]^{\alpha}}_{\beta}$ & $e^{-i\theta}$\\\hline
+  \end{tabular}
+
+\only<1>{
+\begin{align*}
+  \mathcal{L}=&i\xi^{\dagger}_{\dot{\alpha}}\overline{\sigma}^{\mu\;\dot{\alpha}\alpha}\partial_{\mu}\xi_{\alpha}+i\eta^{\alpha}\sigma^{\mu}_{\alpha\dot{\alpha}}\partial_{\mu}\eta^{\dagger\;\dot{\alpha}}
+-m \left(\eta^{\alpha} \xi_{\alpha}+\xi^{\dagger}_{\dot{\alpha}} \eta^{\dagger\;\dot{\alpha}}\right)\nonumber\\
+=&i\xi^{\dagger}\overline{\sigma}^{\mu}\partial_{\mu}\xi+i\eta\sigma^{\mu}\partial_{\mu}\eta^{\dagger}
+-m \left(\eta\xi+\xi^{\dagger}\eta^{\dagger} \right)+\,.
+\end{align*}
+}%
+\only<2>{
+  \begin{align*}
+\mathcal{L}=&
+i \begin{pmatrix}
+  \xi^{\dagger}_{\dot{\alpha}}& \eta^{\alpha}
+  \end{pmatrix}
+ \begin{pmatrix}
+    0           &\mathbf{1}\\
+    \mathbf{1} &0\\
+  \end{pmatrix}
+  \begin{pmatrix}
+    0           &\sigma^{\mu}_{\alpha\dot{\alpha}}\\
+    \overline{\sigma}^{\mu\;\dot{\alpha}\alpha} &0\\
+  \end{pmatrix} \begin{pmatrix}
+   \partial_{\mu}\xi_{\alpha}\\
+   \partial_{\mu}\eta^{\dagger\;\dot{\alpha}}    
+  \end{pmatrix}-m \begin{pmatrix}
+  \xi^{\dagger}_{\dot{\alpha}}& \eta^{\alpha}
+  \end{pmatrix}
+  \begin{pmatrix}
+    0           &\mathbf{1}\\
+    \mathbf{1} &0\\
+  \end{pmatrix} \begin{pmatrix}
+   \xi_{\alpha}\\
+   \eta^{\dagger\;\dot{\alpha}}    
+  \end{pmatrix}
+  \end{align*}
+}
+\centering
+\includegraphics[scale=0.13]{counting-1-to-4}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{picture}(320,250)
+ \only<1-2>{\put(-27,-10){\includegraphics[scale=0.44]{r3su2}}}
+% \only<2>{
+%}
+\end{picture}
+
+\vspace{-3.2cm}
+\invisible<1>{\begin{columns}
+  \begin{column}{0.7\textwidth}
+    \metroset{block=fill}
+
+   \begin{block}{$SU(2)_L$ in an ideal Universe}
+     \begin{align*}
+       L=&
+       \begin{pmatrix}
+         \nu_L\\
+         e_L\\
+       \end{pmatrix}&       Q=&
+       \begin{pmatrix}
+         u_L\\
+         d_L\\
+       \end{pmatrix}
+     \end{align*}
+Massless states with same (hyper)charge!
+   \end{block}
+  \end{column}
+  \begin{column}{0.3\textwidth}
+    \includegraphics{su2}
+  \end{column}
+\end{columns}
+}
+\end{frame}
+
+\begin{frame}[plain]
+\begin{picture}(320,250)
+\only<1->{\put(-30,73){\includegraphics[width=0.8\paperwidth]{what-is-real}}}%
+\only<1->{\put(130,220){
+    \begin{minipage}[t]{0.6\linewidth}
+      ¿Is the mass something real? 
+
+     ¿Or simply the results of some interactions?
+
+     ¿Is it possible to distinguish both situations?
+    \end{minipage}
+}}
+\only<2->{
+\put(0,76.9){  \begin{minipage}[t]{1\linewidth}
+    \begin{block}{Answer}
+      \begin{itemize}[<+->]
+      \item Prediction of charm quark (Bjorken-Glashow 1964)
+      \item $W$ and $Z$ mass and \alert{SM Higgs boson }
+      \item $m_{\text{proton}}\gg 2m_{u}+m_{d}$
+      \end{itemize}
+  \end{block}
+  \end{minipage}
+}
+}
+\end{picture}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{$SU(3)$}
+  Consider the left-quark up: $u$
+  \begin{align*}
+\Psi_{L}^{u}=&    \begin{pmatrix}
+   \color{red} u_{L}   \\
+\color{Green}u_{L} \\
+    \color{blue}u_{L}\\
+    \end{pmatrix}
+  \end{align*}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{From global to local}
+  Let $U(x)\in SU(N)$ and $\Psi$  a multiplet of left spinors  under $SU(N)$. We replace $\partial_{\mu}$ by the covariant derivative $\mathcal{D}_{\mu}$:
+  \begin{align*}
+    \Psi\to \Psi'=&U \Psi\,,& \Psi^{\dagger}\to {\Psi'}^{\dagger}=&\Psi^{\dagger}U^{\dagger}\,,\nonumber\\
+    \mathcal{D}_{\mu}\Psi\to \left( \mathcal{D}_{\mu}\Psi \right)'=&U \left( \mathcal{D}_{\mu}\Psi \right)\,,&
+   \left(  \mathcal{D}_{\mu}\Psi \right)^{\dagger}\to {\left( \mathcal{D}_{\mu}\Psi \right)'}^{\dagger}=& \left( \mathcal{D}_{\mu}\Psi \right)^{\dagger} U^{\dagger}\,,
+  \end{align*}
+since the mass term is forbidden
+  \begin{align*}
+    \mathcal{L}_{SU(N)}=&i \Psi\;\overline{\sigma}^{\mu} \mathcal{D}_{\mu}\Psi -\frac{1}{2}\operatorname{Tr}\left( G_{\mu\nu}G^{\mu\nu} \right)
+  \end{align*}
+with the following $N\times N$ matrix equations ($\alpha_{N}\equiv g^{2}/4\pi$ is the $SU(N)$ coupling)
+\begin{align*}
+  \mathcal{D}_{\mu}=&\boldsymbol{1}\partial_{\mu}-i g G_{\mu}\,, & \widehat{G}_{\mu\nu}=\frac{i}{g}\left[ \mathcal{D}_{\mu},\mathcal{D}_{\nu} \right] 
+\end{align*}
+
+{\scriptsize
+Details: \url{http://fisica.udea.edu.co}$\to$\texttt{cursos}$\to$ \texttt{Física Subatómica}}
+\end{frame}
+
+%%%%
+\begin{frame}
+  \frametitle{Standard Model Lagrangian \tiny{(simplified version)}}
+  \only<1>{\includegraphics[scale=0.43]{smtshirtzoom1}}%
+  \only<2>{\includegraphics[scale=0.43]{smtshirtzoom2}}%
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Higgs production and decay}
+\metroset{block=fill}
+  \begin{block}{Gluon fusion}
+    \includegraphics[scale=0.4]{gluonfusion}
+  \end{block}
+  \begin{block}{Golden channel}
+    \includegraphics[scale=0.4]{golden_channel}
+  \end{block}
+\end{frame}
+%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Standard Model: particles}
+\begin{picture}(320,250)
+\only<1>{\put(-30,100){\includegraphics[scale=0.735]{sm01a}}}%
+\only<2>{\put(-30,100){\includegraphics[scale=0.735]{sm01b}}}%
+\only<3>{\put(-30,100){\includegraphics[scale=0.735]{sm01}}}%
+\only<4>{\put(-30,100){\includegraphics[scale=0.735]{sm02}}}%
+\only<5>{\put(-30,100){\includegraphics[scale=0.735]{sm03}}}%
+\only<6>{\put(-30,100){\includegraphics[scale=0.735]{sm04}}}%
+\only<7>{\put(-30,100){\includegraphics[scale=0.735]{sm05}}}%
+\only<8>{\put(-30,100){\includegraphics[scale=0.735]{sm06}}}%
+\only<9>{\put(-30,100){\includegraphics[scale=0.735]{sm07}}}%
+\only<10->{\put(-30,100){\includegraphics[scale=0.735]{sm08}}}%
+\only<11>{\put(-20,105){
+\begin{minipage}[t]{1.1\linewidth}
+\metroset{block=fill}
+\begin{block}{SM fields + Gauge + Lorentz Invariance$\to$\emph{Lagrangian}}
+
+Electroweak superconductor (\emph{Higgs condensate}) with \alert{emergent masses} which allows
+\begin{itemize}
+\item \alert{confined baryons} (nuclear physics)
+\item \alert{atoms} (chemistry)
+\end{itemize}
+
+\end{block}
+    \end{minipage}
+}}
+\end{picture}
+
+
+%\invisible<1-9>{
+
+%  \begin{minipage}[t]{1.0\linewidth}
+%hola    
+%  \end{minipage}
+%\metroset{block=fill}
+%\begin{block}{SM particles}
+%     +Gauge invariance+Lorentz Invariance$\to$Lagrangian (interactions)   
+%\end{block}
+%}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Links}
+  \url{http:fisica.udea.edu.co} $\to$ cursos
+  \begin{itemize}
+  \item \href{https://sites.google.com/a/fisica.udea.edu.co/cursos/home/fsica-subatmica}{CNF-665: Física subatómica:}
+  \item \href{https://sites.google.com/a/fisica.udea.edu.co/tcc}{CNF-666: Teoría Cuántica de Campos}
+  \end{itemize}
+
+\includegraphics[scale=0.6]{google}
+
+
+
+\end{frame}
 \section{Dark matter and unification}
+
+\begin{frame}
+  \frametitle{Dark matter}
+\rowcolors{1}{RoyalBlue!20}{}
+   \begin{tabular}{llllll}
+ $\text{Name}$ & $\text{Symbol}$ & $\text{SU}(3)_c$ & $\text{SU}(2)_L $& $\text{U}(1)_Y$ & $Z_2$ \\ \hline
+ $\begin{pmatrix}\nu_L  &  e_L\end{pmatrix}^{\operatorname{T}}$ & $
+\begin{pmatrix}\xi_{1\alpha}  &  \xi_{2\alpha} \end{pmatrix}^{\operatorname{T}}$ & $ \mathbf{1} $ & $ \mathbf{2} $ & $ -1/2 $ & $ +1$\\
+$(e_R)^{\dagger} $ & $ \eta^{\alpha}_1 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ +1$ \\
+$(\psi_R)^{\dagger} $ & $ \eta^{\alpha}_2 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ -1$ \\
+$\psi_L $ & $ \xi_{3\alpha} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ -1 $ & $ -1$ \\
+$S$ &  & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & $ -1$ \\
+ \end{tabular}
+
+ \begin{align}
+   \mathcal{L}=& M_{\psi} \left[ \left( \psi_R \right)^{\dagger} \psi_L
+\left( \psi_L \right)^{\dagger} \psi_R \right]
++ h_S \left[ S \left(e_R  \right)^{\dagger} \psi_L 
++ S \left( \psi_L \right)^{\dagger}e_R 
+\right]
+ \end{align}
+\includegraphics[scale=0.5]{fp}
+
+\end{frame}
+
+\section{SARAH}
+
+\begin{frame}
+  \frametitle{Version control}
+\begin{picture}(320,250)
+\only<1>{\put(-10,20){
+  \begin{overpic}[scale=0.5]{ss1}
+  \end{overpic}
+}}%
+\only<2>{\put(-10,20){
+  \begin{overpic}[scale=0.5]{ss2}
+  \end{overpic}
+}}
+\end{picture}
+
+
+\end{frame}
+
+\section{Reproducibility }
+\begin{frame}
+\begin{picture}(320,250)
+\only<1>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm1}\end{overpic}}}%
+\only<2>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm2}\end{overpic}}}%
+\only<3>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm3}\end{overpic}}}%
+\only<4>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm4}\end{overpic}}}%
+\only<5>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm5}\end{overpic}}}%
+\only<6>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm6}\end{overpic}}}%
+\only<7>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm7}\end{overpic}}}%
+\only<8>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm8}\end{overpic}}}%
+\only<9>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm9}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+
 
 \begin{frame}
   \frametitle{Unification: $SO(10)$}
@@ -323,11 +722,12 @@ arXiv:1703.08148 (PRD)\\
 }
 }
 %%%circle
-\invisible<1-3>{\put(145,92){      \metroset{block=fill}
+\invisible<1-3>{\put(125,90){      \metroset{block=fill}
     \begin{minipage}[t]{0.68\linewidth}
       \begin{exampleblock}{\only<4>{Radiative hybrid seesaw (Parida {%\tiny 
 1106.4137}) or} 1509.06313}
       \centering
+ \tiny
       \only<4>{Partial  Split-}SUSY-like spectrum: {\color{red}bino}-higgsino-{\color{red}wino}
 
                \hfill             + $\color{red}\hspace{3cm}\downarrow$\hspace{3cm}    
@@ -427,8 +827,8 @@ Basis $\boldsymbol{\psi}^0=\left({\color{red}N},\Sigma^0,{\color{red}\psi_L^0},{
     \begin{column}{0.53\textwidth}
       %\only<2>{\includegraphics[scale=0.38]{rumor}}
       \invisible<1>{%
-      \only<1-2>{\includegraphics[scale=0.38]{GCE}}\only<3>{\includegraphics[scale=0.38]{GCE2016}}%
-      \only<4>{\includegraphics[scale=0.53]{uniftwo451E16}} 
+      \only<1-2>{\includegraphics[scale=0.35]{GCE}}\only<3>{\includegraphics[scale=0.35]{GCE2016}}%
+      \only<4>{\includegraphics[scale=0.43]{uniftwo451E16}} 
       }%
     \invisible<1>{\only<1-3>{\tiny  \quad \\ S. Horiuchi, O. Macias, DR, A. Rivera, O. Zapata, 1602.04788 (JCAP)}%
                  \only<4>{\tiny \quad \\ Split-SUSY:  like $\alert{M_{\Phi}}=2\ \text{TeV}$}%
@@ -508,7 +908,7 @@ origin is specified in the fourth column. }
 \begin{frame}
   \frametitle{Unification}
   \begin{table}%[h]
-\begin{center}
+\small
 \rowcolors{1}{RoyalBlue!20}{}
 \begin{tabular}{c|c|c}
  $m_{\text{LR}} \,(\mbox{GeV})$ &  $3_{c}2_{L}2_{R}1_{B-L}$  & $m_{G}\,(\mbox{GeV})$ \\ \hline
@@ -517,7 +917,6 @@ origin is specified in the fourth column. }
  
  $\vdots$ &  $\vdots$  & $\vdots$   \\ 
 \end{tabular}
-\end{center}
 \caption{ $\color{blue}{\Delta_{L,R}}=2\Phi_{1,1,3,-2}$. $m_{\text{LR}}$ and $m_{G}$ are given in GeV.}
 \label{tab:I}
 \end{table}
@@ -653,12 +1052,12 @@ Blind spot at
 
 \begin{frame}
   \frametitle{Proper relic density scan}
-\def\fh{6cm}
+\def\fh{5cm}
 \begin{figure}
   \centering
   \includegraphics[height=\fh]{lambda}
-\includegraphics[height=\fh,width=7cm]{ssi_Mdm}
-  \caption{$M_{11}=50\ \text{TeV}$ $2.7<M_{23}/\text{TeV}<3.1$ \qquad\qquad\qquad\qquad  (Right:  $\tan\gamma>5$)}
+\includegraphics[height=\fh,width=4cm]{ssi_Mdm}
+  \caption{$M_{11}=50\ \text{TeV}$ $2.7<M_{23}/\text{TeV}<3.1$ \qquad  (Right:  $\tan\gamma>5$)}
 \end{figure}
 \end{frame}
 
