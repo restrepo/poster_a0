@@ -103,7 +103,7 @@ xcolor=dvipsnames,table%,pdftex%,
 \setlength{\textheight}{86 mm}
 }
 
-\widescreen
+ \widescreen
 
 
 \title{Dark matter in left-right symmetric standard model}
@@ -118,15 +118,15 @@ xcolor=dvipsnames,table%,pdftex%,
 %   affiliation.
 \institute{
   \begin{columns}
-    \begin{column}{0.3\textwidth}
+    \begin{column}{0.4\textwidth}
 Instituto de F\'\i sica\\
 Universidad de Antioquia\\
 Phenomenology Group\\
 \url{http://gfif.udea.edu.co}      
     \end{column}
-    \begin{column}{0.3\textwidth}
-      \hfill Mitchell Workshop\\
-      \hfill \includegraphics[scale=0.25]{mitchell}\\
+    \begin{column}{0.5\textwidth}
+      \hfill 5th Uniandes Particle Physics School\\
+      \hfill \includegraphics[scale=0.25]{ua}\\
       %\hfill \tiny{Image credits}
     \end{column}
   \end{columns}
@@ -142,7 +142,7 @@ arXiv:1703.08148 (PRD)\\
 % - Use the \inst command only if there are several affiliations.
 % - Keep it simple, no one is interested in your street address.
 
-\date{\tiny May 18, 2017 } % (optional) \today
+\date{\tiny May 21, 2017 } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -194,7 +194,128 @@ arXiv:1703.08148 (PRD)\\
 
 %\section{Motivation}
 
+\section{Review of SM}
+\begin{frame}
+  \frametitle{Only fields}
+  Lorentz\invisible<1>{+$U(1)$}:
+  \begin{align}
+    \mathcal{L}=\only<1>{-\tfrac{1}{4}\left( \partial^{\mu} A^{\nu}-\partial^{\nu} A^{\mu} \right) \left( \partial_{\mu} A_{\nu}-\partial_{\nu} A_{\mu} \right) \,.  }
+\only<2>{\partial_{\mu}\phi^{\color{red}*}\partial^{\mu}\phi-{\color{red}m^2} \phi^{\color{red}*}\phi-\lambda \left( \phi^{\color{red}*}\phi \right)^2\,.}
+  \end{align}
+  \begin{align*}
+   A^\mu(x)\to {A'}^\mu(x)=&{\Lambda^\mu}_\nu A^\nu(\Lambda^{-1}x)&&\text{Vector field}\nonumber\\
+   \phi(x)\to \phi'(x)=&\phi(\Lambda^{-1} x) && \text{Scalar field}\nonumber\\
+    \psi_\alpha(x)\to\psi'_\alpha(x)=&{\left[ S(\Lambda) \right]_\alpha}^\beta\psi_\beta(\Lambda^{-1}x)\,, &&\text{Left Weyl spinor}\nonumber\\
+\left(  \psi_\alpha(x) \right)^{\dagger}=\psi_{\dot{\alpha}}^{\dagger}(x)\to{\psi'}_{\dot{\alpha}}^{\dagger}(x)=&{\left[ S^*(\Lambda)\right]_{\dot{\alpha}}}^{\dot{\beta}} \psi_{\dot{\beta}}^{\dagger}(\Lambda^{-1}x)\,,&&\text{Right anti-Weyl spinor}
+\end{align*}
+With
+\begin{align*}
+  S(\Lambda)=
+\exp\left( \boldsymbol{\xi}\cdot \frac{\boldsymbol{\sigma}}{2}+i\boldsymbol{\theta}\cdot \frac{\boldsymbol{\sigma}}{2} \right)\,,
+\end{align*}
+where $\boldsymbol{\sigma}=(\sigma_1,\sigma_2,\sigma_3)$ are the Pauli matrices. $\overline{\boldsymbol{\sigma}}\equiv-\boldsymbol{\sigma}$.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Weyl spinor}
+  \begin{align}
+  \mathcal{L}=&i{\psi}^{\dagger}_{\dot{\alpha}}\overline{\sigma}^{\mu \dot{\alpha}\alpha}\partial_\mu\psi_{\alpha}-
+m \left( \psi^{\alpha}\psi_{\alpha}+\psi^{\dagger}_{\dot{\alpha}}\psi^{\dagger \dot{\alpha}} \right) \nonumber\\
+=&i{\psi}^{\dagger}\overline{\sigma}^\mu\partial_\mu\psi-
+m \left( \psi\psi+\psi^{\dagger}\psi^{\dagger} \right)\,.
+\end{align}
+
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Electron field: \emph{one in four}: Dreiner,... arXiv:0812.1594 (PR)}
+\vspace{-0.7cm}
+
+\begin{align*}
+\text{Scalar product:}\qquad  {{}^{\alpha}}\,{}_{\alpha}\qquad \text{and}\qquad {{}_{\dot{\alpha}}}\,{}^{\dot{\alpha}}\,.
+\end{align*}
+\rowcolors{1}{RoyalBlue!20}{}
+    \begin{tabular}{llll}
+    Name \hspace{4cm} & Symbol Name \hspace{1.5cm} & Lorentz Name \hspace{1.5cm} & $U(1)$\\\hline
+    $e_L$: left electron  & $\xi_{\alpha}$ & ${\left[ S \right]_{\alpha}}^{\beta}$ & $e^{i\theta}$\\
+   $\left( e_L \right)^{\dagger}=e^{\dagger}_R$: right positron    & $\left( \xi_{\alpha} \right)^{\dagger}=\xi^{\dagger}_{\dot{\alpha}}$ & ${\left[{S^{*}}\right]_{\dot{\alpha}}}^{\dot{\beta}}$ & $e^{-i\theta}$\\
+   $e_R$: right electron    & $\left( \eta^{\alpha} \right)^{\dagger}=\eta^{\dagger\;\dot{\alpha}}$ & ${\left[ \left( S^{-1} \right)^\dagger \right]^{\dot{\alpha}}}_{\dot{\beta}}$& $e^{i\theta}$\\
+   $\left( e_R \right)^{\dagger}=e^{\dagger}_L$: left positron&$\eta^{\alpha}$& ${\left[ \left( S^{-1} \right)^T \right]^{\alpha}}_{\beta}$ & $e^{-i\theta}$\\\hline
+  \end{tabular}
+
+\begin{align*}
+  \mathcal{L}=&i\xi^{\dagger}_{\dot{\alpha}}\overline{\sigma}^{\mu\;\dot{\alpha}\alpha}\partial_{\mu}\xi_{\alpha}+i\eta^{\alpha}\sigma^{\mu}_{\alpha\dot{\alpha}}\partial_{\mu}\eta^{\dagger\;\dot{\alpha}}
+-m \left(\eta^{\alpha} \xi_{\alpha}+\xi^{\dagger}_{\dot{\alpha}} \eta^{\dagger\;\dot{\alpha}}\right)\nonumber\\
+=&i\xi^{\dagger}\overline{\sigma}^{\mu}\partial_{\mu}\xi+i\eta\sigma^{\mu}\partial_{\mu}\eta^{\dagger}
+-m \left(\eta\xi+\xi^{\dagger}\eta^{\dagger} \right)+\,.
+\end{align*}
+\centering
+\includegraphics[scale=0.13]{counting-1-to-4}
+\end{frame}
+
+
 \section{Dark matter and unification}
+
+\begin{frame}
+  \frametitle{Dark matter}
+\rowcolors{1}{RoyalBlue!20}{}
+   \begin{tabular}{llllll}
+ $\text{Name}$ & $\text{Symbol}$ & $\text{SU}(3)_c$ & $\text{SU}(2)_L $& $\text{U}(1)_Y$ & $Z_2$ \\ \hline
+ $\begin{pmatrix}\nu_L  &  e_L\end{pmatrix}^{\operatorname{T}}$ & $
+\begin{pmatrix}\xi_{1\alpha}  &  \xi_{2\alpha} \end{pmatrix}^{\operatorname{T}}$ & $ \mathbf{1} $ & $ \mathbf{2} $ & $ -1/2 $ & $ +1$\\
+$(e_R)^{\dagger} $ & $ \eta^{\alpha}_1 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ +1$ \\
+$(\psi_R)^{\dagger} $ & $ \eta^{\alpha}_2 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ -1$ \\
+$\psi_L $ & $ \xi_{3\alpha} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ -1 $ & $ -1$ \\
+$S$ &  & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & $ -1$ \\
+ \end{tabular}
+
+ \begin{align}
+   \mathcal{L}=& M_{\psi} \left[ \left( \psi_R \right)^{\dagger} \psi_L
+\left( \psi_L \right)^{\dagger} \psi_R \right]
++ h_S \left[ S \left(e_R  \right)^{\dagger} \psi_L 
++ S \left( \psi_L \right)^{\dagger}e_R 
+\right]
+ \end{align}
+\includegraphics[scale=0.5]{fp}
+
+\end{frame}
+
+\section{SARAH}
+
+\begin{frame}
+  \frametitle{Version control}
+\begin{picture}(320,250)
+\only<1>{\put(-10,20){
+  \begin{overpic}[scale=0.5]{ss1}
+  \end{overpic}
+}}%
+\only<2>{\put(-10,20){
+  \begin{overpic}[scale=0.5]{ss2}
+  \end{overpic}
+}}
+\end{picture}
+
+
+\end{frame}
+
+\section{Reproducibility }
+\begin{frame}
+\begin{picture}(320,250)
+\only<1>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm1}\end{overpic}}}%
+\only<2>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm2}\end{overpic}}}%
+\only<3>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm3}\end{overpic}}}%
+\only<4>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm4}\end{overpic}}}%
+\only<5>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm5}\end{overpic}}}%
+\only<6>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm6}\end{overpic}}}%
+\only<7>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm7}\end{overpic}}}%
+\only<8>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm8}\end{overpic}}}%
+\only<9>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm9}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+
 
 \begin{frame}
   \frametitle{Unification: $SO(10)$}
@@ -323,11 +444,12 @@ arXiv:1703.08148 (PRD)\\
 }
 }
 %%%circle
-\invisible<1-3>{\put(145,92){      \metroset{block=fill}
+\invisible<1-3>{\put(125,90){      \metroset{block=fill}
     \begin{minipage}[t]{0.68\linewidth}
       \begin{exampleblock}{\only<4>{Radiative hybrid seesaw (Parida {%\tiny 
 1106.4137}) or} 1509.06313}
       \centering
+ \tiny
       \only<4>{Partial  Split-}SUSY-like spectrum: {\color{red}bino}-higgsino-{\color{red}wino}
 
                \hfill             + $\color{red}\hspace{3cm}\downarrow$\hspace{3cm}    
@@ -427,8 +549,8 @@ Basis $\boldsymbol{\psi}^0=\left({\color{red}N},\Sigma^0,{\color{red}\psi_L^0},{
     \begin{column}{0.53\textwidth}
       %\only<2>{\includegraphics[scale=0.38]{rumor}}
       \invisible<1>{%
-      \only<1-2>{\includegraphics[scale=0.38]{GCE}}\only<3>{\includegraphics[scale=0.38]{GCE2016}}%
-      \only<4>{\includegraphics[scale=0.53]{uniftwo451E16}} 
+      \only<1-2>{\includegraphics[scale=0.35]{GCE}}\only<3>{\includegraphics[scale=0.35]{GCE2016}}%
+      \only<4>{\includegraphics[scale=0.43]{uniftwo451E16}} 
       }%
     \invisible<1>{\only<1-3>{\tiny  \quad \\ S. Horiuchi, O. Macias, DR, A. Rivera, O. Zapata, 1602.04788 (JCAP)}%
                  \only<4>{\tiny \quad \\ Split-SUSY:  like $\alert{M_{\Phi}}=2\ \text{TeV}$}%
@@ -508,7 +630,7 @@ origin is specified in the fourth column. }
 \begin{frame}
   \frametitle{Unification}
   \begin{table}%[h]
-\begin{center}
+\small
 \rowcolors{1}{RoyalBlue!20}{}
 \begin{tabular}{c|c|c}
  $m_{\text{LR}} \,(\mbox{GeV})$ &  $3_{c}2_{L}2_{R}1_{B-L}$  & $m_{G}\,(\mbox{GeV})$ \\ \hline
@@ -517,7 +639,6 @@ origin is specified in the fourth column. }
  
  $\vdots$ &  $\vdots$  & $\vdots$   \\ 
 \end{tabular}
-\end{center}
 \caption{ $\color{blue}{\Delta_{L,R}}=2\Phi_{1,1,3,-2}$. $m_{\text{LR}}$ and $m_{G}$ are given in GeV.}
 \label{tab:I}
 \end{table}
@@ -653,12 +774,12 @@ Blind spot at
 
 \begin{frame}
   \frametitle{Proper relic density scan}
-\def\fh{6cm}
+\def\fh{5cm}
 \begin{figure}
   \centering
   \includegraphics[height=\fh]{lambda}
-\includegraphics[height=\fh,width=7cm]{ssi_Mdm}
-  \caption{$M_{11}=50\ \text{TeV}$ $2.7<M_{23}/\text{TeV}<3.1$ \qquad\qquad\qquad\qquad  (Right:  $\tan\gamma>5$)}
+\includegraphics[height=\fh,width=4cm]{ssi_Mdm}
+  \caption{$M_{11}=50\ \text{TeV}$ $2.7<M_{23}/\text{TeV}<3.1$ \qquad  (Right:  $\tan\gamma>5$)}
 \end{figure}
 \end{frame}
 
