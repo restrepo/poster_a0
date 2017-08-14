@@ -312,14 +312,16 @@ m \left( \psi\psi+\psi^{\dagger}\psi^{\dagger} \right)\,.
 \only<1->{\put(160,140){\includegraphics[scale=0.8]{T1-2}}}%
 \only<1->{\put(-20,20){\includegraphics[scale=0.8]{T1-1}}}%
 \only<1->{\put(160,20){\includegraphics[scale=0.8]{T1-3}}}%
-\only<2>{\put(-20,130){Bino/Wino-like scotogenic model}}
-\only<2>{\put(150,13){\includegraphics[scale=0.1]{new}Higgsino-like scotogenic model}}
-\only<2>{\put(150,130){\includegraphics[scale=0.1]{new}Higgsino-like Zee model}}
-\only<2>{\put(55,118){$\Updownarrow$}}
-\only<2>{\put(225,160){\tiny arXiv:1511.01873}}
-\only<2>{\put(40,160){\tiny arXiv:1605.01129}}
-\only<2>{\put(225,40){\tiny arXiv:1504.07892}}
+\only<1->{\put(-20,130){Bino/Wino-like scotogenic model}}
+\only<3->{\put(150,13){\includegraphics[scale=0.1]{new}Higgsino-like scotogenic model}}
+\only<3->{\put(150,130){\includegraphics[scale=0.1]{new}Higgsino-like Zee model}}
+\only<3->{\put(55,118){$\Updownarrow$}}
+\only<1->{\put(40,160){\tiny arXiv:1605.01129}}
+\only<3->{\put(225,160){\tiny arXiv:1511.01873}}
+\only<3->{\put(225,40){\tiny arXiv:1504.07892}}
 \only<1->{\put(120,240){\color{red}($Z_2$-odd fields) }}
+\only<2->{\put(340,120){\includegraphics[scale=0.8]{main_vertex4}}}%
+\only<2->{\put(360,100){ $pp\to l^+l^-+{E_T^{\text{miss}}}$  }}%
 %\only<4->{\put(233,186){\fcolorbox{black}{blue}{\color{white}Zee model}}}%
 \end{picture}
 \end{frame}
@@ -330,37 +332,151 @@ m \left( \psi\psi+\psi^{\dagger}\psi^{\dagger} \right)\,.
 \begin{picture}(320,250)
 \only<1->{\put(-24,-22){\begin{overpic}[scale=0.352]{z2_bkg}\end{overpic}}}%
 \only<1->{\put(180,20){\begin{overpic}[scale=0.25]{inverse_type1}\end{overpic}}}%
+\only<1->{\put(-10,120){\includegraphics[scale=1]{T1-3_a}}}%
+\only<1->{\put(2,80){ {\scriptsize D.R \emph{et al}, arXiv:1504.07892 [PRD]} }}%
+
 \end{picture}
 \end{frame}
 
 
 
+\begin{frame}
+  \frametitle{Scalar dark matter: Higgs portal}
+
+  \begin{center}
+\rowcolors{1}{RoyalBlue!20}{}
+%\def\arraystretch{1.1}
+   \begin{tabular}{llllll}
+ $\text{Name}$ & $\text{Symbol}$ & $\text{SU}(3)_c$ & $\text{SU}(2)_L $& $\text{U}(1)_Y$ & $Z_2$ \\ \hline
+ $L=(\nu_L  \  e_L)^{\operatorname{T}}$ & $
+(\xi_{1\alpha}  \  \xi_{2\alpha} )^{\operatorname{T}}$ & $ \mathbf{1} $ & $ \mathbf{2} $ & $ -1/2 $ & $ +1$\\
+$(e_R)^{\dagger} $ & $ \eta^{\alpha}_1 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ +1$ \\
+\color{red} $ ({\hat\Psi}_R)^{\dagger} $ & $ ( \eta^{\alpha}_2\ \eta^{\alpha}_3)^{\operatorname{T}} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ \color{red} -1$ \\
+\color{red} $\Psi_L $ & $ (\xi_{3\alpha}\ \xi_{4\alpha})^{\operatorname{T}} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ -1 $ & $\color{red} -1$ \\
+\color{red} $N $ & $ \eta_{4\alpha} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & $\color{red} -1$ \\
+\color{red} $S$ &  & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & $\color{red} -1$ \\
+ \end{tabular}
+  \end{center}
+
+ \begin{align}
+   \mathcal{V}=&  M_{S}^2 {\color{red} S^2}+ \lambda_{SH}{\color{red} S^2} H\cdot H + \lambda_S {\color{red} S^4}
+ \end{align}
+\includegraphics[scale=0.5]{hp}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Singlet-doublet fermion dark matter: Higgs portal}
+
+  \begin{center}
+\rowcolors{1}{RoyalBlue!20}{}
+%\def\arraystretch{1.1}
+   \begin{tabular}{llllll}
+ $\text{Name}$ & $\text{Symbol}$ & $\text{SU}(3)_c$ & $\text{SU}(2)_L $& $\text{U}(1)_Y$ & $Z_2$ \\ \hline
+ $L=(\nu_L  \  e_L)^{\operatorname{T}}$ & $
+(\xi_{1\alpha}  \  \xi_{2\alpha} )^{\operatorname{T}}$ & $ \mathbf{1} $ & $ \mathbf{2} $ & $ -1/2 $ & $ +1$\\
+$(e_R)^{\dagger} $ & $ \eta^{\alpha}_1 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ +1$ \\
+\color{red} $ (\psi_R^{0})^{\dagger} $ & $ \eta^{\alpha}_2$ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ \color{red} -1$ \\
+\color{red} $\psi_L^{0} $ & $ \xi_{3\alpha} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ -1 $ & $\color{red} -1$ \\
+\color{red} $N $ & $ \eta_{4\alpha} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & $\color{red} -1$ \\
+\color{red} $S$ &  & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & $\color{red} -1$ \\
+ \end{tabular}
+  \end{center}
+
+\begin{columns}
+  \begin{column}{0.33\textwidth}
+\includegraphics[scale=0.5]{hpf}    
+  \end{column}
+  \begin{column}{0.33\textwidth}
+Basis $\boldsymbol{\psi}^0=\left({\color{red}N},{\color{red}\psi_L^0},{\color{red}\left( \psi_R^0 \right)^{\dagger}}\right)^T$ 
+\tiny
+\begin{align*}
+  &\mathcal{M}_{\boldsymbol{\psi}^0}=\nonumber\\
+&\begin{pmatrix}
+{\color{red}M_N}               &{\color{red}-y\,c_\beta v/\sqrt{2}}&{\color{red}y\,s_\beta v/\sqrt{2}} \\
+{\color{red}-y\,c_\beta} v/\sqrt{2}  & 0            & {\color{red}}-M_D\\
+{\color{red}y\,s_\beta v/\sqrt{2}} &{\color{red}}  -M_D                &  0  \\
+\end{pmatrix},
+\end{align*}
+    
+  \end{column}
+  \begin{column}{0.33\textwidth}
+    \only<1>{\includegraphics[scale=0.2]{GCE}}\only<2->{\includegraphics[scale=0.2]{GCE2016}}%
+{\tiny S. Horiuchi,\\ O. Macias, DR, A. Rivera, O. Zapata, 1602.04788 (JCAP) }
+  \end{column}
+\end{columns}
+
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Is the glass half empty or half full?}
+   Tree-level SM-portal could be fully excluded in the near future
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+      \item Singlet scalar dark matter
+      \item Inert doublet model
+      \item Tree-level SM-portal dark matter $\cdots$
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+
+      \only<1>{\includegraphics[scale=0.2]{x1t} }%
+      \only<2->{\includegraphics[scale=0.3,angle=180]{halffill} }
+
+    %\hfill  \tiny{\url{Dreamstime.com}}  
+    \end{column}
+
+  \end{columns}
+
+  In this talk we explore
+  \begin{itemize}
+  \item<2-> Recover SM-portals in LR models 
+  \item<3-> New portals in LR models 
+  \end{itemize}
+
+\end{frame}
 
 
 
 
 \begin{frame}
-  \frametitle{Dark matter}
+  \frametitle{Scalar dark matter: vector-like portal}
+  \begin{center}
 \rowcolors{1}{RoyalBlue!20}{}
+%\def\arraystretch{1.1}
    \begin{tabular}{llllll}
  $\text{Name}$ & $\text{Symbol}$ & $\text{SU}(3)_c$ & $\text{SU}(2)_L $& $\text{U}(1)_Y$ & $Z_2$ \\ \hline
- $\begin{pmatrix}\nu_L  &  e_L\end{pmatrix}^{\operatorname{T}}$ & $
-\begin{pmatrix}\xi_{1\alpha}  &  \xi_{2\alpha} \end{pmatrix}^{\operatorname{T}}$ & $ \mathbf{1} $ & $ \mathbf{2} $ & $ -1/2 $ & $ +1$\\
+ $L=(\nu_L  \  e_L)^{\operatorname{T}}$ & $
+(\xi_{1\alpha}  \  \xi_{2\alpha} )^{\operatorname{T}}$ & $ \mathbf{1} $ & $ \mathbf{2} $ & $ -1/2 $ & $ +1$\\
 $(e_R)^{\dagger} $ & $ \eta^{\alpha}_1 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ +1$ \\
-$(\psi_R)^{\dagger} $ & $ \eta^{\alpha}_2 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ -1$ \\
-$\psi_L $ & $ \xi_{3\alpha} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ -1 $ & $ -1$ \\
-$S$ &  & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & $ -1$ \\
+\color{red} $ (\psi_R^-)^{\dagger} $ & $ \eta^{\alpha}_3 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ \color{red} -1$ \\
+\color{red} $\psi_L^- $ & $ \xi_{4\alpha} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ -1 $ & $\color{red} -1$ \\
+\color{red} $S$ &  & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & $\color{red} -1$ \\
  \end{tabular}
+  \end{center}
 
  \begin{align}
-   \mathcal{L}=& M_{\psi} \left[ \left( \psi_R \right)^{\dagger} \psi_L
-\left( \psi_L \right)^{\dagger} \psi_R \right]
-+ h_S \left[ S \left(e_R  \right)^{\dagger} \psi_L 
-+ S \left( \psi_L \right)^{\dagger}e_R 
+   \mathcal{L}=&  M_{\psi} \left[ {\color{red} \left( \psi_R^- \right)^{\dagger}  \psi_L^-}+
+{\color{red} \left( \psi_L^- \right)^{\dagger} \psi_R^-} \right] 
++ h_S \left[ {\color{red} S} \left(e_R  \right)^{\dagger} {\color{red} \psi_R^- }
++ {\color{red}S \left( \psi_L^- \right)^{\dagger}}e_L 
 \right]
  \end{align}
 \includegraphics[scale=0.5]{fp}
 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Ernest Ma, D.R, Óscar Zapata:  \invisible<1-2>{$\Longrightarrow R=(-1)^{2s+3B+L}$} \hfill arXiv:1706.08240}
+  \begin{center}
+\only<1>{ \includegraphics[scale=0.47]{super1} }%
+\only<2>{ \includegraphics[scale=0.47]{super2} }%
+\only<3>{ \includegraphics[scale=0.47]{super3} }
+  \end{center}
 \end{frame}
 
 
@@ -652,37 +768,6 @@ Basis $\boldsymbol{\psi}^0=\left({\color{red}N},\Sigma^0,{\color{red}\psi_L^0},{
 %{\small \textbf{Physics Opportunities of a 100 TeV Proton-Proton Collider}\\
 %Nima Arkani-Hamed, T. Han, M. Mangano, LT Wang. }
 }
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{Is the glass half empty or half full?}
-   Tree-level SM-portal could be fully excluded in the near future
-
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \begin{itemize}
-      \item Singlet scalar dark matter
-      \item Inert doublet model
-      \item Tree-level SM-portal dark matter $\cdots$
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-
-      \only<1>{\includegraphics[scale=0.2]{x1t} }%
-      \only<2->{\includegraphics[scale=0.3,angle=180]{halffill} }
-
-    %\hfill  \tiny{\url{Dreamstime.com}}  
-    \end{column}
-
-  \end{columns}
-
-  In this talk we explore
-  \begin{itemize}
-  \item<2-> Recover SM-portals in LR models 
-  \item<3-> New portals in LR models 
-  \end{itemize}
-
 \end{frame}
 
 
