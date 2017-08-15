@@ -106,8 +106,8 @@ xcolor=dvipsnames,table%,pdftex%,
  \widescreen
 
 
-\title{Dark matter in left-right symmetric standard model}
-\subtitle{triplet scalar dark matter portal  }
+\title{Models with radiative neutrino masses\\ and viable dark matter candidates}
+\subtitle{\textbf{JHEP 1311 (2013) 011 }}
 
 
 %\subtitle
@@ -121,28 +121,27 @@ xcolor=dvipsnames,table%,pdftex%,
     \begin{column}{0.4\textwidth}
 Instituto de F\'\i sica\\
 Universidad de Antioquia\\
-Phenomenology Group\\
+%Phenomenology Group\\
 \url{http://gfif.udea.edu.co}      
     \end{column}
     \begin{column}{0.5\textwidth}
-      \hfill 5th Uniandes Particle Physics School\\
-      \hfill \includegraphics[scale=0.25]{ua}\\
+       \hfill \includegraphics[scale=0.4]{gfif}\\
       %\hfill \tiny{Image credits}
     \end{column}
   \end{columns}
 \quad\\
 \quad\\
 {\tiny
-\alert{\textbf{Focus on}} \\
-arXiv:1703.08148 (PRD)\\
+%\alert{\textbf{Focus on}} \\
+%arXiv:1703.08148 (PRD)\\
 \alert{In collaboration with}\\
-  C.~Arbeláez (UFSM)\& M.~Hirsch (IFIC)}
+  Carloa~Yaguna (UPTC) \& Oscar~Zapata (UdeA)}
 %\centering
 }
 % - Use the \inst command only if there are several affiliations.
 % - Keep it simple, no one is interested in your street address.
 
-\date{\tiny May 21, 2017 } % (optional) \today
+\date{\tiny August 15, 2017 } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -258,6 +257,17 @@ m \left( \psi\psi+\psi^{\dagger}\psi^{\dagger} \right)\,.
 
 \section{Dark matter}
 
+
+
+
+\begin{frame}
+\begin{picture}(320,250)
+\only<1>{\put(-29,-22){\begin{overpic}[scale=0.126]{darkmatter}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+
+
 \begin{frame}
 \begin{picture}(320,250)
 \only<1>{\put(-24,-22){\begin{overpic}[scale=0.352]{z2}\end{overpic}}}%
@@ -303,7 +313,7 @@ m \left( \psi\psi+\psi^{\dagger}\psi^{\dagger} \right)\,.
 \end{picture}
 \end{frame}
 
-
+\section{Neutrino masses}
 
 \begin{frame}
 \frametitle{Weinberg operator at one-loop}
@@ -359,7 +369,7 @@ $(e_R)^{\dagger} $ & $ \eta^{\alpha}_1 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +
   \end{center}
 
  \begin{align}
-   \mathcal{V}=&  M_{S}^2 {\color{red} S^2}+ \lambda_{SH}{\color{red} S^2} H\cdot H + \lambda_S {\color{red} S^4}
+   \mathcal{V}=&  M_{S}^2 {\color{red} S^2}+ \lambda_{SH}{\color{red} S^2}\, \widetilde{H}\cdot H + \lambda_S {\color{red} S^4}
  \end{align}
 \includegraphics[scale=0.5]{hp}
 \end{frame}
@@ -470,6 +480,8 @@ $(e_R)^{\dagger} $ & $ \eta^{\alpha}_1 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +
 
 \end{frame}
 
+\section{Mixed dark matter}
+
 \begin{frame}
   \frametitle{Ernest Ma, D.R, Óscar Zapata:  \invisible<1-2>{$\Longrightarrow R=(-1)^{2s+3B+L}$} \hfill arXiv:1706.08240}
   \begin{center}
@@ -479,6 +491,48 @@ $(e_R)^{\dagger} $ & $ \eta^{\alpha}_1 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +
   \end{center}
 \end{frame}
 
+
+
+\begin{frame}
+  \frametitle{\invisible<1>{Anomalous} leptonic U(1) symmetry: $m_{\nu}\only<1-2>{=}\only<3->{\ne}0$}
+
+  \begin{center}
+\rowcolors{1}{RoyalBlue!20}{}
+%\def\arraystretch{1.1}
+   \begin{tabular}{llllll}
+     $\text{Name}$ & $\text{Symbol}$ & $\text{SU}(3)_c$ & $\text{SU}(2)_L $& $\text{U}(1)_Y$ & \only<1-2>{$\text{U(1)}_L$}\only<3>{$Z_2\hspace{0.5cm}$} \\ \hline
+ $L=(\nu_L  \  e_L)^{\operatorname{T}}$ & $
+                                          (\xi_{1\alpha}  \  \xi_{2\alpha} )^{\operatorname{T}}$ & $ \mathbf{1} $ & $ \mathbf{2} $ & $ -1/2 $ & \only<1-2>{$ -1$}\only<3>{$\phantom{+}0$}\\
+$(e_R)^{\dagger} $ & $ \eta^{\alpha}_1 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & \only<1-2>{$ +1$}\only<3>{$\phantom{+}0$} \\
+\color{red} $ ({\hat\Psi}_R)^{\dagger} $ & $ ( \eta^{\alpha}_2\ \eta^{\alpha}_3)^{\operatorname{T}} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ &  
+\only<1-2>{$\phantom{+}0$}\only<3>{$\color{red}-1$}\\
+\color{red} $\Psi_L $ & $ (\xi_{3\alpha}\ \xi_{4\alpha})^{\operatorname{T}} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ -1 $ & 
+\only<1-2>{$\phantom{+}0$}\only<3>{$\color{red}-1$}\\
+\color{red} $N $ & $ \eta_{4\alpha} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & 
+\only<1-2>{$\phantom{+}0$}\only<3>{$\color{red}-1$}\\
+\color{red} $S$ &  & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & 
+\only<1-2>{$\phantom{+}0$}\only<3>{$\color{red}-1$}\\
+\invisible<1>{$\only<1-2>{\sigma}\only<3>{\operatorname{Im}( \sigma )}$ &  & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ &
+ \only<1-2>{$-2$}\only<3>{$\phantom{+}0$}  } \\
+ \end{tabular}
+  \end{center}
+
+ \begin{align*}
+   \mathcal{L}=&\mathcal{L}_{\text{SM}} - M_{S}^2\, {\color{red} S^{*}S}- \lambda_{SH}\,{\color{red} S^{*}S}\, \widetilde{H}\cdot H - \lambda_S \left( {\color{red} S^{*}S} \right)^2
+                 \invisible<1>{+ \lambda_{S\sigma}\,{\color{red} S^{*}S}\,\only<1,2>{\sigma^{*}\sigma }\only<3->{v_{\sigma}^2} +
+                 \left( \mu\,  {\color{red} SS}\, \only<1,2>{\sigma}\only<3>{v_{\sigma}}+\text{h.c} \right)         }   \nonumber\\
+&  + \left( M_N \, {\color{red}NN}+ M_D {\color{red} ({\hat\Psi}_R)^{\dagger} \Psi_L} + h_L\, {\color{red}\Psi_L} \cdot H {\color{red}N}+h_R\, {\color{red}{\hat\Psi}_R} \cdot H {\color{red}N^{\dagger}}  +h_{LS}\,L\cdot {\color{red}\Psi_L S}+\text{h.c} \right) \\
+     &\invisible<1,3>{+V(\sigma).}
+ \end{align*}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusions}
+  We have found \emph{at least one} model with many predictions and profund theoretical insights. 
+\end{frame}
+
+\plain{Thanks!}
 
 \end{document}
 
