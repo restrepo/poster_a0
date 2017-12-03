@@ -5,6 +5,9 @@ Each repo have a commont sty file and example file but a unique LaTeX file
 
 
 
+[![Image inheritance diagram](internal/inherit-diagram.svg)](http://interactive.blockdiag.com/?compression=deflate&src=eJxNjcEOgjAMhu88RcOdoyeCic9hDCmswOK2kq0kRuO7S6cIt_b7_r_tHPd3Y3GEVwHA0VIQFMsBGpg5SkQr9WoMDbg4aQcOkuyTVn1SfoGrw45cU3pMQrG81UXG1Rk6Hlmw3tYkGAxGU3k25P4UI06a-ab3Xtuzn2je1Q9oQuiBSU0eDh3PPR4auua8lcVhVJP_KdvOvz8Xw1Kk)
+
+
 # Official Metroplis READM starts here
 ## Metropolis
 Really installled as a git repo in:
