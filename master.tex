@@ -1,107 +1,7 @@
-%http://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/SUS-16-024/index.html
-
-%% CVSId: $Id: Example.tex,v 1.1.1.1 2000/11/28 11:15:12 exupery Exp $
-\documentclass[%
-xcolor=dvipsnames,table%,pdftex%,
-%pdf,
-%nocolorBG,
-%colorBG,
-%slideColor,
-%slideBW,
-%draft,
-%frames
-%azure
-%contemporain
-%nuancegris
-%troispoints
-%lignesbleues
-%darkblue
-%alienglow
-%autumn
-%12pt
-]{beamer}
+\documentclass{beamer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\mode<presentation>
-%{
-  %\usetheme{Madrid}
- \usetheme[progressbar=frametitle]{metropolis}% \usetheme{Boadilla}
-  % or ...
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%para revelar texto a aparecer en overlays
-  %\setbeamercovered{transparent} 
-  %\setbeamercovered{invisible}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % \setbeamertemplate{blocks}[rounded][shadow=true]
-  % \setbeamertemplate{navigation symbols}{}
+\usepackage{talk}
 
-  % \setbeamertemplate{footline}{%\hspace*{.5cm}
-  %   \scriptsize{\phantom{Gg}%\insertauthor 
-  %     \hspace*{50pt} 
-  %     \hfill \insertframenumber
-  %     \hspace*{.5cm}}}
-
-  % % or whatever (possibly just delete it)
-  % %\useoutertheme{shadow} 
-  % \setbeamercolor{postit}{fg=black,bg=yellow}
-  % \setbeamercolor{white}{fg=black,bg=white}
-  % \setbeamercolor{cite}{fg=black,bg=yellow}
-%}
-
-
-\usepackage[absolute,overlay]{textpos}
-\usepackage{booktabs}
-\usepackage[scale=2]{ccicons}
-
-%\usepackage{pgfplots}
-%\usepgfplotslibrary{dateplot}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Force pdflatex processing even with "$ latex" (required by arXiv)
-%\pdfoutput=1
-\graphicspath{{figures/}}
-%\usepackage[T1]{fontenc}
-%\usepackage[utf8]{inputenc}
-%\usepackage[spanish]{babel}
-%\spanishdecimal{.}
-%\usepackage{marvosym}
-%\usepackage{beamerprosper}
-\usepackage{amsmath,amssymb}
-\usepackage{overpic}
-\usepackage{graphicx}
-\usepackage{mycolors}
-%\usepackage{xmpmulti}
-\usepackage{multimedia}
-\usepackage{pgf}
-\usepackage{cancel}
-\usepackage{wasysym}
-%\usepackage{helvet}
-\usepackage{comment}
-\usepackage{array}   % for \newcolumntype macro
-\newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
-\includecomment{comentar}
-\specialcomment{comentar}
-{\begingroup}{\medskip\endgroup}
-\excludecomment{comentar}
-
-\includecomment{comentario}
-\specialcomment{comentario}
-{\begingroup}{\endgroup}
-\excludecomment{comentario}
-
-\includecomment{details}
-\specialcomment{details}
-{\begingroup}{\endgroup}
-\excludecomment{details}
-
-%\usepackage[texcoord,grid,gridunit=mm,gridcolor=red!10,subgridcolor=green!10]{eso-pic}
-
-
-\newcommand{\widescreen}{
-\setlength{\paperwidth}{171 mm}
-\setlength{\paperheight}{96 mm}
-\setlength{\textwidth}{151 mm}
-\setlength{\textheight}{86 mm}
-}
 
 \widescreen
 
@@ -116,28 +16,15 @@ xcolor=dvipsnames,table%,pdftex%,
 \author{Diego Restrepo}
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
-\institute{
-  \begin{columns}
-    \begin{column}{0.3\textwidth}
-Instituto de F\'\i sica\\
+\institute{\affiliation{Instituto de F\'\i sica\\
 Universidad de Antioquia\\
-Phenomenology Group\\
-\url{http://gfif.udea.edu.co}      
-    \end{column}
-    \begin{column}{0.3\textwidth}
-      \hfill Image title\\
-      \hfill \includegraphics[scale=0.15]{imageicon}\\
-      \hfill \tiny{Image credits}
-    \end{column}
-  \end{columns}
-\quad\\
-\quad\\
-{\tiny
-\alert{\textbf{Focus on}} \\
-arXiv:NNNN.NNNNN (Jrnl)\\
-\alert{In collaboration with}\\
-  N.~Name}
-%\centering
+Phenomenology Group}%
+{http://gfif.udea.edu.co}%
+{Image title}%
+{imageicon}%
+{Image credits}
+\arxiv{arXiv:NNNN.NNNNN (Jrnl}
+\collaborators{NN}
 }
 % - Use the \inst command only if there are several affiliations.
 % - Keep it simple, no one is interested in your street address.
@@ -146,32 +33,7 @@ arXiv:NNNN.NNNNN (Jrnl)\\
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
-%\subject{Talks}
-% This is only inserted into the PDF information catalog. Can be left
-% out. 
 
-
-
-% If you have a file called "university-logo-filename.xxx", where xxx
-% is a graphic format that can be processed by latex or pdflatex,
-% resp., then you can add a logo as follows:
-
-% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
-% \logo{\pgfuseimage{university-logo}}
-
-
-
-% Delete this, if you do not want the table of contents to pop up at
-% the beginning of each subsection:
-%\AtBeginSubsection[]
-%{
-%  \begin{frame}<beamer>
-%    \frametitle{Outline}
-%    \tableofcontents[currentsection,currentsubsection]
-%  \end{frame}
-%}
-
-\newcommand{\chml}[2]{$\underline{\text{#1\hspace{#2}}}$}
 \begin{document}
 
 
