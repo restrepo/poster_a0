@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg viewBox="0 0 1010 500" xmlns="http://www.w3.org/2000/svg" xmlns:inkspace="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs id="defs_block">
+    <filter height="1.504" id="filter_blur" inkspace:collect="always" width="1.1575" x="-0.07875" y="-0.252">
+      <feGaussianBlur id="feGaussianBlur3780" inkspace:collect="always" stdDeviation="4.2" />
+    </filter>
+  </defs>
+  <title>blockdiag</title>
+  <desc />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="110" x="33" y="56" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="110" x="453" y="56" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="110" x="33" y="326" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="110" x="33" y="416" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="110" x="173" y="146" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="110" x="453" y="146" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="110" x="733" y="146" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="110" x="313" y="326" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="110" x="733" y="236" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="110" x="873" y="236" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="110" x="453" y="236" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="110" x="593" y="236" />
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="110" x="30" y="50" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="83" x="85" y="75">building-blocks</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="110" x="450" y="50" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="50" x="505" y="75">Z2-origin</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="110" x="30" y="320" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="88" x="85" y="345">radiative seesaw</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="110" x="30" y="410" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="83" x="85" y="435">split-susy like</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="110" x="170" y="140" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="50" x="225" y="165">inert-Zee</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="110" x="450" y="140" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="56" x="505" y="165">U(1) local</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="110" x="730" y="140" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="61" x="785" y="165">U(1) global</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="110" x="310" y="320" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="77" x="365" y="345">inverse seesaw</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="110" x="730" y="230" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="66" x="785" y="255">Peccei-Quinn</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="110" x="870" y="230" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="39" x="925" y="255">General</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="110" x="450" y="230" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="56" x="505" y="255">high scale</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="110" x="590" y="230" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="50" x="645" y="255">low scale</text>
+  <path d="M 85 90 L 85 115" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 85 115 L 365 115" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 365 115 L 365 312" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="365,319 361,312 369,312 365,319" stroke="rgb(0,0,0)" />
+  <path d="M 85 90 L 85 115" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 85 115 L 225 115" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 225 115 L 225 132" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="225,139 221,132 229,132 225,139" stroke="rgb(0,0,0)" />
+  <path d="M 85 90 L 85 312" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="85,319 81,312 89,312 85,319" stroke="rgb(0,0,0)" />
+  <path d="M 505 90 L 505 115" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 505 115 L 785 115" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 785 115 L 785 132" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="785,139 781,132 789,132 785,139" stroke="rgb(0,0,0)" />
+  <path d="M 505 90 L 505 132" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="505,139 501,132 509,132 505,139" stroke="rgb(0,0,0)" />
+  <path d="M 85 360 L 85 402" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="85,409 81,402 89,402 85,409" stroke="rgb(0,0,0)" />
+  <path d="M 505 180 L 505 222" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="505,229 501,222 509,222 505,229" stroke="rgb(0,0,0)" />
+  <path d="M 505 180 L 505 205" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 505 205 L 645 205" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 645 205 L 645 222" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="645,229 641,222 649,222 645,229" stroke="rgb(0,0,0)" />
+  <path d="M 785 180 L 785 222" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="785,229 781,222 789,222 785,229" stroke="rgb(0,0,0)" />
+  <path d="M 785 180 L 785 205" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 785 205 L 925 205" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 925 205 L 925 222" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="925,229 921,222 929,222 925,229" stroke="rgb(0,0,0)" />
+  <path d="M 785 270 L 785 295" fill="none" stroke="rgb(255,0,0)" />
+  <path d="M 365 295 L 501 295" fill="none" stroke="rgb(255,0,0)" />
+  <path d="M 501.0 295.0 A4,4 0 0 1 509.0 295.0" fill="none" stroke="rgb(255,0,0)" />
+  <path d="M 509 295 L 785 295" fill="none" stroke="rgb(255,0,0)" />
+  <path d="M 365 295 L 365 312" fill="none" stroke="rgb(255,0,0)" />
+  <polygon fill="rgb(255,0,0)" points="365,319 361,312 369,312 365,319" stroke="rgb(255,0,0)" />
+  <path d="M 505 270 L 505 385" fill="none" stroke="rgb(0,128,0)" />
+  <path d="M 85 385 L 505 385" fill="none" stroke="rgb(0,128,0)" />
+  <path d="M 85 385 L 85 402" fill="none" stroke="rgb(0,128,0)" />
+  <polygon fill="rgb(0,128,0)" points="85,409 81,402 89,402 85,409" stroke="rgb(0,128,0)" />
+  <path d="M 505 270 L 505 295" fill="none" stroke="rgb(0,128,0)" />
+  <path d="M 85 295 L 361 295" fill="none" stroke="rgb(0,128,0)" />
+  <path d="M 361.0 295.0 A4,4 0 0 1 369.0 295.0" fill="none" stroke="rgb(0,128,0)" />
+  <path d="M 369 295 L 505 295" fill="none" stroke="rgb(0,128,0)" />
+  <path d="M 85 295 L 85 312" fill="none" stroke="rgb(0,128,0)" />
+  <polygon fill="rgb(0,128,0)" points="85,319 81,312 89,312 85,319" stroke="rgb(0,128,0)" />
+  <rect fill="white" height="14" stroke="rgb(0,0,0)" width="49" x="313" y="301" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="33" x="337" y="313">real S</text>
+  <rect fill="white" height="14" stroke="rgb(0,0,0)" width="55" x="512" y="121" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="39" x="539" y="133">comp. S</text>
+  <rect fill="white" height="14" stroke="rgb(0,0,0)" width="55" x="730" y="276" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="10" font-style="normal" font-weight="normal" text-anchor="middle" textLength="39" x="757" y="288">L numb.</text>
+</svg>
