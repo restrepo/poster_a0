@@ -1,109 +1,9 @@
-%http://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/SUS-16-024/index.html
-
-%% CVSId: $Id: Example.tex,v 1.1.1.1 2000/11/28 11:15:12 exupery Exp $
-\documentclass[%
-xcolor=dvipsnames,table%,pdftex%,
-%pdf,
-%nocolorBG,
-%colorBG,
-%slideColor,
-%slideBW,
-%draft,
-%frames
-%azure
-%contemporain
-%nuancegris
-%troispoints
-%lignesbleues
-%darkblue
-%alienglow
-%autumn
-%12pt
-]{beamer}
+\documentclass[xcolor=dvipsnames,table]{beamer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\mode<presentation>
-%{
-  %\usetheme{Madrid}
- \usetheme[progressbar=frametitle]{metropolis}% \usetheme{Boadilla}
-  % or ...
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%para revelar texto a aparecer en overlays
-  %\setbeamercovered{transparent} 
-  %\setbeamercovered{invisible}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % \setbeamertemplate{blocks}[rounded][shadow=true]
-  % \setbeamertemplate{navigation symbols}{}
+\usepackage{talk}
+%\usepackage{mycolors}
 
-  % \setbeamertemplate{footline}{%\hspace*{.5cm}
-  %   \scriptsize{\phantom{Gg}%\insertauthor 
-  %     \hspace*{50pt} 
-  %     \hfill \insertframenumber
-  %     \hspace*{.5cm}}}
-
-  % % or whatever (possibly just delete it)
-  % %\useoutertheme{shadow} 
-  % \setbeamercolor{postit}{fg=black,bg=yellow}
-  % \setbeamercolor{white}{fg=black,bg=white}
-  % \setbeamercolor{cite}{fg=black,bg=yellow}
-%}
-
-
-\usepackage[absolute,overlay]{textpos}
-\usepackage{booktabs}
-\usepackage[scale=2]{ccicons}
-
-%\usepackage{pgfplots}
-%\usepgfplotslibrary{dateplot}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Force pdflatex processing even with "$ latex" (required by arXiv)
-%\pdfoutput=1
-\graphicspath{{figures/}}
-%\usepackage[T1]{fontenc}
-%\usepackage[utf8]{inputenc}
-%\usepackage[spanish]{babel}
-%\spanishdecimal{.}
-%\usepackage{marvosym}
-%\usepackage{beamerprosper}
-\usepackage{amsmath,amssymb}
-\usepackage{overpic}
-\usepackage{graphicx}
-\usepackage{mycolors}
-%\usepackage{xmpmulti}
-\usepackage{multimedia}
-\usepackage{pgf}
-\usepackage{cancel}
-\usepackage{wasysym}
-%\usepackage{helvet}
-\usepackage{comment}
-\usepackage{array}   % for \newcolumntype macro
-\newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
-\includecomment{comentar}
-\specialcomment{comentar}
-{\begingroup}{\medskip\endgroup}
-\excludecomment{comentar}
-
-\includecomment{comentario}
-\specialcomment{comentario}
-{\begingroup}{\endgroup}
-\excludecomment{comentario}
-
-\includecomment{details}
-\specialcomment{details}
-{\begingroup}{\endgroup}
-\excludecomment{details}
-
-%\usepackage[texcoord,grid,gridunit=mm,gridcolor=red!10,subgridcolor=green!10]{eso-pic}
-
-
-\newcommand{\widescreen}{
-\setlength{\paperwidth}{171 mm}
-\setlength{\paperheight}{96 mm}
-\setlength{\textwidth}{151 mm}
-\setlength{\textheight}{86 mm}
-}
-
- \widescreen
+\widescreen
 
 
 \title{Models with radiative neutrino masses\\ and viable dark matter candidates}
@@ -116,30 +16,17 @@ xcolor=dvipsnames,table%,pdftex%,
 \author{Diego Restrepo}
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
-\institute{
-  \begin{columns}
-    \begin{column}{0.4\textwidth}
-Instituto de F\'\i sica\\
+\institute{\affiliation{Instituto de F\'\i sica\\
 Universidad de Antioquia\\
-%Phenomenology Group\\
-\url{http://gfif.udea.edu.co}      
-    \end{column}
-    \begin{column}{0.5\textwidth}
-       \hfill \includegraphics[scale=0.4]{gfif}\\
-      %\hfill \tiny{Image credits}
-    \end{column}
-  \end{columns}
-\quad\\
-\quad\\
-{\tiny
-%\alert{\textbf{Focus on}} \\
-%arXiv:1703.08148 (PRD)\\
-\alert{In collaboration with}\\
-  Carloa~Yaguna (UPTC) \& Oscar~Zapata (UdeA)}
-%\centering
+Phenomenology Group}%
+{http://gfif.udea.edu.co}%
+{Image title}%
+{gfif}%
+{}
+%\arxiv{arXiv:NNNN.NNNNN (Jrnl}
+\collaborators{In collaboration with\\
+  Carlos~Yaguna (UPTC) \& Oscar~Zapata (UdeA)}
 }
-% - Use the \inst command only if there are several affiliations.
-% - Keep it simple, no one is interested in your street address.
 
 \date{\tiny August 15, 2017 } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
