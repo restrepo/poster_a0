@@ -361,20 +361,16 @@ $(e_R)^{\dagger} $ &  $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ +1$ \\
   \begin{center}
 \rowcolors{1}{RoyalBlue!20}{}
 %\def\arraystretch{1.1}
-   \begin{tabular}{llllll}
-     $\text{Name}$ & $\text{Symbol}$ & $\text{SU}(3)_c$ & $\text{SU}(2)_L $& $\text{U}(1)_Y$ & \only<1-2>{$\text{U(1)}_L$}\only<3>{$Z_2\hspace{0.5cm}$} \\ \hline
- $L=(\nu_L  \  e_L)^{\operatorname{T}}$ & $
-                                          (\xi_{1\alpha}  \  \xi_{2\alpha} )^{\operatorname{T}}$ & $ \mathbf{1} $ & $ \mathbf{2} $ & $ -1/2 $ & \only<1-2>{$ -1$}\only<3>{$\phantom{+}0$}\\
-$(e_R)^{\dagger} $ & $ \eta^{\alpha}_1 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & \only<1-2>{$ +1$}\only<3>{$\phantom{+}0$} \\
-\color{red} $ ({\hat\Psi}_R)^{\dagger} $ & $ ( \eta^{\alpha}_2\ \eta^{\alpha}_3)^{\operatorname{T}} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ &  
-\only<1-2>{$\phantom{+}0$}\only<3>{$\color{red}-1$}\\
-\color{red} $\Psi_L $ & $ (\xi_{3\alpha}\ \xi_{4\alpha})^{\operatorname{T}} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ -1 $ & 
-\only<1-2>{$\phantom{+}0$}\only<3>{$\color{red}-1$}\\
-\color{red} $N $ & $ \eta_{4\alpha} $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & 
-\only<1-2>{$\phantom{+}0$}\only<3>{$\color{red}-1$}\\
-\color{red} $S$ &  & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & 
-\only<1-2>{$\phantom{+}0$}\only<3>{$\color{red}-1$}\\
-\invisible<1>{$\only<1-2>{\sigma}\only<3>{\operatorname{Im}( \sigma )}$ &  & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ &
+   \begin{tabular}{lllll}
+$\text{Name}$  &   $\text{SU}(3)_c$  &  $\text{SU}(2)_L $ &  $\text{U}(1)_Y$ & \only<1-2>{$\text{U(1)}_L$}\only<3>{$Z_2\hspace{0.5cm}$} \\ \hline
+
+ $L=(\nu_L  \  e_L)^{\operatorname{T}}$  &   $ \mathbf{1} $  &  $ \mathbf{2} $  &  $ -1/2 $ & \only<1-2>{$ -1$}\only<3>{$\phantom{+}0$}\\
+$(e_R)^{\dagger} $  &   $ \mathbf{1} $  &  $ \mathbf{1} $  &  $ +1 $  &\only<1-2>{$ +1$}\only<3>{$\phantom{+}0$} \\  
+ \color{red} $ ({\hat\Psi}_R)^{\dagger}    =\left( \left( \psi_R^+ \right)^{\dagger} \  {\color{blue} \left( \psi_R^0 \right)^{\dagger}}  \right)^{\operatorname{T}}$  &   $ \mathbf{1} $  &  $ \mathbf{2} $  &  $ +1/2 $  & \only<1-2>{$\phantom{+}0$}\only<3>{$\color{red}-1$}\\
+ \color{red} $\Psi_L=\left( {\color{blue}\psi_L^0} \ \psi_L^-\right)^{\operatorname{T}}$ &    $ \mathbf{1} $  &  $ \mathbf{2} $  &  $ -1/2 $  & \only<1-2>{$\phantom{+}0$}\only<3>{$\color{red}-1$}\\
+ $ {\color{blue}N} $  &   $ \mathbf{1} $  &  $ \mathbf{1} $  &  $ 0 $  & \only<1-2>{$\phantom{+}0$}\only<3>{$\color{red}-1$}\\
+\color{green} $\only<1-2>{S\in\mathbb{C}}\only<3>{\operatorname{Re}(S)}$  &    $ \mathbf{1} $  &  $ \mathbf{1} $  &  $ 0 $  & \only<1-2>{$\phantom{+}0$}\only<3>{$\color{red}-1$}\\
+\invisible<1>{$\only<1-2>{\sigma}\only<3>{\operatorname{Im}( \sigma )}$ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ &
  \only<1-2>{$-2$}\only<3>{$\phantom{+}0$}  } \\
  \end{tabular}
   \end{center}
@@ -382,7 +378,7 @@ $(e_R)^{\dagger} $ & $ \eta^{\alpha}_1 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +
  \begin{align*}
    \mathcal{L}=&\mathcal{L}_{\text{SM}} - M_{S}^2\, {\color{red} S^{*}S}- \lambda_{SH}\,{\color{red} S^{*}S}\, \widetilde{H}\cdot H - \lambda_S \left( {\color{red} S^{*}S} \right)^2
                  \invisible<1>{+ \lambda_{S\sigma}\,{\color{red} S^{*}S}\,\only<1,2>{\sigma^{*}\sigma }\only<3->{v_{\sigma}^2} +
-                 \left( \mu\,  {\color{red} SS}\, \only<1,2>{\sigma}\only<3>{v_{\sigma}}+\text{h.c} \right)         }   \nonumber\\
+                 \left( \mu\,  {\color{green} SS}\, \only<1,2>{\sigma}\only<3>{v_{\sigma}}+\text{h.c} \right)         }   \nonumber\\
 &  + \left( M_N \, {\color{red}NN}+ M_D {\color{red} ({\hat\Psi}_R)^{\dagger} \Psi_L} + h_L\, {\color{red}\Psi_L} \cdot H {\color{red}N}+h_R\, {\color{red}{\hat\Psi}_R} \cdot H {\color{red}N^{\dagger}}  +h_{LS}\,L\cdot {\color{red}\Psi_L S}+\text{h.c} \right) \\
      &\invisible<1,3>{+V(\sigma).}
  \end{align*}
@@ -391,7 +387,11 @@ $(e_R)^{\dagger} $ & $ \eta^{\alpha}_1 $ & $ \mathbf{1} $ & $ \mathbf{1} $ & $ +
 
 \begin{frame}
   \frametitle{Conclusions}
-  We have found \emph{at least one} model with many predictions and profund theoretical insights. 
+  $Z_{2}$ from global Peccei-Quinn symmetry:
+  \begin{itemize}
+  \item Mixed dark matter with Axion/WIMP or Axion/FIMP
+  \item Lepton number violation controlled by splitting of real and imaginary parts of $\color{red}S$.
+  \end{itemize}
 \end{frame}
 
 \plain{Thanks!}
