@@ -20,14 +20,14 @@
 Universidad de Antioquia\\
 Phenomenology Group}%
 {http://gfif.udea.edu.co}%
-{II}%
-{comhep}%
+{}%
+{HEP}%
 {}
-\arxiv{arXiv:1706.08240}
-\collaborators{ Ernest~Ma (UC-R) \& Óscar~Zapata (UdeA)}
+\arxiv{arXiv:1706.08240, arXiv:1709.09796}
+\collaborators{ Bhaskar Dutta (), Guillermo Palacio, José Ruíz, Ernest~Ma (UC-R) \& Óscar~Zapata (UdeA)}
 }
 
-\date{\tiny August 15, 2017 } % (optional) \today
+\date{\tiny January 9, 2017 } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -139,18 +139,58 @@ Phenomenology Group}%
 \end{picture}
 \end{frame}
 
-\section{Inert doublet Dark Matter}
+\section{Inert doublet model}
 
 
 \begin{frame}
-  \frametitle{Inert doublet Dark Matter}
-  Some results in Drell-Yann searches
+  \frametitle{Inert doublet model}
+
+  The Lagrangian of the model is given by:
+\begin{align}
+\label{eq:0001}
+\mathcal{L} =\mathcal{L}_{\text{SM}}+ (D^{\mu}\Phi)^{\dagger} D_{\mu}\Phi -V(\Phi),
+\end{align}
+where
+\begin{align}
+\label{eq:0002}
+V(\Phi) =& \mu_2^{2} \Phi^{\dagger}\Phi + \lambda_2 (\Phi^{\dagger}\Phi)^{2} + 
+\lambda_3 (H^{\dagger}H)(\Phi^{\dagger}\Phi)  + \lambda_4 (H^{\dagger}\Phi)(\Phi^{\dagger}H) + \dfrac{\lambda_5}{2} \Big [ (\Phi^{\dagger}H)^2 + \text{h.c.} \Big ].
+\end{align} 
+$H$ stands for the Higgs doublet in the SM, which 
+acquires a vacuum expectation value (VEV) $v=246.2$~GeV. We define
+\begin{align}
+\lambda_L=\frac{\lambda_3+\lambda_4+\lambda_5}{2}\,.
+\end{align}
+which controls the interactions though the Higgs portal. The components of the scalar doublets are defined as
+
+\begin{align}
+\label{eq:0003}
+\Phi=\begin{pmatrix}
+ H^{+} \\
+\dfrac{1}{\sqrt{2}}(H^{0} + i A^{0}) 
+\end{pmatrix}, \hspace{2cm}
+H=\begin{pmatrix}
+ G^{+} \\
+\dfrac{1}{\sqrt{2}}(v + h^{0} + i G^{0}) 
+\end{pmatrix}.
+\end{align}
+The fields are written in the canonical form. $H^{0}$, $A^{0}$ and $H^{+}$  are the CP even, CP odd and
+charged scalar of the additional scalar doublet.  $G^{+}$ and
+$G^{0}$ are 
+ the Goldstone bosons of the the $SU(2)_L \times U(1)_Y$ electroweak symmetry,
+
+  %Some results in Drell-Yann searches
   
 \end{frame}
 
 \begin{frame}
   \frametitle{VBF}
-Production
+\def\sep{\hspace{0.3cm}}
+\def\scl{0.23}
+  \includegraphics[scale=\scl]{vbf_a}\sep
+\includegraphics[scale=\scl]{vbf_z}\sep
+\includegraphics[scale=\scl]{vbf_zh}\sep
+\includegraphics[scale=\scl]{vbf_gh}
   
 \end{frame}
 
@@ -165,9 +205,6 @@ Benchmarks points
   \frametitle{VBF}
 Results
 \end{frame}
-
-
-
 
 
 \section{Neutrino masses}
