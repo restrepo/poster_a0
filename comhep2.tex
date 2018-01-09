@@ -7,7 +7,7 @@
 
 
 \title{Scotogenic models}
-\subtitle{Peccei-Quinn as broken lepton number}
+\subtitle{Collider signals}
 
 
 %\subtitle
@@ -104,8 +104,13 @@ Phenomenology Group}%
 \only<1->{\put(-24,-22){\begin{overpic}[scale=0.352]{z2_bkg}\end{overpic}}}%
 \only<1->{\put(34,158.5){ \textbf{SM}  }}%
 \only<1->{\put(38,115){ {\large +}  }}%
-\only<1->{\put(0,100){ $\frac{1}{\Lambda} L \cdot H L \cdot H$  (1-loop) }}%
-\only<1>{\put(-10,80){ {\scriptsize Bonnet, \emph{et al}, arXiv:1204.5862 [JHEP]} }}%
+\only<1->{\put(0,100){ $\frac{1}{\Lambda} L \cdot H L \cdot H$  (
+    \only<1>{$n$}\only<2->{1}-loop) }}%
+\only<1>{\put(-20,80){ {\scriptsize $n=1$: Bonnet, \emph{et al}, arXiv:1204.5862 [JHEP]} }}%
+\only<1>{\put(-20,70){ {\scriptsize $n=2$: Aristizabal, \emph{et al},  arXiv:1411.7038 [JHEP]} }}%
+\only<1>{\put(320,150){\large \color{white} $m_{\nu_i}\ne 0$}}%
+\only<1>{\put(330,100){\large \color{white} $\Downarrow$}}%
+\only<1>{\put(180,50){\color{white} Distinguish between simplified dark Matter models}}%
 \only<2->{\put(2,80){ {\scriptsize This work, arXiv:1308.3655  [JHEP]} }}%
 \only<1->{\put(18,115){\begin{overpic}[scale=0.118]{mice}\end{overpic}}}%
 %
@@ -127,7 +132,7 @@ Phenomenology Group}%
 \end{frame}
 
 
-
+\section{radiative seesaw}
 \begin{frame}
 \frametitle{Radiative seesaw}
 \begin{picture}(320,250)
@@ -148,78 +153,92 @@ Phenomenology Group}%
   The Lagrangian of the model is given by:
 \begin{align}
 \label{eq:0001}
-\mathcal{L} =\mathcal{L}_{\text{SM}}+ (D^{\mu}\Phi)^{\dagger} D_{\mu}\Phi -V(\Phi),
+\mathcal{L} =\mathcal{L}_{\text{SM}}+ (D^{\mu}{\color{red}\Phi})^{\dagger} D_{\mu}{\color{red}\Phi} -V({\color{red}\Phi}),
 \end{align}
 where
 \begin{align}
 \label{eq:0002}
-V(\Phi) =& \mu_2^{2} \Phi^{\dagger}\Phi + \lambda_2 (\Phi^{\dagger}\Phi)^{2} + 
-\lambda_3 (H^{\dagger}H)(\Phi^{\dagger}\Phi)  + \lambda_4 (H^{\dagger}\Phi)(\Phi^{\dagger}H) + \dfrac{\lambda_5}{2} \Big [ (\Phi^{\dagger}H)^2 + \text{h.c.} \Big ].
+V({\color{red}\Phi}) =& \mu_2^{2} {\color{red}\Phi}^{\dagger}{\color{red}\Phi} + \lambda_2 ({\color{red}\Phi}^{\dagger}{\color{red}\Phi})^{2} + 
+\lambda_3 (H^{\dagger}H)({\color{red}\Phi}^{\dagger}{\color{red}\Phi})  + \lambda_4 (H^{\dagger}{\color{red}\Phi})({\color{red}\Phi}^{\dagger}H) + \dfrac{\lambda_5}{2} \Big [ ({\color{red}\Phi}^{\dagger}H)^2 + \text{h.c.} \Big ].
 \end{align} 
-$H$ stands for the Higgs doublet in the SM, which 
-acquires a vacuum expectation value (VEV) $v=246.2$~GeV. We define
+$H$ os the SM Higgs doublet in the SM,
+We define
 \begin{align}
 \lambda_L=\frac{\lambda_3+\lambda_4+\lambda_5}{2}\,.
 \end{align}
-which controls the interactions though the Higgs portal. The components of the scalar doublets are defined as
+which controls the interactions though the Higgs portal. The components  are
 
-\begin{align}
+\begin{align*}
 \label{eq:0003}
-\Phi=\begin{pmatrix}
- H^{+} \\
-\dfrac{1}{\sqrt{2}}(H^{0} + i A^{0}) 
+{\color{red}\Phi}=\begin{pmatrix}
+\color{red} H^{+} \\
+\dfrac{1}{\sqrt{2}}( {\color{red}H^{0} + i A^{0}}) 
 \end{pmatrix}, \hspace{2cm}
 H=\begin{pmatrix}
  G^{+} \\
 \dfrac{1}{\sqrt{2}}(v + h^{0} + i G^{0}) 
 \end{pmatrix}.
-\end{align}
-The fields are written in the canonical form. $H^{0}$, $A^{0}$ and $H^{+}$  are the CP even, CP odd and
-charged scalar of the additional scalar doublet.  $G^{+}$ and
-$G^{0}$ are 
- the Goldstone bosons of the the $SU(2)_L \times U(1)_Y$ electroweak symmetry,
+\end{align*}
 
-  %Some results in Drell-Yann searches
+\alert{%Multilepton signals reach for thermal
+  Drell-Yann production for $m_{H^0}\approx 60\ \text{GeV}$, can prove $m_{H^+}\sim 150\ \text{GeV}$.} 
+
   
 \end{frame}
 
 \begin{frame}
-  \frametitle{VBF}
+  \frametitle{Vector Boson Fussion}
 \def\sep{\hspace{0.3cm}}
-\def\scl{0.23}
-  \includegraphics[scale=\scl]{vbf_a}\sep
+\def\scl{0.18}
+\begin{center}
+    \includegraphics[scale=\scl]{vbf_a}\sep
 \includegraphics[scale=\scl]{vbf_z}\sep
 \includegraphics[scale=\scl]{vbf_zh}\sep
 \includegraphics[scale=\scl]{vbf_gh}
-  
+\end{center}
+
+
 \end{frame}
 
 \begin{frame}
-  \frametitle{VBF}
-\begin{table}
-\centering
-\begin{tabular}{|c|c|c|c|}\hline
-$\lambda_L$& $S_{\text{VBF}}$ & $B_{\text{VBF}}$ & $\sigma_{\text{VBF}}$ \\\hline
-0.01 & 4.6 &  & 0.21 \\
-0.1 & 7.5 & 476 & 0.35 \\
-1.0 & 25 & & 1.1\\  \hline
-\end{tabular}
+  \frametitle{$\sigma=B/\sqrt{B+S}$}
+ \begin{table}
+ \centering
+ \begin{tabular}{|c|c|c|c|}\hline
+ $\lambda_L$& $S_{\text{MJ}}$ & $B_{\text{MJ}}$ & $\sigma_{\text{MJ}}$ \\\hline
+ 0.01 & 3 &  & 0.015 \\ %  old
+ 0.1 & 3.7 & 134044 & 0.02 \\ % old
+ 1.0 & 31 & & 0.15\\ \hline % old
+ \end{tabular}\hspace{1cm}
+ \begin{tabular}{|c|c|c|c|}\hline
+ $\lambda_L$& $S_{\text{VBF}}$ & $B_{\text{VBF}}$ & $\sigma_{\text{VBF}}$ \\\hline
+ 0.01 & 4.6 &  & 0.21 \\
+ 0.1 & 7.5 & 476 & 0.35 \\
+ 1.0 & 25 & & 1.1\\  \hline
+ \end{tabular}
 
-\caption{Sensitivities for $M_{H^+}=M_{A^0}=750\ $GeV and $M_{H_0}=110\ $GeV for several  $\lambda_L$ values, with an integrated luminosity of $20$~fb$^{-1}$.}
-%The Monojet results were obtained with CheckMate.}
-\label{tab:monjet-VBF}
+ \caption{Sensitivities for $M_{H^+}=M_{A^0}=750\ $GeV and $M_{H_0}=110\ $GeV for several  $\lambda_L$ values, with an integrated luminosity of $20$~fb$^{-1}$.}
+% %The Monojet results were obtained with CheckMate.}
+% \label{tab:monjet-VBF}
 \end{table}
   
 \end{frame}
 
 
 \begin{frame}
-  \frametitle{VBF}
-\includegraphics[scale=0.6]{lc3}
+  \frametitle{3 $\sigma$ reach }
+  \begin{picture}(320,250)
+    \only<1->{\put(-24,37){\begin{overpic}[scale=0.5]{lc3}\end{overpic}}}%
+    \only<2->{\put(260,220){\alert{$\Omega_{H^{0}}\ll \Omega_{\text{DM}} $} }}%
+    \only<1->{\put(260,140){$m_{H^+}=m_{A^0}=600\ \text{GeV}$ }}%
+    \only<2->{\put(260,80){\alert{$\Omega_{H^{0}}\sim \Omega_{\text{DM}} $} for $m_{H^{0}}\sim 60\ \text{GeV}$}}%
+  \end{picture}
+
+
 \end{frame}
 
 
-\section{Neutrino masses}
+
 
 \begin{frame}
 \frametitle{Weinberg operator at one-loop}
@@ -238,12 +257,13 @@ $\lambda_L$& $S_{\text{VBF}}$ & $B_{\text{VBF}}$ & $\sigma_{\text{VBF}}$ \\\hlin
 \only<1->{\put(120,240){\color{red}($Z_2$-odd fields) }}
 \only<2->{\put(340,120){\includegraphics[scale=0.8]{main_vertex4}}}%
 \only<2->{\put(360,100){ $pp\to l^+l^-+{E_T^{\text{miss}}}$  }}%
+\only<2->{\put(360,50){ $\mu\to e \gamma,\ \ldots$   }}%
 %\only<4->{\put(233,186){\fcolorbox{black}{blue}{\color{white}Zee model}}}%
 \end{picture}
 \end{frame}
 
 
-
+\section{Inverse radiative seesaw}
 \begin{frame}
 \frametitle{Inverse radiative seesaw}  
 \begin{picture}(320,250)
@@ -255,8 +275,57 @@ $\lambda_L$& $S_{\text{VBF}}$ & $B_{\text{VBF}}$ & $\sigma_{\text{VBF}}$ \\\hlin
 \end{picture}
 \end{frame}
 
+\section{Singlet-doublet fermion dark matter}
+\begin{frame}
+  \frametitle{Singlet-doublet fermion dark matter}
+
+  \begin{center}
+\rowcolors{1}{RoyalBlue!20}{}
+%\def\arraystretch{1.1}
+   \begin{tabular}{llllll}
+ $\text{Name}$ &  $\text{SU}(3)_c$ & $\text{SU}(2)_L $& $\text{U}(1)_Y$ & $Z_2$ \\ \hline
+ $L=(\nu_L  \  e_L)^{\operatorname{T}}$ &  $ \mathbf{1} $ & $ \mathbf{2} $ & $ -1/2 $ & $ +1$\\
+$(e_R)^{\dagger} $ &  $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ +1$ \\
+     \color{red} $ ({\hat\Psi}_R)^{\dagger}
+     =\left( \left( \psi_R^+ \right)^{\dagger} \ 
+     {\color{blue} \left( \psi_R^0 \right)^{\dagger}}
+     \right)^{\operatorname{T}}
+     $ &  $ \mathbf{1} $ & $ \mathbf{2} $ & $ +1/2 $ & $ \color{red} -1$ \\
+     \color{red} $\Psi_L=\left( {\color{blue}\psi_L^0} \ \psi_L^-
+     \right)^{\operatorname{T}}$
+&   $ \mathbf{1} $ & $ \mathbf{2} $ & $ -1/2 $ & $\color{red} -1$ \\
+ $ {\color{blue}N} $ &  $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & $\color{red} -1$ \\
+\color{red} $S$ &   $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & $\color{red} -1$ \\
+ \end{tabular}
+  \end{center}
+
+\begin{columns}
+  \begin{column}{0.33\textwidth}
+\includegraphics[scale=0.5]{hpf}    
+  \end{column}
+  \begin{column}{0.33\textwidth}
+Basis $\boldsymbol{\psi}^0=\left({\color{blue}N},{\color{blue}\psi_L^0},{\color{blue}\left( \psi_R^0 \right)^{\dagger}}\right)^T$ 
+\tiny
+\begin{align*}
+  &\mathcal{M}_{\boldsymbol{\psi}^0}=\nonumber\\
+&\begin{pmatrix}
+{\color{blue}M_N}               &{\color{blue}-y\,c_\beta v/\sqrt{2}}&{\color{blue}y\,s_\beta v/\sqrt{2}} \\
+{\color{blue}-y\,c_\beta} v/\sqrt{2}  & 0            & {\color{blue}}-M_D\\
+{\color{blue}y\,s_\beta v/\sqrt{2}} &{\color{blue}}  -M_D                &  0  \\
+\end{pmatrix},
+\end{align*}
+    
+  \end{column}
+  \begin{column}{0.33\textwidth}
+    \only<1>{\includegraphics[scale=0.2]{GCE}}\only<2->{\includegraphics[scale=0.2]{GCE2016}}%
+{\tiny S. Horiuchi,\\ O. Macias, DR, A. Rivera, O. Zapata, 1602.04788 (JCAP) }
+  \end{column}
+\end{columns}
+
+\end{frame}
 
 
+\section{Singlet scalar dark matter}
 \begin{frame}
   \frametitle{Scalar dark matter: Higgs portal}
 
@@ -304,54 +373,6 @@ $(e_R)^{\dagger} $ &  $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ +1$ \\
 
 \end{frame}
 
-
-\begin{frame}
-  \frametitle{Singlet-doublet fermion dark matter: Higgs portal}
-
-  \begin{center}
-\rowcolors{1}{RoyalBlue!20}{}
-%\def\arraystretch{1.1}
-   \begin{tabular}{llllll}
- $\text{Name}$ &  $\text{SU}(3)_c$ & $\text{SU}(2)_L $& $\text{U}(1)_Y$ & $Z_2$ \\ \hline
- $L=(\nu_L  \  e_L)^{\operatorname{T}}$ &  $ \mathbf{1} $ & $ \mathbf{2} $ & $ -1/2 $ & $ +1$\\
-$(e_R)^{\dagger} $ &  $ \mathbf{1} $ & $ \mathbf{1} $ & $ +1 $ & $ +1$ \\
-     \color{red} $ ({\hat\Psi}_R)^{\dagger}
-     =\left( \left( \psi_R^+ \right)^{\dagger} \ 
-     {\color{blue} \left( \psi_R^0 \right)^{\dagger}}
-     \right)^{\operatorname{T}}
-     $ &  $ \mathbf{1} $ & $ \mathbf{2} $ & $ +1/2 $ & $ \color{red} -1$ \\
-     \color{red} $\Psi_L=\left( {\color{blue}\psi_L^0} \ \psi_L^-
-     \right)^{\operatorname{T}}$
-&   $ \mathbf{1} $ & $ \mathbf{2} $ & $ -1/2 $ & $\color{red} -1$ \\
- $ {\color{blue}N} $ &  $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & $\color{red} -1$ \\
-\color{red} $S$ &   $ \mathbf{1} $ & $ \mathbf{1} $ & $ 0 $ & $\color{red} -1$ \\
- \end{tabular}
-  \end{center}
-
-\begin{columns}
-  \begin{column}{0.33\textwidth}
-\includegraphics[scale=0.5]{hpf}    
-  \end{column}
-  \begin{column}{0.33\textwidth}
-Basis $\boldsymbol{\psi}^0=\left({\color{blue}N},{\color{blue}\psi_L^0},{\color{blue}\left( \psi_R^0 \right)^{\dagger}}\right)^T$ 
-\tiny
-\begin{align*}
-  &\mathcal{M}_{\boldsymbol{\psi}^0}=\nonumber\\
-&\begin{pmatrix}
-{\color{blue}M_N}               &{\color{blue}-y\,c_\beta v/\sqrt{2}}&{\color{blue}y\,s_\beta v/\sqrt{2}} \\
-{\color{blue}-y\,c_\beta} v/\sqrt{2}  & 0            & {\color{blue}}-M_D\\
-{\color{blue}y\,s_\beta v/\sqrt{2}} &{\color{blue}}  -M_D                &  0  \\
-\end{pmatrix},
-\end{align*}
-    
-  \end{column}
-  \begin{column}{0.33\textwidth}
-    \only<1>{\includegraphics[scale=0.2]{GCE}}\only<2->{\includegraphics[scale=0.2]{GCE2016}}%
-{\tiny S. Horiuchi,\\ O. Macias, DR, A. Rivera, O. Zapata, 1602.04788 (JCAP) }
-  \end{column}
-\end{columns}
-
-\end{frame}
 
 
 
@@ -477,6 +498,22 @@ $(e_R)^{\dagger} $  &   $ \mathbf{1} $  &  $ \mathbf{1} $  &  $ +1 $  &\only<1-2
 
 \begin{frame}
   \frametitle{Conclusions}
+  Inert doublet model
+
+  \begin{itemize}
+  \item VBF search has a better reach  when compared with the monojet searches
+  \item  Reach can go up to 280 GeV of Higgs mass for a luminosity of 3000 fb$^{-1}$ for large $M_{H^+}$.
+  \end{itemize}
+
+  Singlet scalar model
+  \begin{itemize}
+  \item Vector-like fermion portal only allowed for tau couplings
+    \begin{itemize}
+    \item Compressed spectra with soft dileptons still to be explored.
+    \end{itemize}
+  \end{itemize}
+
+  
   $Z_{2}$ from global Peccei-Quinn symmetry:
   \begin{itemize}
   \item Mixed dark matter with Axion/WIMP or Axion/FIMP
