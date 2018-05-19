@@ -5,7 +5,7 @@ Each repo have a commont sty file and example file but a unique LaTeX file
 
 
 
-[![Image inheritance diagram](figures/master.svg)](http://interactive.blockdiag.com/?compression=deflate&src=eJxNjsEKgzAQRO9-RfDupdBTsNDvKEVWs2pokpXNCtLSf6-JbfU282Zm2dZR9zAWBvUqlCK2GATEUlC1moiFwYpeE4M9zE6anoJE-8Q1Pid-VTcHLbq69BAFubzrIuPqoloaSED_bBQIBthUngy6PwWGMXW29r5rOvIjTnv0BakhuEBMSRaHjacODotkc9_K7IDzYpOJbvdOieYvdqaL9weE1lmH)
+[![Image inheritance diagram](figures/master.svg)](http://interactive.blockdiag.com/?compression=deflate&src=eJxNjsEOgjAQRO98RcOdi4mnBhO_wxiytAtU2y5pl8Ro_Hdpq8Jt583M7vaW1F0bGMWrEoKCQc_AhrxoxUyBAxiWq6NxgMVyN5DnaJ642sfEz-JioUfb1g4iY6ivssq4OYmeRmKQPxkZvIagG0ca7Z9CgCllSnrrdYrchPNmfUFKMD4gJicPu44jBbtGkjlveLEQcqOMiZZ9h0TzFxtLSJG_lWsrUJOxKKv3B4IZYHg)
 
 
 # Official Metroplis READM starts here
