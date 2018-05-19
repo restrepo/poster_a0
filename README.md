@@ -5,7 +5,7 @@ Each repo have a commont sty file and example file but a unique LaTeX file
 
 
 <!-- figures/master.svg -->
-[![Image inheritance diagram](http://bit.ly/myslides_svg)](http://bit.ly/2IwrqfU)
+[![Image inheritance diagram](http://bit.ly/myslides2_svg)](http://bit.ly/2IwrqfU)
 
 
 # Official Metroplis READM starts here
