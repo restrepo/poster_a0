@@ -4,8 +4,19 @@ The simple template and examples is in master.
 Each repo have a commont sty file and example file but a unique LaTeX file
 
 
+* Install `texlive-fonts-extra`
+* Install [mtheme](https://github.com/matze/mtheme)
+* Install the fonts: mtheme/docker/getFiraFont.sh
 
-[![Image inheritance diagram](figures/master.svg)](http://interactive.blockdiag.com/?compression=deflate&src=eJxNjsEKgzAQRO9-RfDupdBTsNDvKEVWs2pokpXNCtLSf6-JbfU282Zm2dZR9zAWBvUqlCK2GATEUlC1moiFwYpeE4M9zE6anoJE-8Q1Pid-VTcHLbq69BAFubzrIuPqoloaSED_bBQIBthUngy6PwWGMXW29r5rOvIjTnv0BakhuEBMSRaHjacODotkc9_K7IDzYpOJbvdOieYvdqaL9weE1lmH)
+
+
+Run as
+```bash
+xelatex master.tex
+```
+
+<!-- figures/master.svg -->
+[![Image inheritance diagram](http://bit.ly/myslides2_svg)](http://bit.ly/2IwrqfU)
 
 
 # Official Metroplis READM starts here
