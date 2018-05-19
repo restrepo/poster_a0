@@ -4,6 +4,17 @@ The simple template and examples is in master.
 Each repo have a commont sty file and example file but a unique LaTeX file
 
 
+* Install `texlive-fonts-extra`
+* Install [mtheme](https://github.com/matze/mtheme)
+* Install the fonts: mtheme/docker/getFiraFont.sh
+
+
+
+Run as
+```bash
+xelatex master.tex
+```
+
 <!-- figures/master.svg -->
 [![Image inheritance diagram](http://bit.ly/myslides2_svg)](http://bit.ly/2IwrqfU)
 
