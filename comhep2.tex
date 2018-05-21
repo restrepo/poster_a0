@@ -2,7 +2,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{talk}
 %\usepackage{mycolors}
-
+\usepackage{fp}
 \widescreen
 
 
@@ -145,42 +145,77 @@ Phenomenology Group}%
     \only<1>{$\cancel{\text{tree-level}}$}%
     \only<2>{$\nu\ne -1$}%
     \only<3>{Radiative Dirac seesaw}%
+    \only<4>{Exotic $\left( \nu_R \right)^{\dagger}$ with $\nu\ne-1$,
+     and vector-like Dirac fermion with $r\ne 1$}%
+     \only<5>{The model: \textit{colored scotogenic}}%
   }
 \def\pscale{0.6}
-\def\px{80}
+\def\px{0}
 \def\py{140}
 \begin{picture}(320,250)
 \only<1>{\put(\px,\py){\includegraphics[scale=\pscale]{dm1}}}%
 \only<2>{\put(\px,\py){\includegraphics[scale=\pscale]{dm2}}}%
-\only<3->{\put(\px,\py){%\includegraphics[scale=\pscale]{dm3}
-    \begin{overpic}[scale=\pscale,grid]{dm3}
+\only<3-4>{\put(\px,\py){%\includegraphics[scale=\pscale]{dm3}
+    \begin{overpic}[scale=\pscale]{dm3}
     \end{overpic}
-  }}%  
+  }}%
+\only<5>{\put(\px,\py){\includegraphics[scale=\pscale]{dm4}}}%
 %%% circle
 \only<1>{\put(80,50){$\left( \psi_L \right)^{\dagger}\nu_R\sigma \to
     \nu_R \nu_R \sigma  $ }}
-\only<4>{\put(72,133){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
-\only<4>{\put(125,143){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
-\only<4>{\put(147,143){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
-\only<3->{\put(0,70){
+\FPeval\vx{\px+52}%
+\FPeval\vy{\py+3}%
+\only<4>{\put(\vx,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\FPeval\vxr{\vx+73}%
+\only<4>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\FPeval\vxr{\vx+\vy}%
+\only<4>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\FPeval\vxr{\vx+73}%
+\FPeval\vyr{\vy+58}%
+\only<4>{\put(\vxr,\vyr){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\FPeval\sx{\px+270}%
+\FPeval\sy{\py+60}%
+\only<3->{\put(\sx,\sy){
+    \begin{minipage}{0.4\linewidth}
+      \begin{block}{Soft breaking term induced:}
+    \begin{align*}
+      \mathcal{L}\supset & \kappa  \sigma \eta^{\dagger} H\,,
+    \end{align*}
+    \only<3>{where $\kappa=\lambda \langle S \rangle\,.$}%
+\invisible<5>{where $\kappa=\lambda \langle S \rangle\,.$}
+    
+      \end{block}
+  \end{minipage}
+  }}
+\only<4->{\put(0,80){
     \begin{columns}
-      \begin{column}{0.5\textwidth}
-       a 
+      \begin{column}{0.55\textwidth}
+        \begin{align*}
+          -1+\eta=&-\color{red}r\\
+          -{\color{red}r}=&-\color{red}r\\
+          -{\color{red}r}=&-{\color{Green}\nu}+\sigma\\
+          \sigma=&\eta+s
+        \end{align*}
+        \begin{align*}
+          \only<4>{\boldsymbol{N}_c=\boldsymbol{1}\,.}%
+          \only<5>{\color{red}\boldsymbol{N}_c=\boldsymbol{8}\,.}%
+        \end{align*}
       \end{column}
-      \begin{column}{0.5\textwidth}
+      \begin{column}{0.45\textwidth}
 
         \rowcolors{1}{RoyalBlue!20}{}
         \small
   \begin{tabular}{|l|c|l|c|}
 \hline
     Particles& $\operatorname{U}(1)_{B-L}$ & $\left(\operatorname{SU}(3)_c ,\operatorname{SU}(2)_L \right)_Y$\\\hline
- $L_i=\begin{pmatrix}\nu_L& e_L\end{pmatrix}_i^{\operatorname{T}}$                           & $-1$ & $ \left(\mathbf{1},\mathbf{2}\right)_{-1/2}$  \\
- $\overline{\nu_{Ri}}$ & $+1$ & $ \left(\mathbf{1},\mathbf{1}\right)_0$ \\ 
- $\mathcal{Q}_L$    & $-r$ & $ \left(\mathbf{N}_c,\mathbf{1}\right)_0$\\
- $ \overline{\mathcal{Q}_R} $ & $r$ & $ \left(\mathbf{N}_c,\mathbf{1}\right)_0$ \\
- $H$                           &          0  & $ \left(\mathbf{1},\mathbf{2}\right)_{1/2}$ \\ 
- $\sigma_a$                           &  $1-r$   & $ \left(\mathbf{N}_{c},\mathbf{1}\right)_0$ \\
- $\eta_a$                        &  $1-r$   & $ \left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ \\
+    $L_i$                           & $\color{blue}-1$ & $ \left(\mathbf{1},\mathbf{2}\right)_{-1/2}$  \\
+ $H$                           &          0  & $ \left(\mathbf{1},\mathbf{2}\right)_{1/2}$ \\     
+ $\left( \nu_{Ri} \right)^{\dagger}$ & $\color{Green}\nu$ & $ \left(\mathbf{1},\mathbf{1}\right)_0$ \\ 
+    \only<4>{$\psi_L$}\only<5->{$\color{red}\mathcal{Q}_L$}    & $\color{red}-r$ & $ \left(\mathbf{N}_c,\mathbf{1}\right)_0$\\
+ \only<4>{$\left( \psi_R \right)^{\dagger}$}\only<5->{$\color{red}\left( \mathcal{Q}_R \right)^{\dagger}$}   & $\color{red}r$ & $ \left(\mathbf{N}_c,\mathbf{1}\right)_0$ \\
+ $\sigma_a$                           &  ${\color{Green}\nu}-\color{red}r$   & $ \left(\mathbf{N}_{c},\mathbf{1}\right)_0$ \\
+    $\eta_a$                        &  $1-\color{red}r$   & $ \left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ \\
+ $S$                        &  ${\color{Green}\nu}-1$   & $ \left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ \\    
 \hline
   \end{tabular}
 
@@ -194,6 +229,66 @@ Phenomenology Group}%
 \end{frame}
 
 
+\begin{frame}
+  \frametitle{Neutrino masses and mixings}
+  \begin{itemize}
+  \item<1->  $\nu_i$ are free parameter and could be fixed if we impose $\operatorname{U}(1)_{B-L}$ to be local
+  \begin{align*}
+   \color{red} r\ne&\color{red}1\,, & \sum_i   \color{Green} \nu_i =&3\,, & \sum_i \color{Green} \nu_i^3 =&3 
+  \end{align*}
+
+
+  \begin{center}
+      \rowcolors{1}{RoyalBlue!20}{}    
+  \begin{tabular}{rlll}
+    & $\left( \nu_R \right)^{\dagger}_1$ & $\left( \nu_R \right)^{\dagger}_2$ & $\left( \nu_R \right)^{\dagger}_3$ \\
+    $\operatorname{U}(1)_{B-L}$ &$+4$& $+4$& $-5$\\
+    $\operatorname{U}(1)_{B-L}$ &$-6$& $+\dfrac{10}{3}$& $+\dfrac{17}{3}$\\
+  \end{tabular}
+    \end{center}
+  
+  \item<2-> To have at least a rank 2 neutrino mass matrix we need either:
+  \begin{itemize}
+  \item At least two heavy Dirac fermions $\mathcal{Q}_a$, $a=1,2,\ldots$
+  \item \only<2>{At least two sets of scalars $\eta_a$, $\sigma_a$}%
+    \only<3->{\color{red}At least two sets of scalars $\eta_a$, $\sigma_a$}%
+  \end{itemize}
+\item<4> 
+  \begin{align*}
+    \mathcal{L}\supset&\left[ {\color{red}  M_{\mathcal{Q}}\, \left( \mathcal{Q}_R \right)^{\dagger} \mathcal{Q}_L}
+       + h^{a}_i   \left( \mathcal{Q}_R \right)^{\dagger} \widetilde{\eta}^\dagger_a L_i
+  +y^a_i    \overline{\nu_{Ri} }\  \sigma_a^{*} \mathcal{Q}_L  +\text{h.c}\right]
++\kappa^{ab}\, \sigma_a \eta_b^{\dagger} H+\ldots
+  \end{align*}
+  
+  \end{itemize}
+
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Neutrino masses and mixings}
+  %
+\begin{align}
+\left(\mathcal{M}_\nu\right)_{ij}=&N_c\frac{M_{\mathcal{Q}}}{64\pi^2}\sum_{a=1}^2h_{i}^a y_{j}^a\frac{\sqrt{2}\kappa_{aa}v}{m^2_{S_{2R}^a}-m^2_{S_{1R}^a}}\nonumber\\
+&  \left[F\left(\frac{m^2_{S_{2R}^a}}{M_{\mathcal{Q}}^2}\right)-F\left(\frac{m^2_{S_{1R}^a}}{M_{\mathcal{Q}}^2}\right)\right]+(R\to  I)
+\end{align}
+%
+where
+$F(m_{S_\beta}^2/M_Q^2)=m_{S_\beta}^2\log(m_{S_\beta}^2/M_Q^2)/(m_{S_\beta}^2-M_Q^2)$. The four CP-even mass eigenstates are denoted as
+$S_{1R}^1,S_{2R}^1,S_{1R}^2,S_{2R}^2$, with a similar notation for the
+CP-odd ones.
+
+If $(\mu_\eta^{aa})^2\gg M_{\mathcal{Q}}^2$ one has
+\begin{align}
+ &\left(\mathcal{M}_\nu\right)_{ij}=N_c\frac{M_{\mathcal{Q}}}{32\pi^2}\sqrt{2}v\sum_{a=1}^2\kappa^{aa}\frac{h_{i}^a y_{j}^a}{(\mu_\eta^{aa})^2}\\
+ &\sim 0.03\,\mbox{eV}\left(\frac{M_{\mathcal{Q}}}{9.5\, \mbox{TeV}}\right)\left(\frac{\kappa^{aa}}{1\, \mbox{GeV}}\right)\left(\frac{50\,\mbox{TeV}}{\mu_\eta^{aa}}\right)^2\left(\frac{h_{i}^a y_{j}^a}{10^{-6}}\right).\nonumber
+%
+\end{align}
+%
+
+
+\end{frame}
 
 
 \section{Dark matter}
@@ -201,11 +296,11 @@ Phenomenology Group}%
 
 
 
-\begin{frame}
-\begin{picture}(320,250)
-\only<1>{\put(-29,-22){\begin{overpic}[scale=0.126]{darkmatter}\end{overpic}}}%
-\end{picture}
-\end{frame}
+% \begin{frame}
+% \begin{picture}(320,250)
+% \only<1>{\put(-29,-22){\begin{overpic}[scale=0.126]{darkmatter}\end{overpic}}}%
+% \end{picture}
+% \end{frame}
 
 
 

@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
@@ -19,7 +20,7 @@
    inkscape:version="0.92.1 r15371"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
@@ -261,13 +262,13 @@
      inkscape:window-height="1043"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="2.4745833"
-     inkscape:cx="291.76629"
+     inkscape:zoom="2.4334545"
+     inkscape:cx="291.7663"
      inkscape:cy="139.5918"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="layer5"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -302,46 +303,6 @@
        style="display:inline;fill:none;stroke:#231f20;stroke-width:1.33333325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path48"
        inkscape:connector-curvature="0" /><text
-       y="246.66969"
-       x="52.816265"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.12826538px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
-       id="text64"><tspan
-         x="52.816265"
-         y="246.66969"
-         id="tspan60"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325">L</tspan><tspan
-         x="201.61626"
-         y="242.99001"
-         id="tspan62"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325">ψ</tspan></text>
-<text
-       y="245.86969"
-       x="213.77615"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.28351974px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
-       id="text68"><tspan
-         x="213.77615"
-         y="245.86969"
-         id="tspan66"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325">R</tspan></text>
-<text
-       y="242.98999"
-       x="350.25613"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.12826538px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
-       id="text72"><tspan
-         x="350.25613"
-         y="242.98999"
-         id="tspan70"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325">ψ</tspan></text>
-<text
-       y="245.86969"
-       x="362.41653"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.28351974px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
-       id="text76"><tspan
-         x="362.41653"
-         y="245.86969"
-         id="tspan74"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325">L</tspan></text>
-<text
        y="246.66969"
        x="529.61676"
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.28351974px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
@@ -417,7 +378,99 @@
        d="m 1630.2,962.801 -50,20 10,-20 -10,-20 z"
        style="display:inline;fill:none;stroke:#231f20;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path28"
-       inkscape:connector-curvature="0" /></g><g
+       inkscape:connector-curvature="0" /><text
+       id="text4834"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.12826538px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
+       x="52.816265"
+       y="246.66969"><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325"
+         id="tspan4830"
+         y="246.66969"
+         x="52.816265">L</tspan><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325"
+         id="tspan4832"
+         y="242.99001"
+         x="201.61626" /></text>
+<text
+       id="text4834-3"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.12826538px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';writing-mode:lr-tb;display:inline;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;"
+       x="274.68277"
+       y="185.36926"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:1.33333325;fill:#ff0000;"
+         id="tspan4830-6"
+         y="185.36926"
+         x="274.68277"><tspan
+   style="-inkscape-font-specification:'Fira Sans Bold';font-family:'Fira Sans';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan5025">N</tspan><tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64.99999762%;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';baseline-shift:sub;fill:#ff0000"
+   id="tspan5000">c</tspan>=<tspan
+   style="-inkscape-font-specification:'Fira Sans Bold';font-family:'Fira Sans';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan5028">8</tspan></tspan></text>
+<text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="255.39786"
+       y="187.67952"
+       id="text4992"><tspan
+         sodipodi:role="line"
+         id="tspan4990"
+         x="255.39786"
+         y="223.07014" /></text>
+<text
+       y="234.50856"
+       x="284.13901"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.65553284px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Bold';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37008643;"
+       id="text5037"
+       transform="scale(1.0275649,0.97317455)"><tspan
+         x="284.13901"
+         y="234.50856"
+         id="tspan5033"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.66666698px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Bold';stroke-width:1.37008643;">x</tspan></text>
+</g><g
+     inkscape:groupmode="layer"
+     id="layer11"
+     inkscape:label="tree-lvel label"
+     style="display:none"><text
+       transform="translate(-2.8300736,32.10013)"
+       y="246.66969"
+       x="52.816265"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.12826538px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
+       id="text64"><tspan
+         x="201.61626"
+         y="242.99001"
+         id="tspan62"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325">ψ</tspan></text>
+<text
+       transform="translate(-2.8300736,32.10013)"
+       y="245.86969"
+       x="213.77615"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.28351974px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
+       id="text68"><tspan
+         x="213.77615"
+         y="245.86969"
+         id="tspan66"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325">R</tspan></text>
+<text
+       transform="translate(-2.8300736,32.10013)"
+       y="242.98999"
+       x="350.25613"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.12826538px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
+       id="text72"><tspan
+         x="350.25613"
+         y="242.98999"
+         id="tspan70"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325">ψ</tspan></text>
+<text
+       transform="translate(-2.8300736,32.10013)"
+       y="245.86969"
+       x="362.41653"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.28351974px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
+       id="text76"><tspan
+         x="362.41653"
+         y="245.86969"
+         id="tspan74"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325">L</tspan></text>
+</g><g
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="pure tree-level"
@@ -488,7 +541,7 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="-1"
-     style="display:inline"
+     style="display:none"
      transform="translate(-2.8300736,32.10013)"><text
        y="-117.47411"
        x="17.386526"
@@ -519,7 +572,7 @@
      id="layer4"
      inkscape:label="nu"
      transform="translate(-9.78677,33.846071)"
-     style="display:inline"><path
+     style="display:none"><path
        style="display:inline;fill:none;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:url(#marker16097)"
        d="M 590.73936,202.45627 H 539.85947 476.97958"
        id="path5463-0"
@@ -583,7 +636,7 @@
            id="tspan17253"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';fill:#0000ff"><tspan
              id="tspan17249"
-             style="fill:#000000"> </tspan></tspan></tspan></text>
+             style="fill:#000000" /></tspan></tspan></text>
 </g><g
      inkscape:groupmode="layer"
      id="layer10"
@@ -621,7 +674,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="r"
-     style="display:none"
+     style="display:inline"
      transform="translate(-9.78677,33.846071)"><path
        style="fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:url(#marker5430)"
        d="M 421.54655,202.45627 C 388.9541,151.69905 345.93611,123.24336 298.66666,121.70482 251.39721,120.16628 199.8763,145.54489 175.78677,202.45627"
@@ -632,8 +685,12 @@
        inkscape:connector-curvature="0"
        id="path5384"
        d="M 175.78677,202.45627 H 298.66666 421.54655"
-       style="display:inline;fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:url(#Arrow1Lend)" /><text
-       transform="matrix(1.2842161,0,0,1.384329,0,353.33333)"
+       style="display:inline;fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:url(#Arrow1Lend)" /></g><g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="r label"
+     style="display:none"><text
+       transform="matrix(1.2842161,0,0,1.384329,-9.78677,387.1794)"
        id="text14998"
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.81771564px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.96316206"
        x="227.63182"
@@ -646,7 +703,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="loop"
-     style="display:none"
+     style="display:inline"
      transform="translate(-9.78677,33.846071)"><path
        d="m 139.35999,224.95827 c 9.73734,-37.5156 31.92667,-70.6116 62.93334,-93.86626"
        style="fill:none;stroke:#231f20;stroke-width:1.33333325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:12.79715968, 12.79715968;stroke-dashoffset:0;stroke-opacity:1"
@@ -674,19 +731,59 @@
          id="tspan88">η</tspan></text>
 <g
        id="g15002"
-       transform="rotate(60.018143,392.49243,128.68255)" /><text
+       transform="rotate(60.018143,392.49243,128.68255)" /></g><g
+     inkscape:groupmode="layer"
+     id="layer13"
+     inkscape:label="soft"
+     style="display:none"><text
        id="text454-1"
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.34619904px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994"
        x="514.28894"
        y="-253.50696"
-       transform="matrix(1.3333333,0,0,1.3333333,0,353.33333)"><tspan
+       transform="matrix(1.3333333,0,0,1.3333333,-9.78677,387.1794)"><tspan
          id="tspan450-0"
          y="-256.26712"
          x="307.04895"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:0.99999994">S</tspan></text>
 <path
+       transform="translate(-9.78677,33.846071)"
        style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#marker12630)"
        d="M 298.56661,97.259724 350.4465,55.259722 402.3264,13.25972"
        id="path12626"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccc" /></g></svg>
+       sodipodi:nodetypes="ccc" /></g><g
+     inkscape:groupmode="layer"
+     id="layer12"
+     inkscape:label="Q"><image
+       y="259.26959"
+       x="200.66498"
+       id="image4906"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAvCAIAAAAAUC8xAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE 4klEQVRYhe2Yayg0XxzHz+xo12Vdsu2Kdcmt5JooRRQlRS4JES92804k3tgXygtFSiGXZ72g3CJK roWEUqLcLy1a7Io0m0vsLmt2zDwvpuYZs/fR/3nz/L+vfjvn/M5nzm9+53fOWYggCPB3xfnLvH8G 6cTa02g0KhSK29vb29tbBEEEAoFYLE5LSxMKhTY8CQeFoujS0lJlZaW3t7fpaBwOJyMjY2try8oI DiAxDBscHPT396cAnp6eEASZnUlNTQ2GYT9CLiwsREZGAgBSU1OHhoaOj4+1Wi05aaVS2dnZGRcX x6CWl5fjOM4G+fn5WVNTAwBIS0s7PT21EoO+vj4ul0unyuVyh5FqtTopKQmG4ZaWFkuBomt1ddXV 1ZVC8vn8l5cXB5CXl5c+Pj4QBI2OjtqEUZLL5fSJtre324tUq9UBAQEAgF+/ftnPIwgCx/Hk5GQK mZCQYBcSQZDw8HAAQFlZmUM8UtPT0xQShmEy0awhcRzPy8sDAPj4+Dw+PrJAGo1GPp9PUXd3d20g x8bGyK49PT0seKQyMzMp5PLysjUkgiBkWREIBHq9njWytraWQs7Pz9ObmGW9t7f3+fkZACCRSOjp 7qgEAgFl+/n50Zu+ITEMGxgYIO2cnBzWPACAk9OfDUMsFltELi4u3t/fAwB4PF5KSspPkBqNhjR4 PB5jb2EiqfdilC5HhSAIaWRmZnI43yjffiiVStKwvefZ0s7ODmkUFBQw2+i5RJYbAICvry/rXCUI gnp1DoeDIAij9Q8Sx3F6BEzLsf3q7e0lB5FKpaat32bp7u5OIdfW1tjxvr6+YmJiAABcLlelUtlA JiQkUMiioiJ2yNHRUXKEuro6sx2+IRsaGuifeW5uzlEeiqIhISEAgMjISJ1OZxt5dXVF/5xubm4r KyuWRj8+Pm5sbGRkR1tbGwCAz+crFApLjswaK5PJGCktkUi2t7e/vr7IDm9vbwsLCwUFBRAE1dfX 0303NzdhGOZwOFNTU5Z4ZpAoipaUlJiuM2dn56CgIJFIRB7pYmNj19fX6Y4KhUIkEsEwPDExYYVn BkkQBIZhXV1d9LpMyd3dXSKRrK6uMs5B5+fnvr6+XC53ZmbGOo8gCIiwcPNCUXRjY+Pg4ECj0Xh7 e4eGhoaFhUVFRbm4uNC7EQQxPDxcXV0tFArHx8eTkpLMjgYYPqylUqmKi4sBAOXl5a+vr3Z6sUEa DIbZ2dns7GwIgiIiIuwJJl3mr0F6vV6pVH58fGAYptfrdTqdTqd7eno6OTk5PDw8OzszGo1isbi/ v18qldK3RrO6ubkJDg62GFij0djc3Ozl5WXJH4bh/Pz82dlZFEVtTmhqaiouLk4gENBvCkyk2RVC V3p6+uTkJOOcaFbUAaO1tZX+nJmx+/v7l5eXKpVKrVbf3NxsbW1ptVpTMI/Hy8rKKiwszM3NNXvr +/j4CAwMfHx8lEgkAwMD33Zp629qMBiWlpaqqqrodzxGnBMTE6urq0dGRo6Ojh4eHt7f36+vr0tL SwEAFRUVjBVsMBjszVgcx/f29pqamuLj461HnpSrq2t3dzdVJil1dHSwWSR3d3dyuTwnJ8fDw8MU 5u/vL5PJTA8DlCxWH3tEEIRarb64uHh5edHpdEKhMCQkJDo62tLVmtSPkOz0b/zv8z/yP9JvCyG+ ulo2KRoAAAAASUVORK5CYII= "
+       preserveAspectRatio="none"
+       height="20"
+       width="16.170214" /><text
+       id="text4927"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.28351974px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
+       x="214.7867"
+       y="278.76984"><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325"
+         id="tspan4925"
+         y="278.76984"
+         x="214.7867">R</tspan></text>
+<image
+       width="16.170214"
+       height="20"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAvCAIAAAAAUC8xAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE 4klEQVRYhe2Yayg0XxzHz+xo12Vdsu2Kdcmt5JooRRQlRS4JES92804k3tgXygtFSiGXZ72g3CJK roWEUqLcLy1a7Io0m0vsLmt2zDwvpuYZs/fR/3nz/L+vfjvn/M5nzm9+53fOWYggCPB3xfnLvH8G 6cTa02g0KhSK29vb29tbBEEEAoFYLE5LSxMKhTY8CQeFoujS0lJlZaW3t7fpaBwOJyMjY2try8oI DiAxDBscHPT396cAnp6eEASZnUlNTQ2GYT9CLiwsREZGAgBSU1OHhoaOj4+1Wi05aaVS2dnZGRcX x6CWl5fjOM4G+fn5WVNTAwBIS0s7PT21EoO+vj4ul0unyuVyh5FqtTopKQmG4ZaWFkuBomt1ddXV 1ZVC8vn8l5cXB5CXl5c+Pj4QBI2OjtqEUZLL5fSJtre324tUq9UBAQEAgF+/ftnPIwgCx/Hk5GQK mZCQYBcSQZDw8HAAQFlZmUM8UtPT0xQShmEy0awhcRzPy8sDAPj4+Dw+PrJAGo1GPp9PUXd3d20g x8bGyK49PT0seKQyMzMp5PLysjUkgiBkWREIBHq9njWytraWQs7Pz9ObmGW9t7f3+fkZACCRSOjp 7qgEAgFl+/n50Zu+ITEMGxgYIO2cnBzWPACAk9OfDUMsFltELi4u3t/fAwB4PF5KSspPkBqNhjR4 PB5jb2EiqfdilC5HhSAIaWRmZnI43yjffiiVStKwvefZ0s7ODmkUFBQw2+i5RJYbAICvry/rXCUI gnp1DoeDIAij9Q8Sx3F6BEzLsf3q7e0lB5FKpaat32bp7u5OIdfW1tjxvr6+YmJiAABcLlelUtlA JiQkUMiioiJ2yNHRUXKEuro6sx2+IRsaGuifeW5uzlEeiqIhISEAgMjISJ1OZxt5dXVF/5xubm4r KyuWRj8+Pm5sbGRkR1tbGwCAz+crFApLjswaK5PJGCktkUi2t7e/vr7IDm9vbwsLCwUFBRAE1dfX 0303NzdhGOZwOFNTU5Z4ZpAoipaUlJiuM2dn56CgIJFIRB7pYmNj19fX6Y4KhUIkEsEwPDExYYVn BkkQBIZhXV1d9LpMyd3dXSKRrK6uMs5B5+fnvr6+XC53ZmbGOo8gCIiwcPNCUXRjY+Pg4ECj0Xh7 e4eGhoaFhUVFRbm4uNC7EQQxPDxcXV0tFArHx8eTkpLMjgYYPqylUqmKi4sBAOXl5a+vr3Z6sUEa DIbZ2dns7GwIgiIiIuwJJl3mr0F6vV6pVH58fGAYptfrdTqdTqd7eno6OTk5PDw8OzszGo1isbi/ v18qldK3RrO6ubkJDg62GFij0djc3Ozl5WXJH4bh/Pz82dlZFEVtTmhqaiouLk4gENBvCkyk2RVC V3p6+uTkJOOcaFbUAaO1tZX+nJmx+/v7l5eXKpVKrVbf3NxsbW1ptVpTMI/Hy8rKKiwszM3NNXvr +/j4CAwMfHx8lEgkAwMD33Zp629qMBiWlpaqqqrodzxGnBMTE6urq0dGRo6Ojh4eHt7f36+vr0tL SwEAFRUVjBVsMBjszVgcx/f29pqamuLj461HnpSrq2t3dzdVJil1dHSwWSR3d3dyuTwnJ8fDw8MU 5u/vL5PJTA8DlCxWH3tEEIRarb64uHh5edHpdEKhMCQkJDo62tLVmtSPkOz0b/zv8z/yP9JvCyG+ ulo2KRoAAAAASUVORK5CYII= "
+       id="image4947"
+       x="344.66498"
+       y="259.26959" /><text
+       y="278.76984"
+       x="358.78668"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.28351974px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
+       id="text4951"><tspan
+         x="358.78668"
+         y="278.76984"
+         id="tspan4949"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325">L</tspan></text>
+</g></svg>
