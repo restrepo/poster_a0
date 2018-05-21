@@ -6,7 +6,7 @@
 \widescreen
 
 
-\title{Scotogenic models}
+\title{Colored Scotogenic models}
 \subtitle{Collider signals}
 
 
@@ -78,6 +78,122 @@ Phenomenology Group}%
 \end{frame}
 
 %\section{Motivation}
+
+
+
+
+
+\begin{frame}
+  \frametitle{Outline}
+  SM+$\nu_R$ with exotic $B-L$ is equivalent to SM
+
+  Hypothesis:
+  \begin{itemize}
+  \item Only one extra symmetry
+  \item Vector-like extra heavy fermions
+  \end{itemize}
+\end{frame}
+
+
+\section{Exotic $B-L$}
+
+\begin{frame}
+  \frametitle{SM-like $B-L$ model}
+  $ \left( \nu_R \right)^{\dagger}_i: \nu_i  $
+
+  \begin{itemize}
+  \item No neutrino masses. %check grammar
+  \item No DM, 
+  \end{itemize}
+
+  SM+$\nu_R$ with exotic $B-L$ is equivalent to SM  
+\end{frame}
+
+
+
+\section{(Dirac) Neutrino masses}
+
+
+\begin{frame}
+  \frametitle{Seesaw mechanism}
+
+ For Dirac neutrino masses: we require to intruce at least one SM-singlet heavy Dirac fermión
+ \begin{align}
+   \mathcal{L}=i\, \overline{\psi} \gamma^{\mu}\partial_{\mu}\psi -m \,\overline{\psi} \psi\,.
+ \end{align}
+
+ The required $\operatorname{U}(1)$ symmetric for its diracness if
+ idientified with $B-L$
+
+ \begin{center}
+    \rowcolors{1}{RoyalBlue!20}{}
+ \begin{tabular}{lr}
+   Field & $\operatorname{U}(1)_{B-L}$ \\ \hline
+   $L$   & -1\\
+   $H$   & 0\\
+   $\left( \nu_R \right)^{\dagger}_i$ & $\nu_i$\\
+   $\left( \psi_R \right)^{\dagger}$ & $r$\\
+  $\psi_L$ & $-r$\\ \hline
+ \end{tabular}
+ \end{center}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{
+    \only<1>{$\cancel{\text{tree-level}}$}%
+    \only<2>{$\nu\ne -1$}%
+    \only<3>{Radiative Dirac seesaw}%
+  }
+\def\pscale{0.6}
+\def\px{80}
+\def\py{140}
+\begin{picture}(320,250)
+\only<1>{\put(\px,\py){\includegraphics[scale=\pscale]{dm1}}}%
+\only<2>{\put(\px,\py){\includegraphics[scale=\pscale]{dm2}}}%
+\only<3->{\put(\px,\py){%\includegraphics[scale=\pscale]{dm3}
+    \begin{overpic}[scale=\pscale,grid]{dm3}
+    \end{overpic}
+  }}%  
+%%% circle
+\only<1>{\put(80,50){$\left( \psi_L \right)^{\dagger}\nu_R\sigma \to
+    \nu_R \nu_R \sigma  $ }}
+\only<4>{\put(72,133){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\only<4>{\put(125,143){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\only<4>{\put(147,143){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\only<3->{\put(0,70){
+    \begin{columns}
+      \begin{column}{0.5\textwidth}
+       a 
+      \end{column}
+      \begin{column}{0.5\textwidth}
+
+        \rowcolors{1}{RoyalBlue!20}{}
+        \small
+  \begin{tabular}{|l|c|l|c|}
+\hline
+    Particles& $\operatorname{U}(1)_{B-L}$ & $\left(\operatorname{SU}(3)_c ,\operatorname{SU}(2)_L \right)_Y$\\\hline
+ $L_i=\begin{pmatrix}\nu_L& e_L\end{pmatrix}_i^{\operatorname{T}}$                           & $-1$ & $ \left(\mathbf{1},\mathbf{2}\right)_{-1/2}$  \\
+ $\overline{\nu_{Ri}}$ & $+1$ & $ \left(\mathbf{1},\mathbf{1}\right)_0$ \\ 
+ $\mathcal{Q}_L$    & $-r$ & $ \left(\mathbf{N}_c,\mathbf{1}\right)_0$\\
+ $ \overline{\mathcal{Q}_R} $ & $r$ & $ \left(\mathbf{N}_c,\mathbf{1}\right)_0$ \\
+ $H$                           &          0  & $ \left(\mathbf{1},\mathbf{2}\right)_{1/2}$ \\ 
+ $\sigma_a$                           &  $1-r$   & $ \left(\mathbf{N}_{c},\mathbf{1}\right)_0$ \\
+ $\eta_a$                        &  $1-r$   & $ \left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ \\
+\hline
+  \end{tabular}
+
+        
+      \end{column}
+    \end{columns}
+  }}
+\end{picture}
+
+  
+\end{frame}
+
+
 
 
 \section{Dark matter}
@@ -1204,7 +1320,17 @@ amarillo y contorno rojo}
 \put(40,38){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (2,0.5);}
   \end{overpic}
 }
+\only<1->{\put(34,158.5){ some text  }}%
+\only<1->{\put(-20,140){\includegraphics[scale=0.8]{T3}}}%
 }
+  \only<2->{\put(-10,70){
+      \begin{minipage}[t]{1.0\linewidth}
+      \begin{block}{ \includegraphics[scale=0.1]{new} Globall symmetries safe for high multiplets:}
+     Catà, Ibarra, Ingenhütt arXiv:1611.00725 (PRD), arXiv:1707.08480 (JCAP)    
+      \end{block}
+      \end{minipage}
+%
+  }}
 %%%circle
 \end{picture}
 \end{frame}
