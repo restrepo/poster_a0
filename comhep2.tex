@@ -5,9 +5,21 @@
 \usepackage{fp}
 \widescreen
 
+\newenvironment<>{varblock}[2][.9\textwidth]{%
+  \setlength{\textwidth}{#1}
+  \begin{actionenv}#3%
+    \def\insertblocktitle{#2}%
+    \par%
+    \usebeamertemplate{block begin}}
+  {\par%
+    \usebeamertemplate{block end}%
+  \end{actionenv}}
 
-\title{Colored Scotogenic models}
-\subtitle{Collider signals}
+
+
+
+\title{Colored Scotogenic}
+\subtitle{with dirac neutrino masses}
 
 
 %\subtitle
@@ -21,13 +33,13 @@ Universidad de Antioquia\\
 Phenomenology Group}%
 {http://gfif.udea.edu.co}%
 {}%
-{HEP}%
+{mt}%
 {}
-\arxiv{arXiv:1706.08240, arXiv:1709.09796}
-\collaborators{ Bhaskar Dutta, Guillermo Palacio, José Ruíz, Ernest~Ma\& Óscar~Zapata}
+\arxiv{arXiv:1803.08528}
+\collaborators{Mario Reig, Jose Valle (IFIC Valencia), Oscar Zapata (UdeA) }
 }
 
-\date{\tiny January 9, 2017 } % (optional) \today
+\date{\tiny May 22, 2018 } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -55,6 +67,7 @@ Phenomenology Group}%
 %    \tableofcontents[currentsection,currentsubsection]
 %  \end{frame}
 %}
+\setbeamercolor{block title}{bg=black!90,fg=white}
 
 \newcommand{\chml}[2]{$\underline{\text{#1\hspace{#2}}}$}
 \begin{document}
@@ -83,30 +96,33 @@ Phenomenology Group}%
 
 
 
-\begin{frame}
-  \frametitle{Outline}
-  SM+$\nu_R$ with exotic $B-L$ is equivalent to SM
-
-  Hypothesis:
-  \begin{itemize}
-  \item Only one extra symmetry
-  \item Vector-like extra heavy fermions
-  \end{itemize}
-\end{frame}
 
 
 \section{Exotic $B-L$}
 
 \begin{frame}
   \frametitle{SM-like $B-L$ model}
-  $ \left( \nu_R \right)^{\dagger}_i: \nu_i  $
+ \begin{center}
+    \rowcolors{1}{RoyalBlue!20}{}
+ \begin{tabular}{lr}
+   Field & $\operatorname{U}(1)_{B-L}$ \\ \hline
+   $L$   & -1\\
+   $H$   & 0\\
+   $\left( \nu_R \right)^{\dagger}_i$ & $\nu_i$\\
+ \end{tabular}
+ \end{center}
 
+If $\nu_i\ne 0$
   \begin{itemize}
   \item No neutrino masses. %check grammar
   \item No DM, 
   \end{itemize}
 
-  SM+$\nu_R$ with exotic $B-L$ is equivalent to SM  
+  \setbeamercolor{block title}{bg=yellow!30,fg=black}
+  \begin{varblock}[12cm]{  SM+$\nu_R$ with exotic $B-L$ charges is equivalent to SM }      
+  \end{varblock}
+  six massless neutrinos instead of three
+ 
 \end{frame}
 
 
@@ -117,13 +133,13 @@ Phenomenology Group}%
 \begin{frame}
   \frametitle{Seesaw mechanism}
 
- For Dirac neutrino masses: we require to intruce at least one SM-singlet heavy Dirac fermión (Weyl fermion notation)
+ For Dirac neutrino masses: we require to introduce at least one SM-singlet heavy Dirac fermión (Weyl fermion notation)
  \begin{align}
    \mathcal{L}=i\, \left( \psi _L \right)^{\dagger}\overline{\sigma}^{\mu}\partial_{\mu}\psi_L -m \,\left( \psi _R \right)^{\dagger}\psi_L+\text{h.c}\,.
  \end{align}
 
- The required $\operatorname{U}(1)$ symmetric for its diracness if
- idientified with $B-L$
+ The required $\operatorname{U}(1)$ symmetry is
+ identified with $B-L$
 
  \begin{center}
     \rowcolors{1}{RoyalBlue!20}{}
@@ -270,8 +286,8 @@ Phenomenology Group}%
   \frametitle{Neutrino masses and mixings}
   %
 \begin{align}
-\left(\mathcal{M}_\nu\right)_{ij}=&N_c\frac{M_{\mathcal{Q}}}{64\pi^2}\sum_{a=1}^2h_{i}^a y_{j}^a\frac{\sqrt{2}\kappa_{aa}v}{m^2_{S_{2R}^a}-m^2_{S_{1R}^a}}\nonumber\\
-&  \left[F\left(\frac{m^2_{S_{2R}^a}}{M_{\mathcal{Q}}^2}\right)-F\left(\frac{m^2_{S_{1R}^a}}{M_{\mathcal{Q}}^2}\right)\right]+(R\to  I)
+\left(\mathcal{M}_\nu\right)_{ij}=&N_c\frac{M_{\mathcal{Q}}}{64\pi^2}\sum_{a=1}^2h_{i}^a y_{j}^a\frac{\sqrt{2}\kappa_{aa}v}{m^2_{S_{2R}^a}-m^2_{S_{1R}^a}}
+  \left[F\left(\frac{m^2_{S_{2R}^a}}{M_{\mathcal{Q}}^2}\right)-F\left(\frac{m^2_{S_{1R}^a}}{M_{\mathcal{Q}}^2}\right)\right]+(R\to  I)
 \end{align}
 %
 where
@@ -351,6 +367,7 @@ Because $\mathcal{Q}$ is a Dirac fermion, $\mathcal{Q} \mathcal{Q}$ is also stab
   \includegraphics[scale=0.52]{sigmaSI}
 \end{frame}
 
+%https://www.fodey.com/generators/newspaper/snippet.asp
 \begin{frame}
   \frametitle{One year later$\cdots$}
     \includegraphics[scale=0.52]{headline1}
@@ -358,11 +375,63 @@ Because $\mathcal{Q}$ is a Dirac fermion, $\mathcal{Q} \mathcal{Q}$ is also stab
 
 
 \begin{frame}
-  \frametitle{Ten years later$\cdots$}
-    \includegraphics[scale=0.52]{newspaper}
+  \frametitle{Twenty years later$\cdots$}
+  \begin{columns}
+    \begin{column}{0.5\linewidth}
+        \includegraphics[scale=0.52]{newspaper}
+    \end{column}
+    \begin{column}{0.5\linewidth}
+      \begin{block}{Long lived hadrons}
+        \begin{align*}
+          p+p \longrightarrow &\mathcal{Q}+\overline{Q}\\
+          & \Downarrow\\
+          \mathcal{Q} \to \mathcal{Q}g\qquad &\qquad \mathcal{Q}\to\mathcal{Q} q\overline{q}  
+        \end{align*}
+      \end{block}
+      \begin{align*}
+        \sqrt{s}=65\ \text{TeV needed to discover } M_{\mathcal{Q}}=9.5\ \text{TeV}\,.
+      \end{align*}
+    \end{column}
+  \end{columns}
 \end{frame}
 
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{explosion}}  
+\begin{frame}
+  \frametitle{Conclusions}
 
+  Standard Model with right-handed neutrinos of exotic $B-L$ charges
+  \setbeamercolor{block body}{use=structure,fg=black,bg=white}
+
+  \begin{block}<2>{Dirac neutrino masses and DM}
+    \begin{itemize}
+    \item Spontaneously broken $U(1)_{B-L}$ generates a radiative Dirac Type-I seesaw.
+  \item A remnant symmetry makes the lightest field circulating the loop stable and good dark matter candidate.
+  \item If color is also circulating the loop, the colored dark matter scenario can be realized
+    \begin{columns}
+      \begin{column}{0.05\textwidth}
+        
+      \end{column}
+      \begin{column}{0.95\textwidth}
+              \setbeamercolor{block title}{bg=red!30,fg=black}
+   \hspace{8cm}   \begin{varblock}[12cm]{DM is made of two color octets with mass around $9.5\ \text{TeV}$}      
+      \end{varblock}
+
+    \item For standard cosmology:
+      \begin{itemize}
+      \item A single point to be discovered in in Direct Detection.
+            \item Crosscheck at future colliders possible.
+      \end{itemize}
+
+      \end{column}
+
+    \end{columns}
+    \end{itemize}
+  \end{block}
+\end{frame}
+}
+
+\end{document}
 
 \section{radiative seesaw}
 \begin{frame}
