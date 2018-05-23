@@ -16,10 +16,15 @@
   \end{actionenv}}
 
 
+% set block transparency: https://tex.stackexchange.com/a/44716/59580
+\addtobeamertemplate{block begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
+\addtobeamertemplate{block alerted begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
+\addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
+
 
 
 \title{Colored Scotogenic}
-\subtitle{with dirac neutrino masses}
+\subtitle{with Dirac neutrino masses}
 
 
 %\subtitle
@@ -108,11 +113,11 @@ Phenomenology Group}%
    Field & $\operatorname{U}(1)_{B-L}$ \\ \hline
    $L$   & -1\\
    $H$   & 0\\
-   $\left( \nu_R \right)^{\dagger}_i$ & $\nu_i$\\
+   $\left( \nu_R \right)^{\dagger}_i$ & $\color{Green}\nu_i$\\
  \end{tabular}
  \end{center}
 
-If $\nu_i\ne 0$
+If $\color{Green}\nu_i\ne 0$
   \begin{itemize}
   \item No neutrino masses. %check grammar
   \item No DM, 
@@ -147,9 +152,9 @@ If $\nu_i\ne 0$
    Field & $\operatorname{U}(1)_{B-L}$ \\ \hline
    $L$   & -1\\
    $H$   & 0\\
-   $\left( \nu_R \right)^{\dagger}_i$ & $\nu_i$\\
-   $\left( \psi_R \right)^{\dagger}$ & $r$\\
-  $\psi_L$ & $-r$\\ \hline
+   $\left( \nu_R \right)^{\dagger}_i$ & $\color{Green}\nu_i$\\
+   $\left( \psi_R \right)^{\dagger}$ & $\color{red}r$\\
+  $\psi_L$ & $\color{red}-r$\\ \hline
  \end{tabular}
  \end{center}
 
@@ -197,8 +202,7 @@ If $\nu_i\ne 0$
     \begin{align*}
       \mathcal{L}\supset & \kappa  \sigma \eta^{\dagger} H\,,
     \end{align*}
-    \only<3>{where $\kappa=\lambda \langle S \rangle\,.$}%
-\invisible<5>{where $\kappa=\lambda \langle S \rangle\,.$}
+    \invisible<5>{where $\kappa=\lambda \langle S \rangle\,.$}
     
       \end{block}
   \end{minipage}
@@ -227,12 +231,11 @@ If $\nu_i\ne 0$
     $L_i$                           & $\color{blue}-1$ & $ \left(\mathbf{1},\mathbf{2}\right)_{-1/2}$  \\
  $H$                           &          0  & $ \left(\mathbf{1},\mathbf{2}\right)_{1/2}$ \\     
  $\left( \nu_{Ri} \right)^{\dagger}$ & $\color{Green}\nu$ & $ \left(\mathbf{1},\mathbf{1}\right)_0$ \\ 
-    \only<4>{$\psi_L$}\only<5->{$\color{red}\mathcal{Q}_L$}    & $\color{red}-r$ & $ \left(\mathbf{N}_c,\mathbf{1}\right)_0$\\
- \only<4>{$\left( \psi_R \right)^{\dagger}$}\only<5->{$\color{red}\left( \mathcal{Q}_R \right)^{\dagger}$}   & $\color{red}r$ & $ \left(\mathbf{N}_c,\mathbf{1}\right)_0$ \\
- $\sigma_a$                           &  ${\color{Green}\nu}-\color{red}r$   & $ \left(\mathbf{N}_{c},\mathbf{1}\right)_0$ \\
-    $\eta_a$                        &  $1-\color{red}r$   & $ \left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ \\
- $S$                        &  ${\color{Green}\nu}-1$   & $ \left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ \\    
-\hline
+    \only<4>{$\psi_L$}\only<5->{$\color{red}\mathcal{Q}_L$}    & $\color{red}-r$ & $ \left(\only<4>{\mathbf{N}_c}\only<5>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$\\
+ \only<4>{$\left( \psi_R \right)^{\dagger}$}\only<5->{$\color{red}\left( \mathcal{Q}_R \right)^{\dagger}$}   & $\color{red}r$ & $ \left(\only<4>{\mathbf{N}_c}\only<5>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$ \\
+    $\sigma_a$                           &  ${\color{Green}\nu}-\color{red}r$   & $ \left(\only<4>{\mathbf{N}_c}\only<5>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$ \\
+    $\eta_a$                        &  $1-\color{red}r$   & $ \left(\only<4>{\mathbf{N}_c}\only<5>{{\color{red}\mathbf{N}_c}},\mathbf{2}\right)_{1/2}$ \\
+    \invisible<5>{$S$}                        &  \invisible<5>{ ${\color{Green}\nu}-1$ }  & $  \invisible<5>{ \left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ }\\  
   \end{tabular}
 
         
