@@ -138,6 +138,44 @@ If $\color{Green}\nu_i\ne 0$
   \end{varblock}
   six massless neutrinos instead of three
 
+  \begin{picture}(100,10)
+    \put(10,270){{\Huge \alert{Colored Scotogenic.}  }}
+    \put(350,270){
+      \begin{minipage}{0.5\linewidth}
+        \centering
+        {\large\textbf{\alert{Diego Restrepo} }  }\\
+        \alert{Instituto de Física}\\
+        \alert{Universidad de Antioquia}
+      \end{minipage}
+    }
+    \put(700,270){
+      \begin{minipage}{0.5\linewidth}
+        \centering
+        \alert{\textbf{Focus on}: arXiv:1803.08528 [PRD]}\\
+        \alert{\textbf{In collaboration with}:} \\
+        Mario Reig, Jose Valle (IFIC Valencia),\\
+        Oscar Zapata (UdeA)
+% \arxiv{arXiv:1803.08528}
+% \collaborators{Mario Reig, Jose Valle (IFIC Valencia), Oscar Zapata (UdeA) }
+      \end{minipage}
+    }
+
+%     \author{Diego Restrepo}
+% % - Use the \inst{?} command only if the authors have different
+% %   affiliation.
+% \institute{\affiliation{\\
+% \\
+% Phenomenology Group}%
+% {http://gfif.udea.edu.co}%
+% {}%
+% {mt}%
+% {}
+% \arxiv{arXiv:1803.08528}
+% \collaborators{Mario Reig, Jose Valle (IFIC Valencia), Oscar Zapata (UdeA) }
+% }
+
+  \end{picture}
+  
 \end{frame}
 
 
@@ -167,6 +205,22 @@ If $\color{Green}\nu_i\ne 0$
  \end{tabular}
  \end{center}
 
+  \begin{picture}(100,10)
+    \put(-200,-60){
+      \begin{minipage}{2.0\linewidth}
+        if we impose $\operatorname{U}(1)_{B-L}$ to be local:\hspace{2cm}
+%   \begin{center}
+      \rowcolors{1}{RoyalBlue!20}{}    
+  \begin{tabular}{rlll}
+    & $\left( \nu_R \right)^{\dagger}_1$ & $\left( \nu_R \right)^{\dagger}_2$ & $\left( \nu_R \right)^{\dagger}_3$ \\
+    $\operatorname{U}(1)_{B-L}$ &$+4$& $+4$& $-5$\\
+    $\operatorname{U}(1)_{B-L}$ &$-6$& $+\dfrac{10}{3}$& $+\dfrac{17}{3}$\\
+  \end{tabular}
+%     \end{center}
+      \end{minipage}
+}
+\end{picture}
+ 
 \end{frame}
 
 
@@ -198,6 +252,17 @@ If $\color{Green}\nu_i\ne 0$
 \only<1>{\put(\vxr,\vyr){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
 \FPeval\sx{\px+270}%
 \FPeval\sy{\py+60}%
+\only<1>{\put(\sx,\sy){
+    \begin{minipage}{0.4\linewidth}
+      \begin{block}{Soft breaking term induced:}
+    \begin{align*}
+      \mathcal{L}\supset & \kappa  \sigma \eta^{\dagger} H\,,
+    \end{align*}
+    \invisible<5>{where $\kappa=\lambda \langle S \rangle\,.$}
+    
+      \end{block}
+  \end{minipage}
+  }}
 \only<1->{\put(0,80){
     \begin{columns}
       \begin{column}{0.55\textwidth}
@@ -233,6 +298,27 @@ If $\color{Green}\nu_i\ne 0$
       \end{column}
     \end{columns}
   }}
+\only<2>{
+    \put(-320,-20){
+      \begin{minipage}{1.4\linewidth}
+        \begin{columns}
+          \begin{column}{0.5\linewidth}
+            To have at least a rank 2 neutrino mass matrix we need:\\
+            At least two sets of scalars $\eta_a$, $\sigma_a$
+          \end{column}
+          \begin{column}{0.5\linewidth}
+  \begin{align*}
+    \mathcal{L}\supset&\left[ {\color{red}  M_{\mathcal{Q}}\, \left( \mathcal{Q}_R \right)^{\dagger} \mathcal{Q}_L}
+       + h^{a}_i   \left( \mathcal{Q}_R \right)^{\dagger} \widetilde{\eta}^\dagger_a L_i
+  +y^a_i    \overline{\nu_{Ri} }\  \sigma_a^{*} \mathcal{Q}_L  +\text{h.c}\right]
++\kappa^{ab}\, \sigma_a \eta_b^{\dagger} H+\ldots
+  \end{align*}
+          \end{column}
+        \end{columns}
+      \end{minipage}
+}
+}
+
 \end{picture}
 
   
@@ -313,9 +399,9 @@ If $\color{Green}\nu_i\ne 0$
 \begin{frame}
 \begin{picture}(320,250)
 \only<1>{\put(-24,-22){\begin{overpic}[scale=0.352]{zN}\end{overpic}}}%
-\only<1->{\put(310,180){\begin{overpic}[scale=0.15]{Q}\end{overpic}}}%
-\only<1->{\put(160,40){ \begin{overpic}[scale=0.15]{sigmas}\end{overpic}}}%
-\only<1->{\put(220,40){ \begin{overpic}[scale=0.15]{etas}\end{overpic}}}%
+\only<1->{\put(280,180){\begin{overpic}[scale=0.15]{Q}\end{overpic}}}%
+\only<1->{\put(110,-30){ \begin{overpic}[scale=0.15]{sigmas}\end{overpic}}}%
+\only<1->{\put(220,-20){ \begin{overpic}[scale=0.15]{etas}\end{overpic}}}%
 \end{picture}
 \end{frame}
 
@@ -331,35 +417,33 @@ Because $\mathcal{Q}$ is a Dirac fermion, $\mathcal{Q} \mathcal{Q}$ is also stab
   \mathcal{Q}\mathcal{Q}\, \cancel{\to} &\, g\,, &\overline{\mathcal{Q}}\overline{\mathcal{Q}}\, \cancel{\to} &\, g\,.
 \end{align*}
 
-    \includegraphics[scale=0.09]{dmsteps}
+\includegraphics[scale=0.09]{dmsteps}
+
+\begin{picture}(100,10)
+    \put(-140,-8){
+      \begin{minipage}{1.0\linewidth}
+        \includegraphics[scale=0.14]{relden}
+        \tiny{From: \url{http://bit.ly/Mitridate_53d_53rd_Rencontres_de_Moriond} }
+      \end{minipage}
+}
+\end{picture}
+
   
 \end{frame}
 
 
-\begin{frame}
-  \frametitle{Relic abundance. \footnotesize From: \url{http://bit.ly/Mitridate_53d_53rd_Rencontres_de_Moriond}  }
-  \includegraphics[scale=0.3]{relden} 
-\end{frame}
+% \begin{frame}
+%   \frametitle{Relic abundance. \footnotesize From: \url{http://bit.ly/Mitridate_53d_53rd_Rencontres_de_Moriond}  }
+%   \includegraphics[scale=0.3]{relden} 
+% \end{frame}
 
 \begin{frame}
-  \frametitle{Direct detection}
-  \includegraphics[scale=0.52]{sigmaSI}
-\end{frame}
-
-%https://www.fodey.com/generators/newspaper/snippet.asp
-\begin{frame}
-  \frametitle{One year later$\cdots$}
-    \includegraphics[scale=0.52]{headline1}
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{Twenty years later$\cdots$}
+  \frametitle{Direct detection \& Collider Physics}
   \begin{columns}
-    \begin{column}{0.5\linewidth}
-        \includegraphics[scale=0.52]{newspaper}
+    \begin{column}{0.6\linewidth}
+  \includegraphics[scale=0.45]{sigmaSI}
     \end{column}
-    \begin{column}{0.5\linewidth}
+    \begin{column}{0.3\linewidth}
       \begin{block}{Long lived hadrons}
         \begin{align*}
           p+p \longrightarrow &\mathcal{Q}+\overline{\mathcal{Q}}\\
@@ -368,11 +452,43 @@ Because $\mathcal{Q}$ is a Dirac fermion, $\mathcal{Q} \mathcal{Q}$ is also stab
         \end{align*}
       \end{block}
       \begin{align*}
-        \sqrt{s}=65\ \text{TeV needed to discover } M_{\mathcal{Q}}=9.5\ \text{TeV}\,.
+        \sqrt{s}=&65\ \text{TeV needed to discover }\\
+         M_{\mathcal{Q}}=&9.5\ \text{TeV}\,.
       \end{align*}
     \end{column}
   \end{columns}
+
+  
+
 \end{frame}
+
+% %https://www.fodey.com/generators/newspaper/snippet.asp
+% \begin{frame}
+%   \frametitle{One year later$\cdots$}
+%     \includegraphics[scale=0.52]{headline1}
+% \end{frame}
+
+
+% \begin{frame}
+%   \frametitle{Twenty years later$\cdots$}
+%   \begin{columns}
+%     \begin{column}{0.5\linewidth}
+%         \includegraphics[scale=0.52]{newspaper}
+%     \end{column}
+%     \begin{column}{0.5\linewidth}
+%       \begin{block}{Long lived hadrons}
+%         \begin{align*}
+%           p+p \longrightarrow &\mathcal{Q}+\overline{\mathcal{Q}}\\
+%           & \Downarrow\\
+%           \mathcal{Q} \to \mathcal{Q}g\qquad &\qquad \mathcal{Q}\to\mathcal{Q} q\overline{q}  
+%         \end{align*}
+%       \end{block}
+%       \begin{align*}
+%         \sqrt{s}=65\ \text{TeV needed to discover } M_{\mathcal{Q}}=9.5\ \text{TeV}\,.
+%       \end{align*}
+%     \end{column}
+%   \end{columns}
+% \end{frame}
 
 {
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{explosion}}  
@@ -382,7 +498,7 @@ Because $\mathcal{Q}$ is a Dirac fermion, $\mathcal{Q} \mathcal{Q}$ is also stab
   Standard Model with right-handed neutrinos of exotic $B-L$ charges
   \setbeamercolor{block body}{use=structure,fg=black,bg=white}
 
-  \begin{block}<2>{Dirac neutrino masses and DM}
+  \begin{block}<1>{Dirac neutrino masses and DM}
     \begin{itemize}
     \item Spontaneously broken $U(1)_{B-L}$ generates a radiative Dirac Type-I seesaw.
   \item A remnant symmetry makes the lightest field circulating the loop stable and good dark matter candidate.
@@ -398,7 +514,7 @@ Because $\mathcal{Q}$ is a Dirac fermion, $\mathcal{Q} \mathcal{Q}$ is also stab
 
     \item For standard cosmology:
       \begin{itemize}
-      \item A single point to be discovered in in Direct Detection.
+      \item A single point to be discovered in Direct Detection.
             \item Crosscheck at future colliders possible.
       \end{itemize}
 
