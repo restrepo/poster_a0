@@ -6,7 +6,13 @@
 
 \widescreen
 
-%\usepackage{pgffor}
+
+%\renewcommand{\baselinestretch}{2.0}
+%\usepackage[bottom=0.5in]{geometry}
+\addtolength{\topmargin}{15mm}
+% \addtolength{\textheight}{500mm}
+
+% \usepackage{pgffor}
 \usepackage{pgfpages}
 %\usepackage{pgf}
 
@@ -27,6 +33,11 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
+%\pgfpageslogicalpageoptions{1}
+%{%center logical page on middle of left side
+%center=\pgfpoint{.25\pgfphysicalwidth}{.5\pgfphysicalheight}%  
+%resized width=.5\pgfphysicalwidth,%
+%}
 
 \pgfpagesuselayout{8 on 1}[a0paper, border shrink=5mm]
 
@@ -126,7 +137,7 @@ If $\color{Green}\nu_i\ne 0$
   \begin{varblock}[12cm]{  SM+$\nu_R$ with exotic $B-L$ charges is equivalent to SM }      
   \end{varblock}
   six massless neutrinos instead of three
- 
+
 \end{frame}
 
 
@@ -228,66 +239,66 @@ If $\color{Green}\nu_i\ne 0$
 \end{frame}
 
 
-\begin{frame}
-  \frametitle{Neutrino masses and mixings}
-  \begin{itemize}
-  \item<1->  $\nu_i$ are free parameter and could be fixed if we impose $\operatorname{U}(1)_{B-L}$ to be local
-  \begin{align*}
-   \color{red} r\ne&\color{red}1\,, & \sum_i   \color{Green} \nu_i =&3\,, & \sum_i \color{Green} \nu_i^3 =&3 
-  \end{align*}
+% \begin{frame}
+%   \frametitle{Neutrino masses and mixings}
+%   \begin{itemize}
+%   \item<1->  $\nu_i$ are free parameter and could be fixed if we impose $\operatorname{U}(1)_{B-L}$ to be local
+%   \begin{align*}
+%    \color{red} r\ne&\color{red}1\,, & \sum_i   \color{Green} \nu_i =&3\,, & \sum_i \color{Green} \nu_i^3 =&3 
+%   \end{align*}
 
 
-  \begin{center}
-      \rowcolors{1}{RoyalBlue!20}{}    
-  \begin{tabular}{rlll}
-    & $\left( \nu_R \right)^{\dagger}_1$ & $\left( \nu_R \right)^{\dagger}_2$ & $\left( \nu_R \right)^{\dagger}_3$ \\
-    $\operatorname{U}(1)_{B-L}$ &$+4$& $+4$& $-5$\\
-    $\operatorname{U}(1)_{B-L}$ &$-6$& $+\dfrac{10}{3}$& $+\dfrac{17}{3}$\\
-  \end{tabular}
-    \end{center}
+%   \begin{center}
+%       \rowcolors{1}{RoyalBlue!20}{}    
+%   \begin{tabular}{rlll}
+%     & $\left( \nu_R \right)^{\dagger}_1$ & $\left( \nu_R \right)^{\dagger}_2$ & $\left( \nu_R \right)^{\dagger}_3$ \\
+%     $\operatorname{U}(1)_{B-L}$ &$+4$& $+4$& $-5$\\
+%     $\operatorname{U}(1)_{B-L}$ &$-6$& $+\dfrac{10}{3}$& $+\dfrac{17}{3}$\\
+%   \end{tabular}
+%     \end{center}
   
-  \item<1-> To have at least a rank 2 neutrino mass matrix we need either:
-  \begin{itemize}
-  \item At least two heavy Dirac fermions $\mathcal{Q}_a$, $a=1,2,\ldots$
-  \item \only<1>{At least two sets of scalars $\eta_a$, $\sigma_a$}%
-    \only<1->{\color{red}At least two sets of scalars $\eta_a$, $\sigma_a$}%
-  \end{itemize}
-\item<1> 
-  \begin{align*}
-    \mathcal{L}\supset&\left[ {\color{red}  M_{\mathcal{Q}}\, \left( \mathcal{Q}_R \right)^{\dagger} \mathcal{Q}_L}
-       + h^{a}_i   \left( \mathcal{Q}_R \right)^{\dagger} \widetilde{\eta}^\dagger_a L_i
-  +y^a_i    \overline{\nu_{Ri} }\  \sigma_a^{*} \mathcal{Q}_L  +\text{h.c}\right]
-+\kappa^{ab}\, \sigma_a \eta_b^{\dagger} H+\ldots
-  \end{align*}
+%   \item<1-> To have at least a rank 2 neutrino mass matrix we need either:
+%   \begin{itemize}
+%   \item At least two heavy Dirac fermions $\mathcal{Q}_a$, $a=1,2,\ldots$
+%   \item \only<1>{At least two sets of scalars $\eta_a$, $\sigma_a$}%
+%     \only<1->{\color{red}At least two sets of scalars $\eta_a$, $\sigma_a$}%
+%   \end{itemize}
+% \item<1> 
+%   \begin{align*}
+%     \mathcal{L}\supset&\left[ {\color{red}  M_{\mathcal{Q}}\, \left( \mathcal{Q}_R \right)^{\dagger} \mathcal{Q}_L}
+%        + h^{a}_i   \left( \mathcal{Q}_R \right)^{\dagger} \widetilde{\eta}^\dagger_a L_i
+%   +y^a_i    \overline{\nu_{Ri} }\  \sigma_a^{*} \mathcal{Q}_L  +\text{h.c}\right]
+% +\kappa^{ab}\, \sigma_a \eta_b^{\dagger} H+\ldots
+%   \end{align*}
   
-  \end{itemize}
+%   \end{itemize}
 
   
-\end{frame}
+% \end{frame}
 
-\begin{frame}
-  \frametitle{Neutrino masses and mixings}
-  %
-\begin{align}
-\left(\mathcal{M}_\nu\right)_{ij}=&N_c\frac{M_{\mathcal{Q}}}{64\pi^2}\sum_{a=1}^2h_{i}^a y_{j}^a\frac{\sqrt{2}\kappa_{aa}v}{m^2_{S_{2R}^a}-m^2_{S_{1R}^a}}
-  \left[F\left(\frac{m^2_{S_{2R}^a}}{M_{\mathcal{Q}}^2}\right)-F\left(\frac{m^2_{S_{1R}^a}}{M_{\mathcal{Q}}^2}\right)\right]+(R\to  I)
-\end{align}
-%
-where
-$F(m_{S_\beta}^2/M_Q^2)=m_{S_\beta}^2\log(m_{S_\beta}^2/M_Q^2)/(m_{S_\beta}^2-M_Q^2)$. The four CP-even mass eigenstates are denoted as
-$S_{1R}^1,S_{2R}^1,S_{1R}^2,S_{2R}^2$, with a similar notation for the
-CP-odd ones.
+% \begin{frame}
+%   \frametitle{Neutrino masses and mixings}
+%   %
+% \begin{align}
+% \left(\mathcal{M}_\nu\right)_{ij}=&N_c\frac{M_{\mathcal{Q}}}{64\pi^2}\sum_{a=1}^2h_{i}^a y_{j}^a\frac{\sqrt{2}\kappa_{aa}v}{m^2_{S_{2R}^a}-m^2_{S_{1R}^a}}
+%   \left[F\left(\frac{m^2_{S_{2R}^a}}{M_{\mathcal{Q}}^2}\right)-F\left(\frac{m^2_{S_{1R}^a}}{M_{\mathcal{Q}}^2}\right)\right]+(R\to  I)
+% \end{align}
+% %
+% where
+% $F(m_{S_\beta}^2/M_Q^2)=m_{S_\beta}^2\log(m_{S_\beta}^2/M_Q^2)/(m_{S_\beta}^2-M_Q^2)$. The four CP-even mass eigenstates are denoted as
+% $S_{1R}^1,S_{2R}^1,S_{1R}^2,S_{2R}^2$, with a similar notation for the
+% CP-odd ones.
 
-If $(\mu_\eta^{aa})^2\gg M_{\mathcal{Q}}^2$ one has
-\begin{align}
- &\left(\mathcal{M}_\nu\right)_{ij}=N_c\frac{M_{\mathcal{Q}}}{32\pi^2}\sqrt{2}v\sum_{a=1}^2\kappa^{aa}\frac{h_{i}^a y_{j}^a}{(\mu_\eta^{aa})^2}\\
- &\sim 0.03\,\mbox{eV}\left(\frac{M_{\mathcal{Q}}}{9.5\, \mbox{TeV}}\right)\left(\frac{\kappa^{aa}}{1\, \mbox{GeV}}\right)\left(\frac{50\,\mbox{TeV}}{\mu_\eta^{aa}}\right)^2\left(\frac{h_{i}^a y_{j}^a}{10^{-6}}\right).\nonumber
-%
-\end{align}
-%
+% If $(\mu_\eta^{aa})^2\gg M_{\mathcal{Q}}^2$ one has
+% \begin{align}
+%  &\left(\mathcal{M}_\nu\right)_{ij}=N_c\frac{M_{\mathcal{Q}}}{32\pi^2}\sqrt{2}v\sum_{a=1}^2\kappa^{aa}\frac{h_{i}^a y_{j}^a}{(\mu_\eta^{aa})^2}\\
+%  &\sim 0.03\,\mbox{eV}\left(\frac{M_{\mathcal{Q}}}{9.5\, \mbox{TeV}}\right)\left(\frac{\kappa^{aa}}{1\, \mbox{GeV}}\right)\left(\frac{50\,\mbox{TeV}}{\mu_\eta^{aa}}\right)^2\left(\frac{h_{i}^a y_{j}^a}{10^{-6}}\right).\nonumber
+% %
+% \end{align}
+% %
 
 
-\end{frame}
+% \end{frame}
 
 
 
@@ -308,20 +319,6 @@ If $(\mu_\eta^{aa})^2\gg M_{\mathcal{Q}}^2$ one has
 \end{picture}
 \end{frame}
 
-\begin{frame}
-  %\frametitle{The lightest is an stable particle}
-\begin{picture}(320,250)
-\only<1->{\put(-24,-22){\begin{overpic}[scale=0.352]{z2_bkg}\end{overpic}}}%
-\only<1->{\put(34,158.5){ \textbf{SM}  }}%
-\only<1->{\put(38,115){ {\large +}  }}%
-\only<1->{\put(30,100){ $\left( \nu_R \right)^{\dagger}_i$   }}%
-\only<1->{\put(18,115){\begin{overpic}[scale=0.118]{mice}\end{overpic}}}%
-%
-\only<1->{\put(310,180){\begin{overpic}[scale=0.15]{Q}\end{overpic}}}%
-\only<1->{\put(160,40){ \begin{overpic}[scale=0.15]{sigmas}\end{overpic}}}%
-\only<1->{\put(220,40){ \begin{overpic}[scale=0.15]{etas}\end{overpic}}}%
-\end{picture}
-\end{frame}
 
 
 \begin{frame}
