@@ -3,7 +3,12 @@
 \usepackage{talk}
 %\usepackage{mycolors}
 \usepackage{fp}
+
 \widescreen
+
+%\usepackage{pgffor}
+\usepackage{pgfpages}
+%\usepackage{pgf}
 
 \newenvironment<>{varblock}[2][.9\textwidth]{%
   \setlength{\textwidth}{#1}
@@ -20,6 +25,10 @@
 \addtobeamertemplate{block begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 \addtobeamertemplate{block alerted begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
+
+
+
+\pgfpagesuselayout{8 on 1}[a0paper, border shrink=5mm]
 
 
 
@@ -48,7 +57,7 @@ Phenomenology Group}%
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
-%\subject{Talks}
+% \subject{Talks}
 % This is only inserted into the PDF information catalog. Can be left
 % out. 
 
@@ -85,15 +94,7 @@ Phenomenology Group}%
 \end{comentar}
 %=============
 
-\maketitle
-
-\begin{frame}
-  \frametitle{Table of Contents}
-% %\small
-% %\vspace{-0.5cm}
-   \setbeamertemplate{section in toc}[sections numbered]
-   \tableofcontents[hideallsubsections]
-\end{frame}
+%\maketitle
 
 %\section{Motivation}
 
@@ -102,8 +103,6 @@ Phenomenology Group}%
 
 
 
-
-\section{Exotic $B-L$}
 
 \begin{frame}
   \frametitle{SM-like $B-L$ model}
@@ -132,7 +131,6 @@ If $\color{Green}\nu_i\ne 0$
 
 
 
-\section{(Dirac) Neutrino masses}
 
 
 \begin{frame}
@@ -163,51 +161,33 @@ If $\color{Green}\nu_i\ne 0$
 
 \begin{frame}
   \frametitle{
-    \only<1>{$\cancel{\text{tree-level}}$}%
-    \only<2>{$\nu\ne -1$}%
-    \only<3>{Radiative Dirac seesaw}%
-    \only<4>{Exotic $\left( \nu_R \right)^{\dagger}$ with $\nu\ne-1$,
+    \only<1>{Exotic $\left( \nu_R \right)^{\dagger}$ with $\nu\ne-1$,
      and vector-like Dirac fermion with $r\ne 1$}%
-     \only<5>{The model: \textit{colored scotogenic}}%
+     \only<2>{The model: \textit{colored scotogenic}}%
   }
 \def\pscale{0.6}
 \def\px{0}
 \def\py{140}
 \begin{picture}(320,250)
-\only<1>{\put(\px,\py){\includegraphics[scale=\pscale]{dm1}}}%
-\only<2>{\put(\px,\py){\includegraphics[scale=\pscale]{dm2}}}%
-\only<3-4>{\put(\px,\py){%\includegraphics[scale=\pscale]{dm3}
+\only<1>{\put(\px,\py){%\includegraphics[scale=\pscale]{dm3}
     \begin{overpic}[scale=\pscale]{dm3}
     \end{overpic}
   }}%
-\only<5>{\put(\px,\py){\includegraphics[scale=\pscale]{dm4}}}%
+\only<2>{\put(\px,\py){\includegraphics[scale=\pscale]{dm4}}}%
 %%% circle
-\only<1>{\put(80,50){$\left( \psi_L \right)^{\dagger}\nu_R\sigma \to
-    \nu_R \nu_R \sigma  $ }}
 \FPeval\vx{\px+52}%
 \FPeval\vy{\py+3}%
-\only<4>{\put(\vx,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\only<1>{\put(\vx,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
 \FPeval\vxr{\vx+73}%
-\only<4>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\only<1>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
 \FPeval\vxr{\vx+\vy}%
-\only<4>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\only<1>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
 \FPeval\vxr{\vx+73}%
 \FPeval\vyr{\vy+58}%
-\only<4>{\put(\vxr,\vyr){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\only<1>{\put(\vxr,\vyr){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
 \FPeval\sx{\px+270}%
 \FPeval\sy{\py+60}%
-\only<3->{\put(\sx,\sy){
-    \begin{minipage}{0.4\linewidth}
-      \begin{block}{Soft breaking term induced:}
-    \begin{align*}
-      \mathcal{L}\supset & \kappa  \sigma \eta^{\dagger} H\,,
-    \end{align*}
-    \invisible<5>{where $\kappa=\lambda \langle S \rangle\,.$}
-    
-      \end{block}
-  \end{minipage}
-  }}
-\only<4->{\put(0,80){
+\only<1->{\put(0,80){
     \begin{columns}
       \begin{column}{0.55\textwidth}
         \begin{align*}
@@ -217,8 +197,8 @@ If $\color{Green}\nu_i\ne 0$
           \sigma=&\eta+s
         \end{align*}
         \begin{align*}
-          \only<4>{\boldsymbol{N}_c=\boldsymbol{1}\,.}%
-          \only<5>{\color{red}\boldsymbol{N}_c=\boldsymbol{8}\,.}%
+          \only<1>{\boldsymbol{N}_c=\boldsymbol{1}\,.}%
+          \only<2>{\color{red}\boldsymbol{N}_c=\boldsymbol{8}\,.}%
         \end{align*}
       \end{column}
       \begin{column}{0.45\textwidth}
@@ -231,11 +211,11 @@ If $\color{Green}\nu_i\ne 0$
     $L_i$                           & $\color{blue}-1$ & $ \left(\mathbf{1},\mathbf{2}\right)_{-1/2}$  \\
  $H$                           &          0  & $ \left(\mathbf{1},\mathbf{2}\right)_{1/2}$ \\     
  $\left( \nu_{Ri} \right)^{\dagger}$ & $\color{Green}\nu$ & $ \left(\mathbf{1},\mathbf{1}\right)_0$ \\ 
-    \only<4>{$\psi_L$}\only<5->{$\color{red}\mathcal{Q}_L$}    & $\color{red}-r$ & $ \left(\only<4>{\mathbf{N}_c}\only<5>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$\\
- \only<4>{$\left( \psi_R \right)^{\dagger}$}\only<5->{$\color{red}\left( \mathcal{Q}_R \right)^{\dagger}$}   & $\color{red}r$ & $ \left(\only<4>{\mathbf{N}_c}\only<5>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$ \\
-    $\sigma_a$                           &  ${\color{Green}\nu}-\color{red}r$   & $ \left(\only<4>{\mathbf{N}_c}\only<5>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$ \\
-    $\eta_a$                        &  $1-\color{red}r$   & $ \left(\only<4>{\mathbf{N}_c}\only<5>{{\color{red}\mathbf{N}_c}},\mathbf{2}\right)_{1/2}$ \\
-    \invisible<5>{$S$}                        &  \invisible<5>{ ${\color{Green}\nu}-1$ }  & $  \invisible<5>{ \left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ }\\  
+    \only<1>{$\psi_L$}\only<2->{$\color{red}\mathcal{Q}_L$}    & $\color{red}-r$ & $ \left(\only<1>{\mathbf{N}_c}\only<2>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$\\
+ \only<1>{$\left( \psi_R \right)^{\dagger}$}\only<2->{$\color{red}\left( \mathcal{Q}_R \right)^{\dagger}$}   & $\color{red}r$ & $ \left(\only<1>{\mathbf{N}_c}\only<2>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$ \\
+    $\sigma_a$                           &  ${\color{Green}\nu}-\color{red}r$   & $ \left(\only<1>{\mathbf{N}_c}\only<2>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$ \\
+    $\eta_a$                        &  $1-\color{red}r$   & $ \left(\only<1>{\mathbf{N}_c}\only<2>{{\color{red}\mathbf{N}_c}},\mathbf{2}\right)_{1/2}$ \\
+    \invisible<2>{$S$}                        &  \invisible<2>{ ${\color{Green}\nu}-1$ }  & $  \invisible<2>{ \left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ }\\  
   \end{tabular}
 
         
@@ -266,13 +246,13 @@ If $\color{Green}\nu_i\ne 0$
   \end{tabular}
     \end{center}
   
-  \item<2-> To have at least a rank 2 neutrino mass matrix we need either:
+  \item<1-> To have at least a rank 2 neutrino mass matrix we need either:
   \begin{itemize}
   \item At least two heavy Dirac fermions $\mathcal{Q}_a$, $a=1,2,\ldots$
-  \item \only<2>{At least two sets of scalars $\eta_a$, $\sigma_a$}%
-    \only<3->{\color{red}At least two sets of scalars $\eta_a$, $\sigma_a$}%
+  \item \only<1>{At least two sets of scalars $\eta_a$, $\sigma_a$}%
+    \only<1->{\color{red}At least two sets of scalars $\eta_a$, $\sigma_a$}%
   \end{itemize}
-\item<4> 
+\item<1> 
   \begin{align*}
     \mathcal{L}\supset&\left[ {\color{red}  M_{\mathcal{Q}}\, \left( \mathcal{Q}_R \right)^{\dagger} \mathcal{Q}_L}
        + h^{a}_i   \left( \mathcal{Q}_R \right)^{\dagger} \widetilde{\eta}^\dagger_a L_i
@@ -310,10 +290,6 @@ If $(\mu_\eta^{aa})^2\gg M_{\mathcal{Q}}^2$ one has
 \end{frame}
 
 
-\section{Dark matter}
-
-
-
 
 % \begin{frame}
 % \begin{picture}(320,250)
@@ -326,6 +302,9 @@ If $(\mu_\eta^{aa})^2\gg M_{\mathcal{Q}}^2$ one has
 \begin{frame}
 \begin{picture}(320,250)
 \only<1>{\put(-24,-22){\begin{overpic}[scale=0.352]{zN}\end{overpic}}}%
+\only<1->{\put(310,180){\begin{overpic}[scale=0.15]{Q}\end{overpic}}}%
+\only<1->{\put(160,40){ \begin{overpic}[scale=0.15]{sigmas}\end{overpic}}}%
+\only<1->{\put(220,40){ \begin{overpic}[scale=0.15]{etas}\end{overpic}}}%
 \end{picture}
 \end{frame}
 
@@ -436,7 +415,6 @@ Because $\mathcal{Q}$ is a Dirac fermion, $\mathcal{Q} \mathcal{Q}$ is also stab
 
 \end{document}
 
-\section{radiative seesaw}
 \begin{frame}
 \frametitle{Radiative seesaw}
 \begin{picture}(320,250)
